@@ -1,0 +1,29 @@
+.hero {
+    height: 60vh;
+    background: url('../images/hero-bg.png') right top no-repeat;
+    background-size: contain;
+    
+    .container__left {
+        width: 50%;
+    }
+
+    .hero__title {
+        font-size: 42px;
+
+        .title__color {
+            color: $red;
+        }
+    }
+
+    .hero__callback {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .callback__btn--white {
+        background: #ffffff;
+        color: $red;
+    }
+}

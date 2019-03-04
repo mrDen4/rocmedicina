@@ -1,0 +1,21 @@
+.partners {
+    padding-bottom: 50px;
+
+    .partners__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .partners__img {
+        filter: grayscale(100%);
+        opacity: .5;
+        transition: .3s;
+
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+}
