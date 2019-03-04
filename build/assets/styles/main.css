@@ -35,7 +35,7 @@ ul {
   list-style: none; }
 
 .btn {
-  background: #D41F25;
+  background: #FF003D;
   color: #ffffff;
   font-size: 12px;
   border: none;
@@ -44,7 +44,11 @@ ul {
   cursor: pointer;
   transition: .3s; }
   .btn:hover {
-    background: #a8181d; }
+    background: #cc0031; }
+
+a {
+  color: #000000;
+  text-decoration: none; }
 
 .title-wrap {
   display: flex;
@@ -60,7 +64,7 @@ ul {
       flex-direction: column;
       align-items: center; } }
   .title-wrap .title__num {
-    color: #D41F25;
+    color: #FF003D;
     font-size: 144px;
     z-index: 5;
     margin: 0;
@@ -92,3 +96,47 @@ ul {
     .section {
       padding-top: 10px;
       padding-bottom: 10px; } }
+
+.header {
+  padding: 40px 0; }
+  .header .header__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; }
+  .header .header__phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: .3s; }
+    .header .header__phone:hover {
+      color: #FF003D; }
+    .header .header__phone .phone__icon {
+      margin-right: 13px; }
+  .header .header__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .header .header__socials .icon__img {
+      margin-right: 30px; }
+  .header .header__buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FF003D;
+    border-radius: 40px;
+    padding: 10px 25px;
+    color: #FF003D;
+    transition: .3s; }
+    .header .header__buy:hover {
+      background: #FF003D;
+      color: #ffffff; }
+  .header .header__menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s; }
+    .header .header__menu:hover {
+      transform: rotate(90deg); }
