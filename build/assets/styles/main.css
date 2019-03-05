@@ -289,3 +289,102 @@ a {
         margin: 0; }
   .result .result__license {
     width: 20%; }
+
+.services {
+  padding-top: 50px;
+  background: rgba(184, 139, 124, 0.03); }
+  .services .services__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+  .services .services__title {
+    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .services .services__title .title__num {
+      color: #FF003D;
+      font-size: 197px;
+      margin: 0;
+      margin-right: 40px; }
+    .services .services__title .title__text {
+      color: #484848;
+      font-size: 42px;
+      text-transform: uppercase;
+      margin: 0; }
+  .services .services__item {
+    width: 23%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 15px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    transition: .3s; }
+    .services .services__item .item__img {
+      width: 55px;
+      height: 50px;
+      background-size: contain; }
+      .services .services__item .item__img--1 {
+        background: url("../images/services/svg/1.svg") center center no-repeat; }
+      .services .services__item .item__img--2 {
+        background: url("../images/services/svg/2.svg") center center no-repeat; }
+      .services .services__item .item__img--3 {
+        background: url("../images/services/svg/3.svg") center center no-repeat; }
+      .services .services__item .item__img--4 {
+        background: url("../images/services/svg/4.svg") center center no-repeat; }
+      .services .services__item .item__img--5 {
+        background: url("../images/services/svg/5.svg") center center no-repeat; }
+      .services .services__item .item__img--6 {
+        background: url("../images/services/svg/6.svg") center center no-repeat; }
+      .services .services__item .item__img--7 {
+        background: url("../images/services/svg/7.svg") center center no-repeat; }
+      .services .services__item .item__img--8 {
+        background: url("../images/services/svg/8.svg") center center no-repeat; }
+      .services .services__item .item__img--9 {
+        background: url("../images/services/svg/9.svg") center center no-repeat; }
+      .services .services__item .item__img--10 {
+        background: url("../images/services/svg/10.svg") center center no-repeat; }
+      .services .services__item .item__img--11 {
+        background: url("../images/services/svg/11.svg") center center no-repeat; }
+      .services .services__item .item__img--12 {
+        background: url("../images/services/svg/12.svg") center center no-repeat; }
+      .services .services__item .item__img--13 {
+        background: url("../images/services/svg/13.svg") center center no-repeat; }
+      .services .services__item .item__img--14 {
+        background: url("../images/services/svg/14.svg") center center no-repeat; }
+    .services .services__item:hover {
+      background: url("../images/services/active.png") center center no-repeat;
+      background-size: cover;
+      color: #ffffff; }
+      .services .services__item:hover .item__img--1 {
+        background: url("../images/services/svg/active/1.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--2 {
+        background: url("../images/services/svg/active/2.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--3 {
+        background: url("../images/services/svg/active/3.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--4 {
+        background: url("../images/services/svg/active/4.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--5 {
+        background: url("../images/services/svg/active/5.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--6 {
+        background: url("../images/services/svg/active/6.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--7 {
+        background: url("../images/services/svg/active/7.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--8 {
+        background: url("../images/services/svg/active/8.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--9 {
+        background: url("../images/services/svg/active/9.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--10 {
+        background: url("../images/services/svg/active/10.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--11 {
+        background: url("../images/services/svg/active/11.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--12 {
+        background: url("../images/services/svg/active/12.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--13 {
+        background: url("../images/services/svg/active/13.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--14 {
+        background: url("../images/services/svg/active/14.svg") center center no-repeat; }
