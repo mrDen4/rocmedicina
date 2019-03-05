@@ -176,7 +176,8 @@ a {
   width: 49%; }
   .plus .plus__title .title__num {
     font-size: 197px;
-    margin: 0; }
+    margin: 0;
+    margin-right: 10px; }
   .plus .plus__title .title__text {
     font-size: 42px;
     text-transform: uppercase;
@@ -200,13 +201,8 @@ a {
   width: 23%;
   padding: 30px;
   height: 300px;
-  transition: .3s; }
-  .plus .plus__item:hover {
-    background: #FF003D; }
-    .plus .plus__item:hover .item__img {
-      background: #ffffff; }
-    .plus .plus__item:hover .item__title, .plus .plus__item:hover .item__text {
-      color: #ffffff; }
+  transition: .3s;
+  cursor: pointer; }
   .plus .plus__item .item__title {
     font-size: 17px;
     color: #484848;
@@ -214,3 +210,82 @@ a {
   .plus .plus__item .item__text {
     color: #939393;
     font-size: 15px; }
+
+.callback {
+  background: url("../images/callback-bg.png") center center no-repeat;
+  background-size: cover;
+  color: #ffffff; }
+  .callback .callback__title {
+    font-size: 42px;
+    text-align: center; }
+  .callback .callback__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .callback .callback__form .form__row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 60px; }
+    .callback .callback__form .form__item {
+      display: flex;
+      flex-direction: column;
+      width: 30%; }
+      .callback .callback__form .form__item .item__label {
+        display: flex;
+        align-items: center; }
+        .callback .callback__form .form__item .item__label .label__img {
+          margin-right: 10px; }
+      .callback .callback__form .form__item .item__inp {
+        background: none;
+        border: none;
+        border-bottom: 1px solid #FF8D8D;
+        color: #ffffff;
+        height: 50px; }
+        .callback .callback__form .form__item .item__inp::-webkit-input-placeholder {
+          color: #ffffff; }
+      .callback .callback__form .form__item .form__btn {
+        background: #ffffff;
+        color: #FF003D; }
+
+.result {
+  padding-top: 50px; }
+  .result .result__container {
+    flex-direction: row;
+    justify-content: space-between; }
+  .result .result__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; }
+    .result .result__left .left__title {
+      font-size: 17px;
+      color: #484848;
+      margin: 80px 0; }
+      .result .result__left .left__title--big {
+        transform: rotate(-90deg);
+        color: #FF003D;
+        font-size: 175px; }
+  .result .result__center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%; }
+    .result .result__center .center__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #484848;
+      width: 45%;
+      margin-bottom: 80px; }
+      .result .result__center .center__item .item__num {
+        font-size: 60px;
+        font-weight: bold;
+        margin: 0; }
+      .result .result__center .center__item .item__text {
+        margin: 0; }
+  .result .result__license {
+    width: 20%; }

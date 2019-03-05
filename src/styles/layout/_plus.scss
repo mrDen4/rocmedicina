@@ -10,6 +10,7 @@
         .title__num {
             font-size: 197px;
             margin: 0;
+            margin-right: 10px;
         }
 
         .title__text {
@@ -39,18 +40,7 @@
         padding: 30px;
         height: 300px;
         transition: .3s;
-
-        &:hover {
-            background: $red;
-
-            .item__img {
-                background: #ffffff;
-            }
-            
-            .item__title, .item__text {
-                color: #ffffff;
-            }
-        }
+        cursor: pointer;
 
         .item__title {
             font-size: 17px;
