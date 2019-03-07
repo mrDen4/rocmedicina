@@ -79,6 +79,39 @@
             display: flex;
             justify-content: space-around;
             width: 225px;
+
+            .socials__link {
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s;
+
+                &--inst {
+                    background: url('../images/socials/inst.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/socials/active/inst.svg') center center no-repeat;
+                    }
+                }
+
+                &--fb {
+                    background: url('../images/socials/fb.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/socials/active/fb.svg') center center no-repeat;
+                    }
+                }
+
+                &--vk {
+                    background: url('../images/socials/vk.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/socials/active/vk.svg') center center no-repeat;
+                    }
+                }
+            }
         }
     }
 

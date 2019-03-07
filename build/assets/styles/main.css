@@ -45,6 +45,8 @@ ul {
   padding: 22px 60px;
   cursor: pointer;
   transition: .3s; }
+  .btn:hover {
+    opacity: .8; }
 
 a {
   color: #000000;
@@ -101,7 +103,8 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    transition: .3s; }
+    transition: .3s;
+    font-size: 17px; }
     .header .header__phone:hover {
       color: #FF003D; }
     .header .header__phone .phone__icon {
@@ -111,6 +114,10 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center; }
+    .header .header__socials .socials__icon {
+      transition: .3s; }
+      .header .header__socials .socials__icon:hover {
+        opacity: .5; }
     .header .header__socials .icon__img {
       margin-right: 30px; }
   .header .header__buy {
@@ -150,7 +157,11 @@ a {
     justify-content: space-between; }
   .hero .callback__btn--white {
     background: #ffffff;
-    color: #FF003D; }
+    color: #FF003D;
+    transition: .3s; }
+    .hero .callback__btn--white:hover {
+      background: #FF003D;
+      color: #ffffff; }
 
 .partners {
   padding-bottom: 50px; }
@@ -252,7 +263,8 @@ a {
         color: #FF003D; }
 
 .result {
-  padding-top: 50px; }
+  padding-top: 50px;
+  background: url("../images/bg.png") center center no-repeat; }
   .result .result__container {
     flex-direction: row;
     justify-content: space-between; }
@@ -502,6 +514,25 @@ a {
       display: flex;
       justify-content: space-around;
       width: 225px; }
+      .footer .footer__right .right__socials .socials__link {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s; }
+        .footer .footer__right .right__socials .socials__link--inst {
+          background: url("../images/socials/inst.svg") center center no-repeat; }
+          .footer .footer__right .right__socials .socials__link--inst:hover {
+            background: url("../images/socials/active/inst.svg") center center no-repeat; }
+        .footer .footer__right .right__socials .socials__link--fb {
+          background: url("../images/socials/fb.svg") center center no-repeat; }
+          .footer .footer__right .right__socials .socials__link--fb:hover {
+            background: url("../images/socials/active/fb.svg") center center no-repeat; }
+        .footer .footer__right .right__socials .socials__link--vk {
+          background: url("../images/socials/vk.svg") center center no-repeat; }
+          .footer .footer__right .right__socials .socials__link--vk:hover {
+            background: url("../images/socials/active/vk.svg") center center no-repeat; }
   .footer .row__text {
     color: #D2D2D2;
     font-size: 15px;

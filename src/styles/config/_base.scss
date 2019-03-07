@@ -50,6 +50,10 @@ list-style: none;
   padding: 22px 60px;
   cursor: pointer;
   transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
 }
 
 a {

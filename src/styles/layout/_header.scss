@@ -13,6 +13,7 @@
         align-items: center;
         justify-content: center;
         transition: .3s;
+        font-size: 17px;
 
         &:hover {
             color: $red;
@@ -28,6 +29,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        .socials__icon {
+            transition: .3s;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
 
         .icon__img {
             margin-right: 30px;

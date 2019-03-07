@@ -25,5 +25,11 @@
     .callback__btn--white {
         background: #ffffff;
         color: $red;
+        transition: .3s;
+
+        &:hover {
+            background: $red;
+            color: #ffffff;
+        }
     }
 }
