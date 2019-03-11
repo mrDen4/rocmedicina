@@ -1,10 +1,19 @@
 .header {
     padding: 40px 0;
+    z-index: 100;
+    position: relative;
+    background: #fff;
+
     .header__container {
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
+        z-index: 100;
+    }
+
+    .header__logo {
+        z-index: 100;
     }
 
     .header__phone {
@@ -14,6 +23,7 @@
         justify-content: center;
         transition: .3s;
         font-size: 17px;
+        z-index: 100;
 
         &:hover {
             color: $red;
@@ -29,6 +39,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        z-index: 100;
 
         .socials__icon {
             transition: .3s;
@@ -52,6 +63,7 @@
         padding: 10px 25px;
         color: $red;
         transition: .3s;
+        z-index: 100;
 
         &:hover {
             background: $red;
@@ -64,9 +76,75 @@
         background: none;
         cursor: pointer;
         transition: .3s;
+        z-index: 100;
+
+        &:active {
+            outline: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
         
         &:hover {
             transform: rotate(90deg);
+        }
+
+        .menu__img {
+
+            &--open {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &--active {
+                    display: none;
+                }
+            }
+
+            &--exit {
+                display: none;
+
+                &--active {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.header__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    &--active {
+        border-top: 1px solid #B88B7C;
+        margin-top: 48px;
+        padding-top: 60px;
+        height: inherit;
+    }
+
+    .menu-list__link {
+        color: #484848;
+        font-size: 20px;
+        width: 23%;
+        margin-bottom: 35px;
+        z-index: 100;
+        transition: .3s;
+
+        &:hover {
+            color: $red;
         }
     }
 }

@@ -1,0 +1,150 @@
+.products {
+    .products__title {
+        font-size: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $red;
+        margin: 0;
+    }
+
+    .products__text {
+        text-align: center;
+        font-size: 15px;
+        color: #939393;
+
+        .text__link {
+            color: $red;
+        }
+    }
+
+    .products__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .list__item {
+            width: 30%;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            border: 1px solid rgba(184, 139, 124, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            align-items: center;
+
+            .item__img {
+                width: 55px;
+                height: 50px;
+                background-size: contain;
+
+                &--1 {
+                    background: url('../images/services/svg/1.svg') center center no-repeat;
+                }
+
+                &--2 {
+                    background: url('../images/services/svg/2.svg') center center no-repeat;
+                }
+                
+                &--3 {
+                    background: url('../images/services/svg/3.svg') center center no-repeat;
+                }
+
+                &--4 {
+                    background: url('../images/services/svg/4.svg') center center no-repeat;
+                }
+
+                &--5 {
+                    background: url('../images/services/svg/5.svg') center center no-repeat;
+                }
+
+                &--6 {
+                    background: url('../images/services/svg/6.svg') center center no-repeat;
+                }
+
+                &--7 {
+                    background: url('../images/services/svg/7.svg') center center no-repeat;
+                }
+
+                &--8 {
+                    background: url('../images/services/svg/8.svg') center center no-repeat;
+                }
+
+                &--9 {
+                    background: url('../images/services/svg/9.svg') center center no-repeat;
+                }
+
+                &--10 {
+                    background: url('../images/services/svg/10.svg') center center no-repeat;
+                }
+
+                &--11 {
+                    background: url('../images/services/svg/11.svg') center center no-repeat;
+                }
+
+                &--12 {
+                    background: url('../images/services/svg/12.svg') center center no-repeat;
+                }
+
+                &--13 {
+                    background: url('../images/services/svg/13.svg') center center no-repeat;
+                }
+
+                &--14 {
+                    background: url('../images/services/svg/14.svg') center center no-repeat;
+                }
+            }
+
+            .item__title {
+                font-size: 24px;
+                color: #484848;
+                margin-bottom: 15px;
+            }
+
+            .item__text {
+                color: #939393;
+                margin-bottom: 30px;
+            }
+
+            .item__links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .links__link {
+                    font-size: 15px;
+                    color: #484848;
+                    margin-bottom: 15px;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $red;
+                    }
+
+
+                    .link__color {
+                        color: $red;
+                    }
+                }
+            }
+
+            .item__btn {
+                background: #FFFFFF;
+                border: 1px solid $red;
+                color: $red;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+
+                &:hover {
+                    background: $red;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
