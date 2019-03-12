@@ -34,6 +34,8 @@
             border-radius: 15px;
             padding: 30px;
             align-items: center;
+            justify-content: space-between;
+            height: 610px;
 
             .item__img {
                 width: 55px;
@@ -101,6 +103,7 @@
                 font-size: 24px;
                 color: #484848;
                 margin-bottom: 15px;
+                text-align: center;
             }
 
             .item__text {
@@ -118,6 +121,7 @@
                     color: #484848;
                     margin-bottom: 15px;
                     transition: .3s;
+                    text-align: center;
 
                     &:hover {
                         color: $red;

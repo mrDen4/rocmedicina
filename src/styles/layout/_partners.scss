@@ -12,6 +12,7 @@
         filter: grayscale(100%);
         opacity: .5;
         transition: .3s;
+        height: 50px;
 
         &:hover {
             filter: grayscale(0%);
