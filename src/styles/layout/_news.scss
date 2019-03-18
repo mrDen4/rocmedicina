@@ -1,0 +1,92 @@
+.news {
+    padding-bottom: 50px;
+
+    .news__container {
+        align-items: center;
+    }
+    
+    .news__title {
+        font-size: 42px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $red;
+        text-align: center;
+        margin: 0;
+    }
+
+    .news__text {
+        text-align: center;
+        font-size: 15px;
+        color: #939393;
+        margin-bottom: 30px;
+
+        .text__link {
+            color: $red;
+        }
+    }
+
+    .news__btn {
+        width: 180px;
+        background: #ffffff;
+        border: 1px solid $red;
+        color: $red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .news__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .list__item {
+            width: 70%;
+            margin-bottom: 60px;
+
+            .item__link {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid #B88B7C;
+                border-radius: 10px;
+                padding: 0;
+
+                .link__img {
+                    width: 48%;
+                    background-size: contain;
+                }
+
+                .link__content {
+                    width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 50px 0;
+
+                    .content__date {
+                        display: flex;
+                        align-items: center;
+
+                        .date__icon {
+                            margin-right: 15px;
+                        }
+                    }
+
+                    .content__title {
+                        font-size: 24px;
+                        color: #484848;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+
+                    .content__text {
+                        color: #484848;
+                        font-size: 17px;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

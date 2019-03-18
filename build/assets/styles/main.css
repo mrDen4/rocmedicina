@@ -741,3 +741,67 @@ a {
       .service .content__about .about__callback .callback__btn-price {
         background: #ffffff;
         color: #FF003D; }
+
+.news {
+  padding-bottom: 50px; }
+  .news .news__container {
+    align-items: center; }
+  .news .news__title {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF003D;
+    text-align: center;
+    margin: 0; }
+  .news .news__text {
+    text-align: center;
+    font-size: 15px;
+    color: #939393;
+    margin-bottom: 30px; }
+    .news .news__text .text__link {
+      color: #FF003D; }
+  .news .news__btn {
+    width: 180px;
+    background: #ffffff;
+    border: 1px solid #FF003D;
+    color: #FF003D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; }
+  .news .news__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .news .news__list .list__item {
+      width: 70%;
+      margin-bottom: 60px; }
+      .news .news__list .list__item .item__link {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #B88B7C;
+        border-radius: 10px;
+        padding: 0; }
+        .news .news__list .list__item .item__link .link__img {
+          width: 48%;
+          background-size: contain; }
+        .news .news__list .list__item .item__link .link__content {
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          padding: 50px 0; }
+          .news .news__list .list__item .item__link .link__content .content__date {
+            display: flex;
+            align-items: center; }
+            .news .news__list .list__item .item__link .link__content .content__date .date__icon {
+              margin-right: 15px; }
+          .news .news__list .list__item .item__link .link__content .content__title {
+            font-size: 24px;
+            color: #484848;
+            font-weight: bold;
+            margin: 0; }
+          .news .news__list .list__item .item__link .link__content .content__text {
+            color: #484848;
+            font-size: 17px;
+            margin: 10px 0; }
