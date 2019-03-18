@@ -667,3 +667,77 @@ a {
       .products .products__list .list__item .item__btn:hover {
         background: #FF003D;
         color: #FFFFFF; }
+
+.service {
+  padding-bottom: 50px; }
+  .service .service__title {
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF003D;
+    font-weight: bold;
+    margin: 0; }
+  .service .products__text {
+    text-align: center;
+    font-size: 15px;
+    color: #939393;
+    margin-bottom: 30px; }
+    .service .products__text .text__link {
+      color: #FF003D; }
+  .service .service__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .service .content__img {
+    width: 45%;
+    position: relative; }
+    .service .content__img .img__img {
+      width: 100%; }
+    .service .content__img .img__sale {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #FF0000;
+      color: #ffffff;
+      padding: 30px;
+      width: 250px;
+      text-align: center;
+      border-radius: 0 0 50px 0; }
+  .service .content__about {
+    width: 50%; }
+    .service .content__about .about__title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 0; }
+    .service .content__about .about__text {
+      font-size: 15px;
+      color: #939393; }
+    .service .content__about .about__price {
+      margin-bottom: 30px; }
+      .service .content__about .about__price .price__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px; }
+      .service .content__about .about__price .row__name {
+        color: #484848;
+        width: 70%; }
+      .service .content__about .about__price .row__old-price {
+        color: #939393;
+        width: 15%;
+        text-decoration: line-through; }
+      .service .content__about .about__price .row__new-price {
+        font-size: 17px;
+        color: #FF003D;
+        width: 15%; }
+    .service .content__about .about__callback {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      .service .content__about .about__callback .callback__btn-price {
+        background: #ffffff;
+        color: #FF003D; }
