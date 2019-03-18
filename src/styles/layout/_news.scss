@@ -44,6 +44,7 @@
         .list__item {
             width: 70%;
             margin-bottom: 60px;
+            overflow: hidden;
 
             .item__link {
                 width: 100%;
@@ -52,6 +53,7 @@
                 border: 1px solid #B88B7C;
                 border-radius: 10px;
                 padding: 0;
+                overflow: hidden;
 
                 .link__img {
                     width: 48%;

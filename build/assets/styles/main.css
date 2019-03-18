@@ -690,7 +690,9 @@ a {
     justify-content: space-between; }
   .service .content__img {
     width: 45%;
-    position: relative; }
+    position: relative;
+    border-radius: 0 0 100px 0;
+    overflow: hidden; }
     .service .content__img .img__img {
       width: 100%; }
     .service .content__img .img__sale {
@@ -740,7 +742,8 @@ a {
       justify-content: space-around; }
       .service .content__about .about__callback .callback__btn-price {
         background: #ffffff;
-        color: #FF003D; }
+        color: #FF003D;
+        border: 1px solid #FF003D; }
 
 .news {
   padding-bottom: 50px; }
@@ -775,14 +778,16 @@ a {
     align-items: center; }
     .news .news__list .list__item {
       width: 70%;
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      overflow: hidden; }
       .news .news__list .list__item .item__link {
         width: 100%;
         display: flex;
         justify-content: space-between;
         border: 1px solid #B88B7C;
         border-radius: 10px;
-        padding: 0; }
+        padding: 0;
+        overflow: hidden; }
         .news .news__list .list__item .item__link .link__img {
           width: 48%;
           background-size: contain; }
@@ -805,3 +810,54 @@ a {
             color: #484848;
             font-size: 17px;
             margin: 10px 0; }
+
+.jobs .jobs__title {
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF003D;
+  font-weight: bold;
+  margin: 0; }
+
+.jobs .jobs__text {
+  text-align: center;
+  font-size: 15px;
+  color: #939393;
+  margin-bottom: 30px; }
+  .jobs .jobs__text .text__link {
+    color: #FF003D; }
+
+.jobs .jobs__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .jobs .jobs__list .jobs__item {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 520px;
+    margin-bottom: 50px; }
+    .jobs .jobs__list .jobs__item .item__title {
+      text-align: center;
+      font-size: 24px;
+      color: #484848;
+      font-weight: bold; }
+    .jobs .jobs__list .jobs__item .item__text {
+      font-size: 15px;
+      color: #939393;
+      text-align: center; }
+    .jobs .jobs__list .jobs__item .item__btn {
+      background: #FFFFFF;
+      color: #FF003D;
+      padding: 0;
+      width: 80%;
+      border: 1px solid red; }
+      .jobs .jobs__list .jobs__item .item__btn:hover {
+        background: #FF003D;
+        color: #FFFFFF; }
