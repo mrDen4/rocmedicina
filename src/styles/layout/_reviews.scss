@@ -1,0 +1,27 @@
+.reviews {
+    background: rgba(184, 139, 124, 0.03);
+
+    .reviews__slider {
+        display: flex;
+
+        .slider__slide {
+            display: flex;
+
+            .slide__ava {
+                width: 40%;
+                border-radius: 50%;
+                overflow: hidden;
+
+                .ava__img {
+                    width: 100%;
+                }
+            }
+
+            .slide__content {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.price {
+    padding-bottom: 50px;
+
+    .price__container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+
+        .list__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .item__btn {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            color: #484848;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 25px 35px;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background: $red;
+                color: #FFFFFF;
+            }
+        }
+
+        .item__block {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            overflow: hidden;
+            height: 0;
+
+            &--active {
+                height: inherit;
+            }
+
+            .block__price {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(184, 139, 124, 0.2);
+            }
+
+            .price__name {
+                color: #939393;
+                font-size: 17px;
+                width: 70%;
+            }
+
+            .price__num {
+                display: flex;
+                flex-wrap: wrap;
+                width: 30%;
+            }
+
+            .num__old-price {
+                width: 50%;
+                text-decoration: line-through;
+                font-size: 15px;
+                color: #484848;
+                text-align: right;
+            }
+
+            .num__new-price {
+                width: 50%;
+                color: $red;
+                font-size: 15px;
+                text-align: right;
+            }
+
+            .num__usual-price {
+                color: #484848;
+                font-size: 17px;
+                text-align: right;
+                width: 100%;
+            }
+
+            .num__sale {
+                color: #D2D2D2;
+                font-size: 15px;
+                width: 100%;
+                text-align: right;
+            }
+        }
+
+        .item__link {
+            background: #FFFFFF;
+            border: 1px solid red;
+            color: $red;
+            margin-top: 40px;
+            display: none;
+
+            &--active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:hover {
+                background: $red;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -4,26 +4,6 @@
     .news__container {
         align-items: center;
     }
-    
-    .news__title {
-        font-size: 42px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: $red;
-        text-align: center;
-        margin: 0;
-    }
-
-    .news__text {
-        text-align: center;
-        font-size: 15px;
-        color: #939393;
-        margin-bottom: 30px;
-
-        .text__link {
-            color: $red;
-        }
-    }
 
     .news__btn {
         width: 180px;

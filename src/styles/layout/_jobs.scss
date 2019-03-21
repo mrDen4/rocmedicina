@@ -1,23 +1,4 @@
 .jobs {
-    .jobs__title {
-        font-size: 42px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $red;
-        font-weight: bold;
-        margin: 0;
-    }
-
-    .jobs__text {
-        text-align: center;
-        font-size: 15px;
-        color: #939393;
-        margin-bottom: 30px;
-
-        .text__link {
-            color: $red;
-        }
-    }
 
     .jobs__list {
         display: flex;
