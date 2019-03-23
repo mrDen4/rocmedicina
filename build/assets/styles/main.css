@@ -925,13 +925,18 @@ a {
         color: #FFFFFF; }
 
 .reviews {
-  background: rgba(184, 139, 124, 0.03); }
+  background: rgba(184, 139, 124, 0.03);
+  padding-bottom: 50px; }
   .reviews .reviews__slider {
-    display: flex; }
+    display: flex;
+    width: 100%; }
     .reviews .reviews__slider .slider__slide {
-      display: flex; }
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
       .reviews .reviews__slider .slider__slide .slide__ava {
-        width: 40%;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         overflow: hidden; }
         .reviews .reviews__slider .slider__slide .slide__ava .ava__img {
@@ -940,3 +945,28 @@ a {
         display: flex;
         flex-direction: column;
         width: 50%; }
+        .reviews .reviews__slider .slider__slide .slide__content .content__date {
+          color: #939393;
+          font-size: 15px; }
+        .reviews .reviews__slider .slider__slide .slide__content .content__name {
+          color: #484848;
+          font-size: 30px;
+          margin: 0; }
+        .reviews .reviews__slider .slider__slide .slide__content .content__text {
+          font-size: 20px;
+          color: #646464; }
+        .reviews .reviews__slider .slider__slide .slide__content .content__menu {
+          display: flex; }
+          .reviews .reviews__slider .slider__slide .slide__content .content__menu .menu__btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: none;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-right: 15px; }
+          .reviews .reviews__slider .slider__slide .slide__content .content__menu .btn__img {
+            width: 130%; }
