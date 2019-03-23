@@ -970,3 +970,10 @@ a {
             margin-right: 15px; }
           .reviews .reviews__slider .slider__slide .slide__content .content__menu .btn__img {
             width: 130%; }
+
+.about .about__text {
+  font-size: 17px;
+  color: #484848; }
+
+.about .about__img {
+  width: 100%; }
