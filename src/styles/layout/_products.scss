@@ -149,6 +149,35 @@
                     color: #FFFFFF;
                 }
             }
+
+            &--sales {
+                height: inherit;
+
+                .item__title {
+                    color: #939393;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    margin: 0;
+                    margin-top: 10px;
+                }
+
+                .item__subtitle {
+                    color: $red;
+                    font-size: 24px;
+                    margin: 0;
+                }
+
+                .item__btn {
+                    color: #FFFFFF;
+                    background: $red;
+                }
+
+                .item__price {
+                    color: $red;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+            }
         }
     }
 }
