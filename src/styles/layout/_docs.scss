@@ -1,0 +1,36 @@
+.docs {
+    background: #fefefe;
+
+    .docs__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .list__item {
+            width: 45%;
+            background: #ffffff;
+            box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            height: 65px;
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            .item__link {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                font-weight: bold;
+                color: $black;
+
+                .link__img {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
