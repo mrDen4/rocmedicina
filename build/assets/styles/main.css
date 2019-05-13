@@ -686,9 +686,16 @@ a {
 
 .service {
   padding-bottom: 50px; }
+  .service .service__text .about__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0; }
+  .service .service__text .about__text {
+    font-size: 15px;
+    color: #939393; }
   .service .service__content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between; }
   .service .content__img {
     width: 45%;
@@ -713,13 +720,6 @@ a {
       border-radius: 0 0 50px 0; }
   .service .content__about {
     width: 50%; }
-    .service .content__about .about__title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 0; }
-    .service .content__about .about__text {
-      font-size: 15px;
-      color: #939393; }
     .service .content__about .about__price {
       margin-bottom: 30px; }
       .service .content__about .about__price .price__row {
@@ -977,3 +977,58 @@ a {
 
 .about .about__img {
   width: 100%; }
+
+.buy .buy__container {
+  align-items: center; }
+
+.buy .buy__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .buy .buy__content .content__img {
+    width: 45%; }
+    .buy .buy__content .content__img .img__img {
+      width: 100%; }
+  .buy .buy__content .content__form {
+    display: flex;
+    flex-direction: column; }
+    .buy .buy__content .content__form .row {
+      display: flex;
+      align-items: center; }
+    .buy .buy__content .content__form .form__icon {
+      margin-right: 20px; }
+    .buy .buy__content .content__form .form__text {
+      color: #FF003D;
+      font-size: 17px;
+      font-weight: bold; }
+    .buy .buy__content .content__form .form__inp {
+      border: none;
+      border-bottom: 1px solid #D2D2D2;
+      padding: 15px;
+      font-size: 17px;
+      outline: none; }
+    .buy .buy__content .content__form .form__btn {
+      margin-top: 80px;
+      background: #FF003D;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      height: 65px;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: bold; }
+    .buy .buy__content .content__form .form__about {
+      font-size: 15px;
+      color: #939393;
+      text-align: center; }
+
+.buy .buy__about {
+  width: 50%; }
+  .buy .buy__about .about__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #484848; }
+  .buy .buy__about .about__text {
+    font-size: 15px;
+    color: #939393; }

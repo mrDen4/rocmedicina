@@ -1,9 +1,22 @@
 .service {
     padding-bottom: 50px;
 
+    .service__text {
+        .about__title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .about__text {
+            font-size: 15px;
+            color: #939393;
+        }
+    }
+
     .service__content {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -36,17 +49,6 @@
 
     .content__about {
         width: 50%;
-
-        .about__title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 0;
-        }
-
-        .about__text {
-            font-size: 15px;
-            color: #939393;
-        }
 
         .about__price {
             margin-bottom: 30px;

@@ -1,0 +1,82 @@
+.buy {
+
+    .buy__container {
+        align-items: center;
+    }
+
+    .buy__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .content__img {
+            width: 45%;
+
+            .img__img {
+                width: 100%;
+            }
+        }
+
+        .content__form {
+            display: flex;
+            flex-direction: column;
+
+            .row {
+                display: flex;
+                align-items: center;
+            }
+
+            .form__icon {
+                margin-right: 20px;
+            }
+
+            .form__text {
+                color: $red;
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            .form__inp {
+                border: none;
+                border-bottom: 1px solid #D2D2D2;
+                padding: 15px;
+                font-size: 17px;
+                outline: none;
+            }
+
+            .form__btn {
+                margin-top: 80px;
+                background: $red;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+                height: 65px;
+                border-radius: 10px;
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            .form__about {
+                font-size: 15px;
+                color: #939393;
+                text-align: center;
+            }
+        }
+    }
+
+    .buy__about {
+        width: 50%;
+
+        .about__title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #484848;
+        }
+
+        .about__text {
+            font-size: 15px;
+            color: #939393;
+        }
+    }
+}
