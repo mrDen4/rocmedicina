@@ -1,5 +1,5 @@
 .hero {
-    height: 60vh;
+    height: 70vh;
     background: url('../images/hero-bg.png') right top no-repeat;
     background-size: contain;
     
@@ -9,6 +9,8 @@
 
     .hero__title {
         font-size: 42px;
+        color: #484848;
+        margin-bottom: 30px;
 
         .title__color {
             color: $red;
