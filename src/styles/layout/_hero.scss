@@ -1,16 +1,37 @@
 .hero {
-    height: 70vh;
+    height: 100vh;
     background: url('../images/hero-bg.png') right top no-repeat;
     background-size: contain;
+
+    @include phones() {
+        background: url('../images/hero-bg.png') right bottom no-repeat;
+        background-size: contain;
+    }
+
+    .hero__container {
+
+        @include phones() {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
     
     .container__left {
         width: 50%;
+
+        @include phones() {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
 
     .hero__title {
         font-size: 42px;
         color: #484848;
         margin-bottom: 30px;
+        text-align: left;
 
         .title__color {
             color: $red;
@@ -22,6 +43,20 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .callback__btn {
+
+        @include phones() {
+            height: 40px;
+            padding: 10px 40px;
+            margin-bottom: 15px;
+        }
     }
 
     .callback__btn--white {

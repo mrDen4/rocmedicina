@@ -6,6 +6,10 @@
     .callback__title {
         font-size: 42px;
         text-align: center;
+
+        @include phones() {
+            font-size: 20px;
+        }
     }
 
     .callback__form {
@@ -21,12 +25,29 @@
             justify-content: space-around;
             width: 100%;
             margin-bottom: 60px;
+
+            @include phones() {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
         }
 
         .form__item {
             display: flex;
             flex-direction: column;
             width: 30%;
+
+            @include phones() {
+                width: 100%;
+                margin-bottom: 0;
+                align-items: center;
+            }
+
+            &--copy {
+                @include phones() {
+                    order: 10;
+                }
+            }
 
             .item__label {
                 display: flex;
@@ -45,6 +66,11 @@
                 height: 50px;
                 outline: none;
 
+                @include phones() {
+                    width: 60%;
+                    margin-bottom: 20px;
+                }
+
                 &::-webkit-input-placeholder {
                     color: #ffffff;
                 }
@@ -53,6 +79,25 @@
             .form__btn {
                 background: #ffffff;
                 color: $red;
+            }
+
+            .form__copy {
+
+                @include phones() {
+                    color: #FF8D8D;
+                    text-align: center;
+                }
+            }
+
+            .form__text {
+                
+                &--callback {
+                    @include phones() {
+                        font-weight: bold;
+                        color: #ffffff;
+                        text-align: center;
+                    }
+                }
             }
         }
     }

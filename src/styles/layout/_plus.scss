@@ -7,10 +7,18 @@
         justify-content: center;
         width: 49%;
 
+        @include phones() {
+            width: 100%;
+        }
+
         .title__num {
             font-size: 197px;
             margin: 0;
             margin-right: 10px;
+
+            @include phones() {
+                font-size: 120px;
+            }
         }
 
         .title__text {
@@ -18,6 +26,10 @@
             text-transform: uppercase;
             width: 360px;
             margin: 0;
+
+            @include phones() {
+                font-size: 30px;
+            }
         }
     }
 
@@ -27,6 +39,10 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
+
+        @include phones() {
+            flex-wrap: wrap;
+        }
     }
 
     .plus__item {
@@ -41,6 +57,15 @@
         height: 300px;
         transition: .3s;
         cursor: pointer;
+
+        @include phones() {
+            width: 100%;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            height: 290px;
+            margin-bottom: 15px;
+        }
 
         .item__title {
             font-size: 17px;

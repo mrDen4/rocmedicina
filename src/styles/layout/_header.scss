@@ -14,6 +14,14 @@
 
     .header__logo {
         z-index: 100;
+
+        @include phones() {
+            width: 40%;
+        }
+
+        .logo__img {
+            width: 100%;
+        }
     }
 
     .header__phone {
@@ -24,6 +32,10 @@
         transition: .3s;
         font-size: 17px;
         z-index: 100;
+
+        @include phones() {
+            display: none;
+        }
 
         &:hover {
             color: $red;
@@ -51,6 +63,10 @@
 
         .icon__img {
             margin-right: 30px;
+
+            @include phones() {
+                margin-right: 10px;
+            }
         }
     }
 
@@ -64,6 +80,10 @@
         color: $red;
         transition: .3s;
         z-index: 100;
+
+        @include phones() {
+            display: none;
+        }
 
         &:hover {
             background: $red;

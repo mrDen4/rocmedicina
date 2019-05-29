@@ -81,6 +81,11 @@ a {
     z-index: 100; }
   .header .header__logo {
     z-index: 100; }
+    @media screen and (max-width: 576px) {
+      .header .header__logo {
+        width: 40%; } }
+    .header .header__logo .logo__img {
+      width: 100%; }
   .header .header__phone {
     display: flex;
     flex-direction: row;
@@ -89,6 +94,9 @@ a {
     transition: .3s;
     font-size: 17px;
     z-index: 100; }
+    @media screen and (max-width: 576px) {
+      .header .header__phone {
+        display: none; } }
     .header .header__phone:hover {
       color: #FF003D; }
     .header .header__phone .phone__icon {
@@ -105,6 +113,9 @@ a {
         opacity: .5; }
     .header .header__socials .icon__img {
       margin-right: 30px; }
+      @media screen and (max-width: 576px) {
+        .header .header__socials .icon__img {
+          margin-right: 10px; } }
   .header .header__buy {
     display: flex;
     align-items: center;
@@ -115,6 +126,9 @@ a {
     color: #FF003D;
     transition: .3s;
     z-index: 100; }
+    @media screen and (max-width: 576px) {
+      .header .header__buy {
+        display: none; } }
     .header .header__buy:hover {
       background: #FF003D;
       color: #ffffff; }
@@ -171,15 +185,30 @@ a {
       color: #FF003D; }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
   background: url("../images/hero-bg.png") right top no-repeat;
   background-size: contain; }
+  @media screen and (max-width: 576px) {
+    .hero {
+      background: url("../images/hero-bg.png") right bottom no-repeat;
+      background-size: contain; } }
+  @media screen and (max-width: 576px) {
+    .hero .hero__container {
+      align-items: flex-start;
+      justify-content: flex-start; } }
   .hero .container__left {
     width: 50%; }
+    @media screen and (max-width: 576px) {
+      .hero .container__left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; } }
   .hero .hero__title {
     font-size: 42px;
     color: #484848;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: left; }
     .hero .hero__title .title__color {
       color: #FF003D; }
   .hero .hero__callback {
@@ -187,6 +216,15 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
+    @media screen and (max-width: 576px) {
+      .hero .hero__callback {
+        flex-direction: column;
+        align-items: flex-start; } }
+  @media screen and (max-width: 576px) {
+    .hero .callback__btn {
+      height: 40px;
+      padding: 10px 40px;
+      margin-bottom: 15px; } }
   .hero .callback__btn--white {
     background: #ffffff;
     color: #FF003D;
@@ -202,11 +240,19 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
+    @media screen and (max-width: 576px) {
+      .partners .partners__container {
+        flex-wrap: wrap; } }
   .partners .partners__img {
     filter: grayscale(100%);
     opacity: .5;
     transition: .3s;
     height: 50px; }
+    @media screen and (max-width: 576px) {
+      .partners .partners__img {
+        width: 45%;
+        height: inherit;
+        margin-bottom: 15px; } }
     .partners .partners__img:hover {
       filter: grayscale(0%);
       opacity: 1; }
@@ -218,15 +264,24 @@ a {
   align-items: center;
   justify-content: center;
   width: 49%; }
+  @media screen and (max-width: 576px) {
+    .plus .plus__title {
+      width: 100%; } }
   .plus .plus__title .title__num {
     font-size: 197px;
     margin: 0;
     margin-right: 10px; }
+    @media screen and (max-width: 576px) {
+      .plus .plus__title .title__num {
+        font-size: 120px; } }
   .plus .plus__title .title__text {
     font-size: 42px;
     text-transform: uppercase;
     width: 360px;
     margin: 0; }
+    @media screen and (max-width: 576px) {
+      .plus .plus__title .title__text {
+        font-size: 30px; } }
 
 .plus .plus__row {
   display: flex;
@@ -234,6 +289,9 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px; }
+  @media screen and (max-width: 576px) {
+    .plus .plus__row {
+      flex-wrap: wrap; } }
 
 .plus .plus__item {
   display: flex;
@@ -247,6 +305,14 @@ a {
   height: 300px;
   transition: .3s;
   cursor: pointer; }
+  @media screen and (max-width: 576px) {
+    .plus .plus__item {
+      width: 100%;
+      padding: 10px;
+      align-items: center;
+      text-align: center;
+      height: 290px;
+      margin-bottom: 15px; } }
   .plus .plus__item .item__title {
     font-size: 17px;
     color: #484848;
@@ -262,6 +328,9 @@ a {
   .callback .callback__title {
     font-size: 42px;
     text-align: center; }
+    @media screen and (max-width: 576px) {
+      .callback .callback__title {
+        font-size: 20px; } }
   .callback .callback__form {
     display: flex;
     flex-direction: column;
@@ -274,10 +343,22 @@ a {
       justify-content: space-around;
       width: 100%;
       margin-bottom: 60px; }
+      @media screen and (max-width: 576px) {
+        .callback .callback__form .form__row {
+          flex-direction: column;
+          margin-bottom: 0; } }
     .callback .callback__form .form__item {
       display: flex;
       flex-direction: column;
       width: 30%; }
+      @media screen and (max-width: 576px) {
+        .callback .callback__form .form__item {
+          width: 100%;
+          margin-bottom: 0;
+          align-items: center; } }
+      @media screen and (max-width: 576px) {
+        .callback .callback__form .form__item--copy {
+          order: 10; } }
       .callback .callback__form .form__item .item__label {
         display: flex;
         align-items: center; }
@@ -290,11 +371,24 @@ a {
         color: #ffffff;
         height: 50px;
         outline: none; }
+        @media screen and (max-width: 576px) {
+          .callback .callback__form .form__item .item__inp {
+            width: 60%;
+            margin-bottom: 20px; } }
         .callback .callback__form .form__item .item__inp::-webkit-input-placeholder {
           color: #ffffff; }
       .callback .callback__form .form__item .form__btn {
         background: #ffffff;
         color: #FF003D; }
+      @media screen and (max-width: 576px) {
+        .callback .callback__form .form__item .form__copy {
+          color: #FF8D8D;
+          text-align: center; } }
+      @media screen and (max-width: 576px) {
+        .callback .callback__form .form__item .form__text--callback {
+          font-weight: bold;
+          color: #ffffff;
+          text-align: center; } }
 
 .result {
   padding-top: 50px;
@@ -302,6 +396,9 @@ a {
   .result .result__container {
     flex-direction: row;
     justify-content: space-between; }
+    @media screen and (max-width: 576px) {
+      .result .result__container {
+        flex-direction: column; } }
   .result .result__left {
     display: flex;
     flex-direction: column;

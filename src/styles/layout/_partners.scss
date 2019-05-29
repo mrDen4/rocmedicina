@@ -6,6 +6,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            flex-wrap: wrap;
+        }
     }
 
     .partners__img {
@@ -13,6 +17,12 @@
         opacity: .5;
         transition: .3s;
         height: 50px;
+
+        @include phones() {
+            width: 45%;
+            height: inherit;
+            margin-bottom: 15px;
+        }
 
         &:hover {
             filter: grayscale(0%);
