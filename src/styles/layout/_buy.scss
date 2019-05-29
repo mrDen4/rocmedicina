@@ -12,6 +12,10 @@
         .content__img {
             width: 45%;
 
+            @include phones() {
+                display: none;
+            }
+
             .img__img {
                 width: 100%;
             }
@@ -66,6 +70,10 @@
 
     .buy__about {
         width: 50%;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .about__title {
             text-align: center;

@@ -7,7 +7,8 @@
         justify-content: space-between;
 
         @include phones() {
-            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
         }
     }
 
@@ -22,10 +23,19 @@
             color: $black;
             margin: 80px 0;
 
+            @include phones() {
+                margin: 80px 0;
+            }
+
             &--big {
                 transform: rotate(-90deg);
                 color: $red;
                 font-size: 175px;
+
+                @include phones() {
+                    font-size: 100px;
+                    margin: 0;
+                }
             }
         }
     }
@@ -36,6 +46,10 @@
         flex-wrap: wrap;
         width: 50%;
 
+        @include phones() {
+            width: 60%;
+        }
+
         .center__item {
             display: flex;
             flex-direction: column;
@@ -43,6 +57,10 @@
             color: $black;
             width: 45%;
             margin-bottom: 80px;
+
+            @include phones() {
+                width: 100%;
+            }
 
             .item__num {
                 font-size: 60px;
@@ -58,5 +76,9 @@
 
     .result__license {
         width: 20%;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 }

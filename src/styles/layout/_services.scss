@@ -20,6 +20,10 @@
             font-size: 197px;
             margin: 0;
             margin-right: 40px;
+
+            @include phones() {
+                font-size: 120px;
+            }
         }
 
         .title__text {
@@ -41,6 +45,10 @@
         background: #ffffff;
         margin-bottom: 20px; 
         transition: .3s;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .item__img {
             width: 55px;

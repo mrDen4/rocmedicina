@@ -18,6 +18,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .content__img {
@@ -25,6 +29,10 @@
         position: relative;
         border-radius: 0 0 100px 0;
         overflow: hidden;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .img__img {
             width: 100%;
@@ -49,6 +57,10 @@
 
     .content__about {
         width: 50%;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .about__price {
             margin-bottom: 30px;
@@ -83,10 +95,25 @@
             align-items: center;
             justify-content: space-around;
 
+            @include phones() {
+                flex-direction: column;
+            }
+
             .callback__btn-price {
                 background: #ffffff;
                 color: $red;
                 border: 1px solid $red;
+
+                @include phones() {
+                    width: 100%;
+                }
+            }
+
+            .callback__btn-buy {
+                @include phones() {
+                    width: 100%;
+                    margin-top: 20px;
+                }
             }
         }
     }

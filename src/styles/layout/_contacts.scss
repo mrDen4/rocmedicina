@@ -3,16 +3,28 @@
     .contacts__container {
         flex-direction: row;
         justify-content: space-between;
+
+        @include phones() {
+            flex-wrap: wrap;
+        }
     }
 
     .contacts__map {
         width: 45%;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 
     .contacts__content {
         width: 45%;
         padding-top: 50px;
         padding-bottom: 50px;
+
+        @include phones() {
+            width: 100%;
+        }
     }
     
     .contacts__title {

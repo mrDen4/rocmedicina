@@ -163,6 +163,10 @@
         z-index: 100;
         transition: .3s;
 
+        @include phones() {
+            width: 45%;
+        }
+
         &:hover {
             color: $red;
         }
