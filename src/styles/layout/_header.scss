@@ -30,8 +30,10 @@
         align-items: center;
         justify-content: center;
         transition: .3s;
-        font-size: 17px;
+        font-size: 20px;
         z-index: 100;
+        font-weight: bold;
+        color: #FF003D;
 
         @include phones() {
             display: none;
@@ -50,7 +52,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        width: 10%;
         z-index: 100;
 
         .socials__icon {
@@ -58,14 +61,6 @@
 
             &:hover {
                 opacity: .5;
-            }
-        }
-
-        .icon__img {
-            margin-right: 30px;
-
-            @include phones() {
-                margin-right: 10px;
             }
         }
     }
@@ -76,10 +71,12 @@
         justify-content: center;
         border: 2px solid $red;
         border-radius: 40px;
-        padding: 10px 25px;
+        padding: 4px 25px;
         color: $red;
+        font-weight: bold;
         transition: .3s;
         z-index: 100;
+        font-size: 14px;
 
         @include phones() {
             display: none;

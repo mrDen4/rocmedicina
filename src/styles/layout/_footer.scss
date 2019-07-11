@@ -21,6 +21,7 @@
 
     .left__text {
         margin-bottom: 45px;
+        font-size: 17px;
         
         @include phones() {
             width: 100%;
@@ -39,7 +40,7 @@
         }
 
         .left__link {
-            color: #D2D2D2;
+            color: #fff;
             font-size: 17px;
             margin-bottom: 45px;
             transition: .3s;

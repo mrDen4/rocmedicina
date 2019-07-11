@@ -10,10 +10,11 @@
     }
     
     .services__title {
-        width: 46%;
+        width: 48%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-weight: bold;
 
         .title__num {
             color: $red;
@@ -36,8 +37,9 @@
 
     .services__item {
         width: 23%;
-        padding: 25px 30px;
+        padding: 20px 20px;
         display: flex;
+        height: 220px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start; 
@@ -45,6 +47,7 @@
         background: #ffffff;
         margin-bottom: 20px; 
         transition: .3s;
+        border: 1px solid #dcdcdc;
 
         @include phones() {
             width: 100%;
@@ -113,7 +116,7 @@
         }
 
         &:hover {
-            background: url('../images/services/active.png') center center no-repeat;
+            background: url('../images/services/active.png');
             background-size: cover;
             color: #ffffff;
 

@@ -6,6 +6,7 @@
     .callback__title {
         font-size: 42px;
         text-align: center;
+        margin-bottom: 20px;
 
         @include phones() {
             font-size: 20px;
@@ -24,7 +25,7 @@
             align-items: center;
             justify-content: space-around;
             width: 100%;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
 
             @include phones() {
                 flex-direction: column;
@@ -34,7 +35,6 @@
 
         .form__item {
             display: flex;
-            flex-direction: column;
             width: 30%;
 
             @include phones() {
@@ -52,6 +52,7 @@
             .item__label {
                 display: flex;
                 align-items: center;
+                border-bottom: 1px solid #FF8D8D;
 
                 .label__img {
                     margin-right: 10px;
@@ -65,6 +66,7 @@
                 color: #ffffff;
                 height: 50px;
                 outline: none;
+                width: 100%;    
 
                 @include phones() {
                     width: 60%;
@@ -79,9 +81,16 @@
             .form__btn {
                 background: #ffffff;
                 color: $red;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 0;
+                padding-bottom: 0;
             }
 
             .form__copy {
+                text-align: center;
 
                 @include phones() {
                     color: #FF8D8D;
@@ -90,6 +99,8 @@
             }
 
             .form__text {
+                text-align: center;
+                width: 100%;
                 
                 &--callback {
                     @include phones() {
