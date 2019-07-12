@@ -9,14 +9,30 @@
     top: -50%;
     left: 50%;
     margin-top: -250px;
-    margin-left: -125px;
+    margin-left: -175px;
     background: #ffffff;
     border-radius: 10px;
     z-index: 150;
     transition: .3s;
 
+    @include phones() {
+        width: 300px;
+        padding: 20px;
+        margin-left: -150px;
+    }
+
     &--active {
         top: 50%;
+    }
+
+    .popup__btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        color: #FF0000;
+        background: none;
+        border: none;
     }
 
     .form__title {

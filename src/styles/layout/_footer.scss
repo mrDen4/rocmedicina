@@ -17,6 +17,10 @@
 
     .left__logo {
         margin-bottom: 25px;
+
+        .logo__img {
+            width: 100%;
+        }
     }
 
     .left__text {
@@ -46,6 +50,15 @@
             transition: .3s;
             display: flex;
             align-items: center;
+            font-weight: bold;
+
+            @include laptop() {
+                font-size: 15px;
+            }
+
+            @include phones() {
+                display: none;
+            }
 
             .link__icon {
                 margin-right: 20px;
@@ -63,9 +76,14 @@
         justify-content: space-between;
         width: 30%;
 
+        @include tablets() {
+            width: 40%;
+        }
+
         @include phones() {
             width: 100%;
             align-items: center;
+            padding: 0 0 0 30px;
         }
 
         .center__link {
@@ -76,8 +94,13 @@
             margin-bottom: 40px;
             transition: .3s;
 
+            @include laptop() {
+                font-size: 15px;
+            }
+
             @include phones() {
                 width: 45%;
+                margin-bottom: 20px;
             }
 
             &:hover {
@@ -92,6 +115,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include tablets() {
+            width: 25%;
+        }
+
         @include phones() {
             width: 100%;
         }
@@ -100,6 +127,39 @@
             width: 225px;
             margin-bottom: 30px;
             padding: 0;
+
+            @include tablets() {
+                width: 50%;
+                margin-top: 10px;
+            }
+        }
+
+        .left__link {
+            color: #fff;
+            font-size: 17px;
+            margin-bottom: 20px;
+            transition: .3s;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            display: none;
+            margin-top: 10px;
+
+            @include laptop() {
+                font-size: 15px;
+            }
+
+            @include phones() {
+                display: flex;
+            }
+
+            .link__icon {
+                margin-right: 20px;
+            }
+
+            &:hover {
+                color: $red;
+            }
         }
 
 
@@ -107,6 +167,10 @@
             display: flex;
             justify-content: space-around;
             width: 225px;
+
+            @include tablets() {
+                width: 80%;
+            }
 
             .socials__link {
                 width: 45px;

@@ -10,13 +10,21 @@
         flex-direction: row;
         justify-content: space-between;
         z-index: 100;
+
+        @include phones() {
+            flex-wrap: wrap;
+        }
     }
 
     .header__logo {
         z-index: 100;
 
+        @include tablets() {
+            width: 30%;
+        }
+
         @include phones() {
-            width: 40%;
+            width: 65%;
         }
 
         .logo__img {
@@ -35,6 +43,10 @@
         font-weight: bold;
         color: #FF003D;
 
+        @include tablets() {
+            font-size: 15px;
+        }
+
         @include phones() {
             display: none;
         }
@@ -48,6 +60,14 @@
         }
     }
 
+    .header__phone--mob {
+        display: none;
+
+        @include phones() {
+            display: flex;
+        }
+    }
+
     .header__socials {
         display: flex;
         flex-direction: row;
@@ -55,6 +75,16 @@
         justify-content: space-between;
         width: 10%;
         z-index: 100;
+
+        @include tablets() {
+            width: 15%;
+        }
+
+        @include phones() {
+            width: 45%;
+            order: 3;
+            margin-top: 20px;
+        }
 
         .socials__icon {
             transition: .3s;
@@ -78,8 +108,15 @@
         z-index: 100;
         font-size: 14px;
 
+        @include tablets() {
+            padding: 5px;
+            text-align: center;
+            font-size: 12px;
+        }
+
         @include phones() {
-            display: none;
+            order: 4;
+            margin-top: 20px;
         }
 
         &:hover {
@@ -95,6 +132,10 @@
         transition: .3s;
         z-index: 100;
 
+        @include phones() {
+            height: 25px;
+        }
+
         &:active {
             outline: none;
         }
@@ -105,9 +146,17 @@
         
         &:hover {
             transform: rotate(90deg);
+
+            @include tablets() {
+                transform: none;
+            }
         }
 
         .menu__img {
+
+            @include phones() {
+                height: 100%;
+            }
 
             &--open {
                 display: flex;

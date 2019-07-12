@@ -16,14 +16,23 @@
         justify-content: space-between;
         font-weight: bold;
 
+        @include phones() {
+            width: 100%;
+        }
+
         .title__num {
             color: $red;
             font-size: 197px;
             margin: 0;
             margin-right: 40px;
 
+            @include tablets() {
+                font-size: 150px;
+            }
+
             @include phones() {
                 font-size: 120px;
+                margin-right: 20px;
             }
         }
 
@@ -32,6 +41,14 @@
             font-size: 42px;
             text-transform: uppercase;
             margin: 0;
+
+            @include tablets() {
+                font-size: 33px;
+            }
+
+            @include phones() {
+                font-size: 25px;
+            }
         }
     }
 
@@ -50,7 +67,32 @@
         border: 1px solid #dcdcdc;
 
         @include phones() {
-            width: 100%;
+            width: 45%;
+            height: 150px;
+            justify-content: space-around;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .item__title {
+            
+            @include tablets() {
+                font-size: 12px;
+                margin: 10px 0;
+            }
+        }
+
+        .item__text {
+
+            @include tablets() {
+                font-size: 10px;
+                margin: 5px 0;
+            }
+
+            @include phones() {
+                display: none;
+            }
         }
 
         .item__img {

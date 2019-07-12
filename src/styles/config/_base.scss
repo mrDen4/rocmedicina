@@ -41,7 +41,6 @@ list-style: none;
 
 .btn {
   background: linear-gradient(90deg, #FF003D 0%, #FF0000 61.33%, #FF3D00 100%);
-  box-shadow: 0px 10px 30px rgba(255, 0, 61, 0.1);
   border-radius: 10px;
   color: #ffffff;
   font-size: 17px;
@@ -50,6 +49,11 @@ list-style: none;
   padding: 22px 60px;
   cursor: pointer;
   transition: .3s;
+
+  @include tablets() {
+    height: 45px;
+    padding: 10px 30px;
+  }
 
   &:hover {
     opacity: .8;
