@@ -11,7 +11,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 100%;
+
+        @include phones() {
+            width: 100%;
+        }
 
         .list__item {
             display: flex;
@@ -32,9 +36,13 @@
             color: #484848;
             font-size: 24px;
             font-weight: bold;
-            padding: 25px 35px;
+            padding: 10px 35px;
             cursor: pointer;
             transition: .3s;
+
+            @include phones() {
+                font-size: 20px;
+            }
 
             &:hover {
                 background: $red;
@@ -58,18 +66,31 @@
                 align-items: center;
                 justify-content: space-between;
                 border-bottom: 1px solid rgba(184, 139, 124, 0.2);
+
+                @include phones() {
+                    flex-direction: column;
+                }
             }
 
             .price__name {
                 color: #939393;
                 font-size: 17px;
                 width: 70%;
+
+                @include phones() {
+                    width: 100%;
+                    font-size: 15px;
+                }
             }
 
             .price__num {
                 display: flex;
                 flex-wrap: wrap;
                 width: 30%;
+
+                @include phones() {
+                    width: 100%;
+                }
             }
 
             .num__old-price {
@@ -78,6 +99,10 @@
                 font-size: 15px;
                 color: #484848;
                 text-align: right;
+
+                @include phones() {
+                    text-align: center;
+                }
             }
 
             .num__new-price {
@@ -85,6 +110,10 @@
                 color: $red;
                 font-size: 15px;
                 text-align: right;
+
+                @include phones() {
+                    text-align: center;
+                }
             }
 
             .num__usual-price {
@@ -92,6 +121,10 @@
                 font-size: 17px;
                 text-align: right;
                 width: 100%;
+
+                @include phones() {
+                    text-align: center;
+                }
             }
 
             .num__sale {
@@ -99,6 +132,10 @@
                 font-size: 15px;
                 width: 100%;
                 text-align: right;
+
+                @include phones() {
+                    text-align: center;
+                }
             }
         }
 

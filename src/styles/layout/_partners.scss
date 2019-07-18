@@ -1,15 +1,21 @@
 .partners {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     .partners__container {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         @include phones() {
             flex-wrap: wrap;
         }
+    }
+
+    .partners__title {
+        width: 100%;
+        color: #484848;
     }
 
     .partners__img {

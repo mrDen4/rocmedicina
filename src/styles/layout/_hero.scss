@@ -1,5 +1,5 @@
 .hero {
-    height: 72vh;
+    height: 65vh;
 
     @include phones() {
         background: url('../images/hero-bg-mob.png') no-repeat;
@@ -50,6 +50,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        width: 90%;
 
         @include phones() {
             flex-direction: column;

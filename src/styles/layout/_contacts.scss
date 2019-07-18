@@ -3,6 +3,7 @@
     .contacts__container {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
         @include phones() {
             flex-wrap: wrap;
@@ -11,16 +12,18 @@
 
     .contacts__map {
         width: 45%;
+        height: 350px;
 
         @include phones() {
             width: 100%;
+            display: none;
         }
     }
 
     .contacts__content {
         width: 45%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
 
         @include phones() {
             width: 100%;

@@ -23,6 +23,11 @@
         align-items: flex-start;
         justify-content: flex-start;
         flex-wrap: wrap;
+        position: relative;
+
+        @include phones() {
+            justify-content: space-between;
+        }
 
         .list__item {
             width: 30%;
@@ -42,12 +47,106 @@
                 cursor: pointer;
             }
 
-            &--active {
-                height: 600px;
+            @include phones() {
+                width: 45%;
+                padding: 10px;
+                margin: 0 0 15px 0;
+                height: 290px;
             }
 
-            @include phones() {
+            .item__exit {
+                display: none;
+            }
+
+            .item__links {
+                display: none;
+            }
+
+            .item__btn {
+                background: #FFFFFF;
+                border: 1px solid $red;
+                color: $red;
                 width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: initial;
+                height: 35px;
+
+                &:hover {
+                    background: $red;
+                    color: #FFFFFF;
+                }
+            }
+
+            .item__title {
+                font-size: 24px;
+                color: #484848;
+                margin-bottom: 10px;
+                text-align: center;
+
+                @include phones() {
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+            }
+
+            &--active {
+                height: 495px;
+                position: fixed;
+                width: 400px;
+                top: 50%;
+                left: 50%;
+                margin-top: -300px;
+                margin-left: -200px;
+                z-index: 999999;
+
+                @include phones() {
+                    width: 300px;
+                    height: 500px;
+                    margin-top: -250px;
+                    margin-left: -150px;
+                }
+
+                .item__btn {
+                    display: none;
+                }
+
+                .item__exit {
+                    display: flex;
+                    background: none;
+                    border: none;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 25px;
+                }
+
+                .item__title {
+                    margin-bottom: 43px;
+                }
+
+                .item__links {
+                    display: flex;
+                    flex-direction: column;
+    
+                    .links__link {
+                        font-size: 15px;
+                        color: #484848;
+                        margin-bottom: 15px;
+                        transition: .3s;
+                        text-align: center;
+    
+                        &:hover {
+                            color: $red;
+                        }
+    
+    
+                        .link__color {
+                            color: $red;
+                        }
+                    }
+                }
             }
 
             .item__img {
@@ -112,64 +211,16 @@
                 }
             }
 
-            .item__title {
-                font-size: 24px;
-                color: #484848;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-
             .item__text {
-                color: #939393;
-                margin-bottom: 10px;
-            }
+                color: #616161;
+                margin-bottom: 20px;
+                font-size: 16px;
+                text-align: center;
 
-            .item__links {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                display: none;
-
-                &--active {
-                    display: flex;
-                }
-
-                .links__link {
-                    font-size: 15px;
-                    color: #484848;
-                    margin-bottom: 15px;
-                    transition: .3s;
-                    text-align: center;
-
-                    &:hover {
-                        color: $red;
-                    }
-
-
-                    .link__color {
-                        color: $red;
-                    }
-                }
-            }
-
-            .item__btn {
-                background: #FFFFFF;
-                border: 1px solid $red;
-                color: $red;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: initial;
-                height: 35px;
-
-                &--active {
-                    display: none;
-                }
-
-                &:hover {
-                    background: $red;
-                    color: #FFFFFF;
+                @include phones() {
+                    font-size: 12px;
+                    margin: 0;
+                    text-align: justify;
                 }
             }
 
