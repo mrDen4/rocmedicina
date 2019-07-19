@@ -94,6 +94,7 @@
 
             .item__text {
                 margin: 0;
+                font-size: 14px;
 
                 @include phones() {
                     text-align: center;

@@ -1,5 +1,11 @@
 .service {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    .title {
+        color: #939393;
+        font-size: 32px;
+    }
 
     .service__text {
         margin-top: 20px;
@@ -29,7 +35,7 @@
     }
 
     .content__img {
-        width: 45%;
+        width: 40%;
         position: relative;
         border-radius: 0 0 100px 0;
         overflow: hidden;
@@ -65,7 +71,7 @@
     }
 
     .content__about {
-        width: 50%;
+        width: 55%;
 
         @include phones() {
             width: 100%;
@@ -90,12 +96,14 @@
                 color: #939393;
                 width: 15%;
                 text-decoration: line-through;
+                text-align: right;
             }
 
             .row__new-price {
                 font-size: 17px;
                 color: $red;
                 width: 15%;
+                text-align: right;
             }
         }
 
@@ -112,6 +120,9 @@
                 background: #ffffff;
                 color: $red;
                 border: 1px solid $red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 @include phones() {
                     width: 100%;

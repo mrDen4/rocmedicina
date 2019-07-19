@@ -3,6 +3,7 @@
     z-index: 100;
     position: relative;
     background: #fff;
+    border-bottom: 1px solid #c5c5c5;
 
     .header__container {
         display: flex;
@@ -131,6 +132,7 @@
         cursor: pointer;
         transition: .3s;
         z-index: 100;
+        padding: 0;
 
         @include phones() {
             height: 25px;
@@ -204,10 +206,11 @@
     .menu-list__link {
         color: #484848;
         font-size: 20px;
-        width: 23%;
+        width: 20%;
         margin-bottom: 35px;
         z-index: 100;
         transition: .3s;
+        text-align: center;
 
         @include phones() {
             width: 45%;
@@ -215,6 +218,11 @@
 
         &:hover {
             color: $red;
+        }
+
+        &--border {
+            border: 1px solid $red;
+            border-radius: 30px;
         }
     }
 }

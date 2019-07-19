@@ -13,6 +13,8 @@
         background: url('../images/hero-bg.png') right top no-repeat;
         background-size: contain;
         height: 95%;
+        display: flex;
+        justify-content: center;
 
         @include phones() {
             background: none;
@@ -50,7 +52,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 90%;
+        width: 80%;
 
         @include phones() {
             flex-direction: column;
@@ -60,6 +62,10 @@
 
     .callback__btn {
         border: 1px solid #dcdcdc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
 
         @include phones() {
             height: 40px;

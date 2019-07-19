@@ -49,6 +49,7 @@
         .form__item {
             display: flex;
             width: 30%;
+            justify-content: center;
 
             @include phones() {
                 width: 80%;
@@ -79,7 +80,8 @@
                 color: #ffffff;
                 height: 50px;
                 outline: none;
-                width: 100%;    
+                width: 100%;  
+                font-size: 18px;  
 
                 @include phones() {
                     width: 100%;

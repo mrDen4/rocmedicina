@@ -1,5 +1,5 @@
 .docs {
-    background: #fefefe;
+    padding-top: 30px;
 
     .docs__list {
         display: flex;
@@ -9,7 +9,7 @@
 
         .list__item {
             width: 45%;
-            background: #ffffff;
+            border: 1px solid #dcdcdc;
             box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
             border-radius: 15px;
             height: 65px;

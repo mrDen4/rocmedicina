@@ -45,10 +45,11 @@ list-style: none;
   color: #ffffff;
   font-size: 17px;
   border: none;
-  height: 65px;
+  height: 50px;
   padding: 0 30px;
   cursor: pointer;
   transition: .3s;
+  font-weight: bold;
 
   @include tablets() {
     height: 45px;

@@ -40,7 +40,7 @@
             padding: 30px;
             align-items: center;
             justify-content: space-between;
-            height: 300px;
+            height: 355px;
             transition: .3s;
 
             &:hover {
@@ -51,7 +51,7 @@
                 width: 45%;
                 padding: 10px;
                 margin: 0 0 15px 0;
-                height: 290px;
+                height: 225px;
             }
 
             .item__exit {
@@ -91,6 +91,20 @@
                 }
             }
 
+            .item__text {
+                color: #616161;
+                margin-bottom: 20px;
+                font-size: 16px;
+                text-align: center;
+
+                @include phones() {
+                    font-size: 12px;
+                    margin: 0;
+                    text-align: justify;
+                    display: none;
+                }
+            }
+
             &--active {
                 height: 495px;
                 position: fixed;
@@ -106,6 +120,10 @@
                     height: 500px;
                     margin-top: -250px;
                     margin-left: -150px;
+                }
+
+                .item__text {
+                    display: none;
                 }
 
                 .item__btn {
@@ -208,19 +226,6 @@
 
                 &--14 {
                     background: url('../images/services/svg/14.svg') center center no-repeat;
-                }
-            }
-
-            .item__text {
-                color: #616161;
-                margin-bottom: 20px;
-                font-size: 16px;
-                text-align: center;
-
-                @include phones() {
-                    font-size: 12px;
-                    margin: 0;
-                    text-align: justify;
                 }
             }
 
