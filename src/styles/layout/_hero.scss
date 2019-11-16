@@ -35,7 +35,7 @@
     .hero__title {
         font-size: 36px;
         color: #484848;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         text-align: left;
 
         .title__color {
@@ -52,7 +52,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 70%;
 
         @include phones() {
             flex-direction: column;
@@ -88,7 +88,7 @@
     .hero__img {
         height: 50px;
         width: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         @include phones() {
             height: 30px;

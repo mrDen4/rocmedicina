@@ -1,7 +1,13 @@
 .price {
-    padding-bottom: 50px;
+    padding: 30px 0;
 
     .price__container {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .price__btn {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -34,7 +40,7 @@
             box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
             border-radius: 15px;
             color: #484848;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             padding: 10px 35px;
             cursor: pointer;
@@ -44,8 +50,12 @@
                 font-size: 20px;
             }
 
+            &:focus {
+                outline: none;
+            }
+
             &:hover {
-                background: $red;
+                background: #484848;
                 color: #FFFFFF;
             }
         }
@@ -53,12 +63,16 @@
         .item__block {
             display: flex;
             flex-direction: column;
-            width: 80%;
+            align-items: center;
+            width: 94%;
             overflow: hidden;
             height: 0;
+            transition: 10s;
 
             &--active {
                 height: inherit;
+                background: #fff;
+                transition: 10s;
             }
 
             .block__price {
@@ -66,6 +80,8 @@
                 align-items: center;
                 justify-content: space-between;
                 border-bottom: 1px solid rgba(184, 139, 124, 0.2);
+                background: #fff;
+                width: 100%;
 
                 @include phones() {
                     flex-direction: column;
@@ -144,13 +160,10 @@
             border: 1px solid red;
             color: $red;
             margin-top: 40px;
-            display: none;
-
-            &--active {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
 
             &:hover {
                 background: $red;

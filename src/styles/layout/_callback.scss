@@ -9,6 +9,7 @@
         text-align: center;
         margin: 0;
         margin-bottom: 20px;
+        font-family: 'Lato', sans-serif;
 
         @include phones() {
             font-size: 20px;
@@ -110,9 +111,10 @@
 
             .form__copy {
                 text-align: center;
+                color: #D2D2D2;
 
                 @include phones() {
-                    color: #FF8D8D;
+                    color: #D2D2D2;
                     text-align: center;
                 }
             }
@@ -120,11 +122,12 @@
             .form__text {
                 text-align: center;
                 width: 100%;
+                color: #D2D2D2;
                 
                 &--callback {
                     @include phones() {
                         font-weight: bold;
-                        color: #ffffff;
+                        color: #D2D2D2;
                         text-align: center;
                     }
                 }

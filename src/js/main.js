@@ -52,8 +52,29 @@ $(document).ready(function () {
         $('.bg').toggleClass('bg--active-popup');
     });
 
+    $('.result .license__slider').slick({
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.result .result__license .license__btn--left'),
+        nextArrow: $('.result .result__license .license__btn--right')
+    });
+
     // Раскрывание эл-ов в прайс-листе
     $('.price .price__list .item__btn').on('click', function () {
-        $(this).next('.item__block').addClass('item__block--active');
+        if ($(this).next('.item__block').hasClass('item__block--active')) {
+            $(this).next('.item__block').toggleClass('item__block--active');
+            return;
+        }
+
+        if ($('.item__block').hasClass('item__block--active')) {
+            $('.item__block').removeClass('item__block--active');
+            $(this).next('.item__block').toggleClass('item__block--active');
+        } else {
+            $(this).next('.item__block').toggleClass('item__block--active');
+        }
     });
 });

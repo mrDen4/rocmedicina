@@ -3,7 +3,7 @@
     z-index: 100;
     position: relative;
     background: #fff;
-    border-bottom: 1px solid #c5c5c5;
+    border-bottom: 1px solid #f3f3f3;
 
     .header__container {
         display: flex;
@@ -74,7 +74,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 10%;
+        width: 12%;
         z-index: 100;
 
         @include tablets() {

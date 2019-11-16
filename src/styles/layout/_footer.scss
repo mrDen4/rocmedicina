@@ -1,5 +1,5 @@
 .footer {
-    background: #484848;
+    background: #2a2a2a;
     color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -17,6 +17,9 @@
 
     .left__logo {
         margin-bottom: 25px;
+        display: flex;
+        background: #fff;
+        border: 3px solid #fff;
 
         .logo__img {
             width: 100%;
@@ -41,6 +44,50 @@
         @include phones() {
             width: 100%;
             align-items: center;
+        }
+
+        .left__iso {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+
+            .iso__img {
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s;
+                margin-right: 20px;
+
+                &--9001 {
+                    background: url('../images/iso/9001.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/iso/active/9001.svg') center center no-repeat;
+                    }
+                }
+
+                &--14001 {
+                    background: url('../images/iso/14001.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/iso/active/14001.svg') center center no-repeat;
+                    }
+                }
+
+                &--18001 {
+                    background: url('../images/iso/18001.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/iso/active/18001.svg') center center no-repeat;
+                    }
+                }
+            }
+        }
+
+        .left__text {
+            margin-top: 0;
         }
 
         .left__link {
@@ -166,7 +213,7 @@
         .right__socials {
             display: flex;
             justify-content: space-around;
-            width: 225px;
+            width: 100%;
 
             @include tablets() {
                 width: 80%;
@@ -201,6 +248,22 @@
 
                     &:hover {
                         background: url('../images/socials/active/vk.svg') center center no-repeat;
+                    }
+                }
+
+                &--twitter {
+                    background: url('../images/socials/twitter.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/socials/active/twitter.svg') center center no-repeat;
+                    }
+                }
+
+                &--ok {
+                    background: url('../images/socials/ok.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/socials/active/ok.svg') center center no-repeat;
                     }
                 }
             }

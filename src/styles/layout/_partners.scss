@@ -22,7 +22,6 @@
         filter: grayscale(100%);
         opacity: .5;
         transition: .3s;
-        height: 50px;
 
         @include phones() {
             width: 45%;
