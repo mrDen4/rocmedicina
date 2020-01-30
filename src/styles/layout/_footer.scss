@@ -1,5 +1,6 @@
 .footer {
-    background: #2a2a2a;
+    // background: #2a2a2a;
+    background: linear-gradient(360deg, #484848 0.29%, rgba(72, 72, 72, 0) 116.67%);
     color: #fff;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -18,8 +19,6 @@
     .left__logo {
         margin-bottom: 25px;
         display: flex;
-        background: #fff;
-        border: 3px solid #fff;
 
         .logo__img {
             width: 100%;
@@ -83,6 +82,14 @@
                         background: url('../images/iso/active/18001.svg') center center no-repeat;
                     }
                 }
+
+                &--7701 {
+                    background: url('../images/iso/7701.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/iso/active/7701.svg') center center no-repeat;
+                    }
+                }
             }
         }
 
@@ -122,6 +129,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 30%;
+        padding-top: 25px;
 
         @include tablets() {
             width: 40%;
@@ -138,7 +146,7 @@
             width: 30%;
             font-size: 17px;
             font-weight: bold;
-            margin-bottom: 40px;
+            margin-top: 40px;
             transition: .3s;
 
             @include laptop() {
@@ -148,6 +156,7 @@
             @include phones() {
                 width: 45%;
                 margin-bottom: 20px;
+                margin-top: 0;
             }
 
             &:hover {
@@ -212,7 +221,8 @@
 
         .right__socials {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            flex-wrap: wrap;
             width: 100%;
 
             @include tablets() {
@@ -220,12 +230,13 @@
             }
 
             .socials__link {
-                width: 45px;
+                width: 26%;
                 height: 45px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 transition: .3s;
+                margin-bottom: 20px;
 
                 &--inst {
                     background: url('../images/socials/inst.svg') center center no-repeat;
@@ -264,6 +275,14 @@
 
                     &:hover {
                         background: url('../images/socials/active/ok.svg') center center no-repeat;
+                    }
+                }
+
+                &--youtube {
+                    background: url('../images/socials/youtube.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/socials/active/youtube.svg') center center no-repeat;
                     }
                 }
             }

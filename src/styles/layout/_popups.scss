@@ -78,6 +78,119 @@
     }
 }
 
+.popup-delivery {
+    display: none;
+
+    &--active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 450px;
+        background: #ffffff;
+        color: $red;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -225px;
+        margin-left: -250px;
+        z-index: 50;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .delivery__exit {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: $red;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.popup-job {
+    display: none;
+
+    &--active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        height: 500px;
+        background: #ffffff;
+        color: $red;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -225px;
+        z-index: 50;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 15px;
+
+        @include phones() {
+            width: 100%;
+            margin: 0;
+            left: 0;
+            top: 140px;
+        }
+    }
+
+    .job__title {
+        font-size: 40px;
+    }
+
+    .job__form {
+        display: flex;
+        flex-direction: column;
+
+        .form__inp {
+            width: 100%;
+            border: none;
+            background: none;
+            border-bottom: 1px solid $gray;
+            padding: 10px;
+            font-size: 17px;
+            color: #484848;
+            outline: none;
+            margin-bottom: 35px;
+
+            &::-webkit-input-placeholder {
+                color: #484848;
+            }
+
+            &--file {
+                border: none;
+            }
+        }
+    }
+
+    .job__text {
+        font-size: 15px;
+        color: $gray;
+        text-align: center;
+        opacity: .6;
+    }
+
+    .job__exit {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: $red;
+        font-size: 35px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
 .bg {
     background: #C4C4C4;
     opacity: .5;

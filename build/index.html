@@ -66,11 +66,26 @@
                         Скидка <span class="title__color">70%</span> на услугу “Выезд скорой помощи в пределах МКАД”
                     </h1>
                     <div class="left__imgs">
-                        <img src="./assets/images/hero/3.png" alt="" class="hero__img">
-                        <img src="./assets/images/hero/3.png" alt="" class="hero__img">
-                        <img src="./assets/images/hero/3.png" alt="" class="hero__img">
-                        <img src="./assets/images/hero/3.png" alt="" class="hero__img">
-                        <img src="./assets/images/hero/3.png" alt="" class="hero__img">
+                        <div class="imgs__item">
+                            <img src="./assets/images/hero/3.png" alt="6 лет на рынке" class="hero__img">
+                            <div class="item__text">6 лет на рынке</div>
+                        </div>
+                        <div class="imgs__item">
+                            <img src="./assets/images/hero/3.png" alt="Медицинская лицензия" class="hero__img">
+                            <div class="item__text">Медицинская лицензия</div>
+                        </div>
+                        <div class="imgs__item">
+                            <img src="./assets/images/hero/3.png" alt="Сертификат ISO" class="hero__img">
+                            <div class="item__text">Сертификат ISO</div>
+                        </div>
+                        <div class="imgs__item">
+                            <img src="./assets/images/hero/3.png" alt="Нет информации" class="hero__img">
+                            <div class="item__text">Нет информации</div>
+                        </div>
+                        <div class="imgs__item">
+                            <img src="./assets/images/hero/3.png" alt="Нет информации" class="hero__img">
+                            <div class="item__text">Нет информации</div>
+                        </div>
                     </div>
                     <div class="hero__callback">
                         <a href="#" class="btn callback__btn">Заказать</a>
@@ -482,7 +497,7 @@
         </footer>
         <div class="popup-buy">
             <form class="popup-buy__form">
-                <button class="popup__btn">&#10008;</button>
+                <button class="popup__btn">&times;</button>
                 <h2 class="form__title">ЗАКАЗАТЬ</h2>
                 <div class="form__row">
                     <img src="./assets/images/form/fio.svg" alt="Имя" class="row__img">
@@ -497,6 +512,33 @@
                     При отправлении заявки Вы соглашаетесь на обработку персональных данных
                 </p>
             </form>
+        </div>
+        <div class="popup-delivery">
+            <button class="delivery__exit">&times;</button>
+            <h2 class="delivery__title">Как добраться до офиса на метро?</h2>
+            <p class="delivery__text">
+                Вам нужно выйти из метро Шоссе Энтузиастов (единственный выход) из
+                стеклянных дверей налево, перейти по подземному переходу Шоссе Энтузиастов (до упора) и повернуть
+                направо. Перед Вами будет Торговый центр 31, на Шоссе Энтузиастов. Огибаете его справа (центр находится
+                по левую руку) и выходите по диагонали на Электродный проезд (по правую руку будет располагаться мост
+                эстакады 4 транспортного кольца). Продолжая идти по Электродному проезду, Вы доходите (5-10 минут ходьбы
+                от метро в зависимости от интенсивности шага) до дома № 6 – 5-этажное желтоватое здание. Вам нужен 4
+                подъезд (относительно метро, сразу после серых металлических ворот). На домофоне набрать 33, подняться
+                на 2 этаж, офис 33.
+            </p>
+        </div>
+        <div class="popup-job">
+            <button class="job__exit">&times;</button>
+            <h2 class="job__title">Отправить резюме</h2>
+            <form method="POST" class="job__form">
+                <input type="text" class="form__inp" placeholder="Ваше имя">
+                <input type="text" class="form__inp" placeholder="Номер телефона">
+                <input type="file" class="form__inp form__inp--file" placeholder="Прекрепить резюме">
+                <input type="button" class="btn form__btn" value="Отправить">
+            </form>
+            <p class="job__text">
+                При отправлении заявки Вы соглашаетесь на обработку персональных данных
+            </p>
         </div>
         <div class="bg"></div>
     </div>

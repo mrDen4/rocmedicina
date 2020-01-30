@@ -41,12 +41,14 @@
 
     .news__list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
         width: 100%;
 
         .list__item {
-            width: 100%;
+            width: 45%;
             margin-bottom: 60px;
             overflow: hidden;
 
@@ -63,19 +65,20 @@
                 padding: 0;
                 overflow: hidden;
 
-                @include phones() {
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: flex-start;
-                }
-
                 .link__img {
                     width: 48%;
                     background-size: contain;
+                    padding: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     
                     @include phones() {
+                        width: 45%;
+                    }
+
+                    .img__img {
                         width: 100%;
-                        height: 250px;
                     }
                 }
 
@@ -83,16 +86,12 @@
                     width: 48%;
                     display: flex;
                     flex-direction: column;
-                    padding: 50px 0;
-
-                    @include phones() {
-                        width: 95%;
-                        padding: 15px 0;
-                    }
+                    padding: 25px 10px;
 
                     .content__date {
                         display: flex;
                         align-items: center;
+                        margin: 0;
 
                         .date__icon {
                             margin-right: 15px;
@@ -100,16 +99,10 @@
                     }
 
                     .content__title {
-                        font-size: 24px;
+                        font-size: 18px;
                         color: #484848;
                         font-weight: bold;
-                        margin: 0;
-                    }
-
-                    .content__text {
-                        color: #484848;
-                        font-size: 17px;
-                        margin: 10px 0;
+                        margin: 10px 0 0 0;
                     }
                 }
             }

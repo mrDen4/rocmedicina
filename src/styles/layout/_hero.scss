@@ -6,7 +6,7 @@
         background-size: 100%;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 65vh;
+        height: 50vh;
     }
 
     .hero__container {
@@ -47,6 +47,52 @@
         }
     }
 
+    .left__imgs {
+        display: flex;
+
+        .imgs__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            cursor: pointer;
+
+            &:hover {
+                transition: .3s;
+
+                .item__text {
+                    height: 50px;
+                    width: 80px;
+                    transition: .3s;
+                }
+            }
+            
+            .hero__img {
+                height: 50px;
+                width: 50px;
+                transition: .3s;
+        
+                @include phones() {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .item__text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 0;
+                overflow: hidden;
+                height: 0;
+                transition: .3s;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     .hero__callback {
         display: flex;
         flex-direction: row;
@@ -82,17 +128,6 @@
         &:hover {
             background: $red;
             color: #ffffff;
-        }
-    }
-
-    .hero__img {
-        height: 50px;
-        width: 50px;
-        margin-bottom: 10px;
-
-        @include phones() {
-            height: 30px;
-            width: 30px;
         }
     }
 }

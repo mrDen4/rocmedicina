@@ -1,5 +1,6 @@
 .products {
     padding: 30px 0;
+    background: #f7f7f7;
     
     .products__title {
         font-size: 42px;
@@ -42,7 +43,7 @@
             padding: 30px;
             align-items: center;
             justify-content: space-between;
-            height: 355px;
+            height: 310px;
             transition: .3s;
 
             &:hover {
@@ -68,12 +69,16 @@
                 background: #FFFFFF;
                 border: 1px solid $red;
                 color: $red;
-                width: 100%;
+                width: 60%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding: initial;
                 height: 35px;
+
+                @include phones() {
+                    width: 100%;
+                }
 
                 &:hover {
                     background: $red;
@@ -82,9 +87,9 @@
             }
 
             .item__title {
-                font-size: 24px;
+                font-size: 18px;
                 color: #484848;
-                margin-bottom: 10px;
+                margin: 10px 0;
                 text-align: center;
 
                 @include phones() {
@@ -96,7 +101,7 @@
             .item__text {
                 color: #616161;
                 margin-bottom: 20px;
-                font-size: 16px;
+                font-size: 17px;
                 text-align: center;
 
                 @include phones() {
@@ -108,12 +113,12 @@
             }
 
             &--active {
-                height: 495px;
+                height: 400px;
                 position: fixed;
                 width: 400px;
                 top: 50%;
                 left: 50%;
-                margin-top: -300px;
+                margin-top: -200px;
                 margin-left: -200px;
                 z-index: 999999;
 
@@ -139,23 +144,24 @@
                     position: absolute;
                     top: 10px;
                     right: 10px;
-                    font-size: 25px;
+                    font-size: 35px;
+                    color: $red;
                 }
 
-                .item__title {
-                    margin-bottom: 43px;
-                }
+                // .item__title {
+                //     margin-bottom: 43px;
+                // }
 
                 .item__links {
                     display: flex;
                     flex-direction: column;
+                    width: 100%;
     
                     .links__link {
                         font-size: 15px;
                         color: #484848;
                         margin-bottom: 15px;
                         transition: .3s;
-                        text-align: center;
     
                         &:hover {
                             color: $red;
