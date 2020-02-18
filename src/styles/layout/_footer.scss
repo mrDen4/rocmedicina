@@ -90,6 +90,14 @@
                         background: url('../images/iso/active/7701.svg') center center no-repeat;
                     }
                 }
+
+                &--7703 {
+                    background: url('../images/iso/7703.svg') center center no-repeat;
+
+                    &:hover {
+                        background: url('../images/iso/active/7703.svg') center center no-repeat;
+                    }
+                }
             }
         }
 

@@ -76,6 +76,14 @@ a {
   color: #000000;
   text-decoration: none; }
 
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 100%; }
+  .breadcrumbs .item__link {
+    color: #FF003D; }
+
 .header {
   padding: 30px 0;
   z-index: 100;
@@ -278,18 +286,23 @@ a {
       .hero .hero__title {
         font-size: 20px; } }
   .hero .left__imgs {
-    display: flex; }
+    display: flex;
+    margin-bottom: 50px; }
     .hero .left__imgs .imgs__item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       transition: .3s;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      transition: .3s; }
       .hero .left__imgs .imgs__item:hover {
         transition: .3s; }
         .hero .left__imgs .imgs__item:hover .item__text {
-          height: 50px;
+          height: 40px;
           width: 80px;
           transition: .3s; }
       .hero .left__imgs .imgs__item .hero__img {
@@ -309,7 +322,9 @@ a {
         overflow: hidden;
         height: 0;
         transition: .3s;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        bottom: -55px;
+        position: absolute; }
   .hero .hero__callback {
     display: flex;
     flex-direction: row;
@@ -948,6 +963,10 @@ a {
           background: url("../images/iso/7701.svg") center center no-repeat; }
           .footer .footer__left .left__iso .iso__img--7701:hover {
             background: url("../images/iso/active/7701.svg") center center no-repeat; }
+        .footer .footer__left .left__iso .iso__img--7703 {
+          background: url("../images/iso/7703.svg") center center no-repeat; }
+          .footer .footer__left .left__iso .iso__img--7703:hover {
+            background: url("../images/iso/active/7703.svg") center center no-repeat; }
     .footer .footer__left .left__text {
       margin-top: 0; }
     .footer .footer__left .left__link {
@@ -1100,7 +1119,8 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     color: #FF003D;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 30px; }
   .products .products__text {
     text-align: center;
     font-size: 15px;
@@ -1178,13 +1198,13 @@ a {
             text-align: justify;
             display: none; } }
       .products .products__list .list__item--active {
-        height: 400px;
+        height: 410px;
         position: fixed;
-        width: 400px;
+        width: 350px;
         top: 50%;
         left: 50%;
-        margin-top: -200px;
-        margin-left: -200px;
+        margin-top: -205px;
+        margin-left: -175px;
         z-index: 999999; }
         @media screen and (max-width: 576px) {
           .products .products__list .list__item--active {
@@ -1274,8 +1294,9 @@ a {
   padding-bottom: 30px;
   padding-top: 30px; }
   .service .title {
-    color: #939393;
-    font-size: 32px; }
+    color: #FF003D;
+    font-size: 32px;
+    margin-bottom: 30px; }
   .service p {
     font-size: 18px;
     margin-bottom: 0; }
@@ -1287,6 +1308,9 @@ a {
   .service a {
     color: #FF003D;
     text-decoration: underline; }
+  .service .service__breadcrumbs {
+    list-style: none;
+    padding: 0; }
   .service .service__content {
     display: flex;
     align-items: center;
@@ -1377,7 +1401,8 @@ a {
         border: 1px solid #FF003D;
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        text-decoration: none; }
         @media screen and (max-width: 576px) {
           .service .content__about .about__callback .callback__btn-price {
             width: 70%;
@@ -1463,7 +1488,6 @@ a {
         .news .news__list .list__item .item__link .link__img {
           width: 48%;
           background-size: contain;
-          padding: 25px;
           display: flex;
           align-items: center;
           justify-content: center; }
@@ -1505,7 +1529,7 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 460px;
+      height: 375px;
       margin-bottom: 50px; }
       @media screen and (max-width: 576px) {
         .jobs .jobs__list .jobs__item {
@@ -1539,7 +1563,7 @@ a {
         background: #FFFFFF;
         color: #FF003D;
         padding: 0;
-        width: 80%;
+        width: 65%;
         border: 1px solid red; }
         @media screen and (max-width: 576px) {
           .jobs .jobs__list .jobs__item .item__btn {
@@ -1551,12 +1575,13 @@ a {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #FF003D;
-          color: #fff;
-          margin-bottom: 20px; }
+          background: #fff;
+          color: #FF003D;
+          border: 1px solid red;
+          height: 30px; }
           .jobs .jobs__list .jobs__item .item__btn--link:hover {
-            background: #fff;
-            color: #FF003D; }
+            background: #FF003D;
+            color: #fff; }
 
 .price {
   padding: 30px 0; }
@@ -1693,7 +1718,8 @@ a {
 .reviews {
   padding: 30px 0; }
   .reviews .reviews__slider {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
     .reviews .reviews__slider .slider__slide {
       display: flex;
       width: 100%;
@@ -1808,10 +1834,12 @@ a {
     color: #484848; }
   .about p {
     font-size: 18px;
-    margin-bottom: 0; }
+    margin-top: 0;
+    margin-bottom: 10px; }
   .about ol {
     margin: 0;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 10px; }
   .about a {
     color: #FF003D;
     text-decoration: underline; }
@@ -1866,7 +1894,7 @@ a {
       text-align: center; }
 
 .buy .buy__about {
-  width: 50%; }
+  width: 80%; }
   @media screen and (max-width: 576px) {
     .buy .buy__about {
       width: 100%; } }
@@ -1878,6 +1906,13 @@ a {
   .buy .buy__about .about__text {
     font-size: 15px;
     color: #939393; }
+  .buy .buy__about p {
+    font-size: 15px;
+    color: #939393; }
+  .buy .buy__about ol {
+    font-size: 15px;
+    color: #939393;
+    padding-inline-start: 15px; }
 
 .docs {
   padding-top: 30px; }
@@ -1943,7 +1978,7 @@ a {
     background: none;
     border: none; }
   .popup-buy .form__title {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
     color: #FF003D;
     text-align: center; }
@@ -1985,7 +2020,7 @@ a {
     width: 500px;
     height: 450px;
     background: #ffffff;
-    color: #FF003D;
+    color: #484848;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -2032,10 +2067,12 @@ a {
         left: 0;
         top: 140px; } }
   .popup-job .job__title {
-    font-size: 40px; }
+    font-size: 36px; }
   .popup-job .job__form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     .popup-job .job__form .form__inp {
       width: 100%;
       border: none;
@@ -2050,6 +2087,8 @@ a {
         color: #484848; }
       .popup-job .job__form .form__inp--file {
         border: none; }
+    .popup-job .job__form .form__btn {
+      width: 60%; }
   .popup-job .job__text {
     font-size: 15px;
     color: #939393;
@@ -2085,9 +2124,13 @@ a {
   padding-bottom: 30px;
   padding-top: 30px; }
   .new .container {
-    align-items: center; }
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
   .new .title {
-    color: #939393;
+    color: #FF003D;
     font-size: 32px; }
     @media screen and (max-width: 576px) {
       .new .title {
@@ -2099,92 +2142,67 @@ a {
   .new ol, .new ul {
     margin: 0;
     font-size: 16px;
-    list-style: initial;
     padding-left: 20px; }
+  .new ul {
+    list-style: initial; }
   .new a {
     color: #FF003D;
     text-decoration: underline; }
-  .new .service__content {
+  .new .new__breadcrumbs {
+    list-style: none;
+    padding: 0; }
+  .new .new__content {
+    width: 60%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 650px; }
-    @media screen and (max-width: 576px) {
-      .new .service__content {
-        flex-direction: column; } }
-  .new .content__about {
-    width: 100%; }
-    @media screen and (max-width: 576px) {
-      .new .content__about {
-        width: 100%; } }
-    .new .content__about .about__price {
-      margin-bottom: 30px; }
-      .new .content__about .about__price .price__row {
+    flex-direction: column; }
+    .new .new__content .new__img {
+      width: 100%;
+      margin: 40px 0; }
+  .new .new__nav {
+    display: flex;
+    width: 35%;
+    flex-direction: column; }
+    .new .new__nav .nav__title {
+      text-align: center; }
+    .new .new__nav .nav__list {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .new .new__nav .nav__list .list__item {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        font-size: 15px; }
-      .new .content__about .about__price .row__name {
-        color: #484848;
-        width: 70%; }
-      .new .content__about .about__price .row__old-price {
-        color: #939393;
-        width: 15%;
-        text-decoration: line-through;
-        text-align: right; }
-      .new .content__about .about__price .row__new-price {
-        font-size: 17px;
-        color: #FF003D;
-        width: 15%;
-        text-align: right; }
-    .new .content__about .about__callback {
+        align-items: center;
+        margin-bottom: 30px; }
+      .new .new__nav .nav__list .item__img {
+        width: 40%; }
+    .new .new__nav .nav__img {
+      width: 100%; }
+    .new .new__nav .nav__link {
+      margin-top: 30px;
+      background: none;
+      border: 1px solid #FF003D;
+      text-decoration: none;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin-top: 20px; }
-      @media screen and (max-width: 576px) {
-        .new .content__about .about__callback {
-          flex-direction: column; } }
-      .new .content__about .about__callback .callback__btn-price {
-        background: #ffffff;
-        color: #FF003D;
-        border: 1px solid #FF003D;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        @media screen and (max-width: 576px) {
-          .new .content__about .about__callback .callback__btn-price {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center; } }
-      @media screen and (max-width: 576px) {
-        .new .content__about .about__callback .callback__btn-buy {
-          width: 70%;
-          margin-top: 20px; } }
-  .new .content__img {
-    width: 100%;
-    height: 330px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px; }
-    @media screen and (max-width: 576px) {
-      .new .content__img {
-        height: 200px; } }
-    .new .content__img .img__img {
-      width: 100%; }
+      justify-content: center; }
+    .new .new__nav .nav__btn {
+      margin-top: 30px; }
 
 .job {
   padding-bottom: 30px;
   padding-top: 30px; }
   .job .container {
-    align-items: center; }
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
   .job .title {
-    color: #939393;
+    color: #FF003D;
     font-size: 32px; }
+    @media screen and (max-width: 576px) {
+      .job .title {
+        font-size: 30px; } }
   .job p {
     font-size: 16px;
     margin-bottom: 0;
@@ -2192,80 +2210,43 @@ a {
   .job ol, .job ul {
     margin: 0;
     font-size: 16px;
-    list-style: initial;
     padding-left: 20px; }
+  .job ul {
+    list-style: initial; }
   .job a {
     color: #FF003D;
     text-decoration: underline; }
-  .job .service__content {
+  .job .job__breadcrumbs {
+    list-style: none;
+    padding: 0; }
+  .job .job__content {
+    width: 60%;
     display: flex;
-    align-items: center;
+    flex-direction: column; }
+    .job .job__content .job__img {
+      width: 100%;
+      margin: 40px 0; }
+  .job .job__nav {
+    display: flex;
+    width: 35%;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 650px; }
-    @media screen and (max-width: 576px) {
-      .job .service__content {
-        flex-direction: column; } }
-  .job .content__about {
-    width: 100%; }
-    @media screen and (max-width: 576px) {
-      .job .content__about {
-        width: 100%; } }
-    .job .content__about .about__price {
-      margin-bottom: 30px; }
-      .job .content__about .about__price .price__row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 15px; }
-      .job .content__about .about__price .row__name {
-        color: #484848;
-        width: 70%; }
-      .job .content__about .about__price .row__old-price {
-        color: #939393;
-        width: 15%;
-        text-decoration: line-through;
-        text-align: right; }
-      .job .content__about .about__price .row__new-price {
-        font-size: 17px;
-        color: #FF003D;
-        width: 15%;
-        text-align: right; }
-    .job .content__about .about__callback {
+    border-left: 1px solid #484848; }
+    .job .job__nav .nav__title {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #484848;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      font-size: 30px; }
+    .job .job__nav .nav__list {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px; }
-      @media screen and (max-width: 576px) {
-        .job .content__about .about__callback {
-          flex-direction: column; } }
-      .job .content__about .about__callback .callback__btn-price {
-        background: #ffffff;
-        color: #FF003D;
-        border: 1px solid #FF003D;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        @media screen and (max-width: 576px) {
-          .job .content__about .about__callback .callback__btn-price {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center; } }
-      @media screen and (max-width: 576px) {
-        .job .content__about .about__callback .callback__btn-buy {
-          width: 70%;
-          margin-top: 20px; } }
-  .job .content__img {
-    width: 100%;
-    height: 330px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px; }
-    @media screen and (max-width: 576px) {
-      .job .content__img {
-        height: 150px; } }
-    .job .content__img .img__img {
-      height: 100%; }
+      flex-direction: column;
+      width: 100%;
+      padding-left: 40px;
+      font-size: 20px; }
+    .job .job__nav .nav__subtitle {
+      padding-left: 15px;
+      font-size: 24px;
+      text-align: center; }
+    .job .job__nav .nav__btn {
+      margin-left: 15px; }

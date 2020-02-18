@@ -49,6 +49,7 @@
 
     .left__imgs {
         display: flex;
+        margin-bottom: 50px;
 
         .imgs__item {
             display: flex;
@@ -57,12 +58,16 @@
             justify-content: center;
             transition: .3s;
             cursor: pointer;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            transition: .3s;
 
             &:hover {
                 transition: .3s;
 
                 .item__text {
-                    height: 50px;
+                    height: 40px;
                     width: 80px;
                     transition: .3s;
                 }
@@ -89,6 +94,8 @@
                 height: 0;
                 transition: .3s;
                 margin-bottom: 20px;
+                bottom: -55px;
+                position: absolute;
             }
         }
     }

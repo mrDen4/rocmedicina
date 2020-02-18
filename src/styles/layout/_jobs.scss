@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: 460px;
+            height: 375px;
             margin-bottom: 50px;
 
             @include phones() {
@@ -61,7 +61,7 @@
                 background: #FFFFFF;
                 color: $red;
                 padding: 0;
-                width: 80%;
+                width: 65%;
                 border: 1px solid red;
 
                 @include phones() {
@@ -77,13 +77,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background: $red;
-                    color: #fff;
-                    margin-bottom: 20px;
+                    background: #fff;
+                    color: $red;
+                    border: 1px solid red;
+                    height: 30px;
 
                     &:hover {
-                        background: #fff;
-                        color: $red;
+                        background: $red;
+                        color: #fff;
                     }
                 }
             }

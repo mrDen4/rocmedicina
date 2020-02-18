@@ -82,7 +82,7 @@ $(document).ready(function () {
     });
 
     //Popup "Отправить резюме"
-    $('.jobs .jobs__list .jobs__item .item__btn').on('click', function () {
+    $('.jobs .jobs__list .jobs__item .item__btn--job, .callback__btn-job').on('click', function () {
         $('.popup-job').addClass('popup-job--active');
         $('.bg').addClass('bg--active');
     });

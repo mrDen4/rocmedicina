@@ -9,6 +9,7 @@
         font-weight: bold;
         color: $red;
         margin: 0;
+        margin-bottom: 30px;
     }
 
     .products__text {
@@ -113,13 +114,13 @@
             }
 
             &--active {
-                height: 400px;
+                height: 410px;
                 position: fixed;
-                width: 400px;
+                width: 350px;
                 top: 50%;
                 left: 50%;
-                margin-top: -200px;
-                margin-left: -200px;
+                margin-top: -205px;
+                margin-left: -175px;
                 z-index: 999999;
 
                 @include phones() {

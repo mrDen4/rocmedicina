@@ -69,7 +69,7 @@
     }
 
     .buy__about {
-        width: 50%;
+        width: 80%;
 
         @include phones() {
             width: 100%;
@@ -85,6 +85,17 @@
         .about__text {
             font-size: 15px;
             color: #939393;
+        }
+
+        p {
+            font-size: 15px;
+            color: #939393;
+        }
+
+        ol {
+            font-size: 15px;
+            color: #939393;
+            padding-inline-start: 15px;
         }
     }
 }

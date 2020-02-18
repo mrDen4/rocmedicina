@@ -4,10 +4,14 @@
 
     .container {
         align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .title {
-        color: #939393;
+        color: $red;
         font-size: 32px;
 
         @include phones() {
@@ -24,8 +28,11 @@
     ol,ul {
         margin: 0;
         font-size: 16px;
-        list-style: initial;
         padding-left: 20px;
+    }
+
+    ul {
+        list-style: initial;
     }
 
     a {
@@ -33,105 +40,64 @@
         text-decoration: underline;
     }
 
-    .service__content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 650px;
+    .new__breadcrumbs {
+        list-style: none;
+        padding: 0;
+    }
 
-        @include phones() {
-            flex-direction: column;
+    .new__content {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        .new__img {
+            width: 100%;
+            margin: 40px 0;
         }
     }
 
-    .content__about {
-        width: 100%;
+    .new__nav {
+        display: flex;
+        width: 35%;
+        flex-direction: column;
 
-        @include phones() {
+        .nav__title {
+            text-align: center;
+        }
+
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .list__item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            .item__img {
+                width: 40%;
+            }
+        }
+
+        .nav__img {
             width: 100%;
         }
 
-        .about__price {
-            margin-bottom: 30px;
-
-            .price__row {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                font-size: 15px;
-            }
-
-            .row__name {
-                color: #484848;
-                width: 70%;
-            }
-
-            .row__old-price {
-                color: #939393;
-                width: 15%;
-                text-decoration: line-through;
-                text-align: right;
-            }
-
-            .row__new-price {
-                font-size: 17px;
-                color: $red;
-                width: 15%;
-                text-align: right;
-            }
-        }
-
-        .about__callback {
+        .nav__link {
+            margin-top: 30px;
+            background: none;
+            border: 1px solid $red;
+            text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-top: 20px;
-
-            @include phones() {
-                flex-direction: column;
-            }
-
-            .callback__btn-price {
-                background: #ffffff;
-                color: $red;
-                border: 1px solid $red;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                @include phones() {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
-
-            .callback__btn-buy {
-                @include phones() {
-                    width: 70%;
-                    margin-top: 20px;
-                }
-            }
-        }
-    }
-
-    .content__img {
-        width: 100%;
-        height: 330px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-
-        @include phones() {
-            height: 200px;
+            justify-content: center;
         }
 
-        .img__img {
-            width: 100%;
+        .nav__btn {
+            margin-top: 30px;
         }
     }
 }
