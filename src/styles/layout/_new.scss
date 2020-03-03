@@ -54,12 +54,30 @@
             width: 100%;
             margin: 40px 0;
         }
+
+        .content__callback {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .content__link {
+            background: none;
+            border: 1px solid $red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
     }
 
     .new__nav {
         display: flex;
         width: 35%;
         flex-direction: column;
+        position:sticky; 
+        top:0;
 
         .nav__title {
             text-align: center;
