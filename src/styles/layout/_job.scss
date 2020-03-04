@@ -13,6 +13,9 @@
     .title {
         color: $red;
         font-size: 32px;
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
 
         @include phones() {
             font-size: 30px;
@@ -60,14 +63,12 @@
         display: flex;
         width: 35%;
         flex-direction: column;
-        border-left: 1px solid $black;
+        position: sticky;
+        top: 10px;
 
         .nav__title {
             text-align: center;
             margin-bottom: 40px;
-            border-bottom: 1px solid $black;
-            padding-bottom: 15px;
-            padding-left: 15px;
             font-size: 30px;
         }
 

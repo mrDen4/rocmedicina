@@ -323,7 +323,8 @@ a {
         transition: .3s;
         margin-bottom: 20px;
         bottom: -55px;
-        position: absolute; }
+        position: absolute;
+        color: #d0801f; }
   .hero .hero__callback {
     display: flex;
     flex-direction: row;
@@ -2132,7 +2133,10 @@ a {
     align-items: flex-start; }
   .new .title {
     color: #FF003D;
-    font-size: 32px; }
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0; }
     @media screen and (max-width: 576px) {
       .new .title {
         font-size: 30px; } }
@@ -2155,15 +2159,17 @@ a {
   .new .new__content {
     width: 60%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
     .new .new__content .new__img {
-      width: 100%;
-      margin: 40px 0; }
+      width: 80%;
+      margin: 0; }
     .new .new__content .content__callback {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      margin-top: 30px; }
+      margin-top: 30px;
+      width: 100%; }
     .new .new__content .content__link {
       background: none;
       border: 1px solid #FF003D;
@@ -2176,7 +2182,13 @@ a {
     width: 35%;
     flex-direction: column;
     position: sticky;
-    top: 0; }
+    top: 10px; }
+    .new .new__nav .nav__block {
+      border: 1px solid #dcdcdc;
+      border-radius: 15px;
+      margin-bottom: 30px; }
+      .new .new__nav .nav__block:last-child {
+        margin-bottom: 0; }
     .new .new__nav .nav__title {
       text-align: center; }
     .new .new__nav .nav__list {
@@ -2214,7 +2226,10 @@ a {
     align-items: flex-start; }
   .job .title {
     color: #FF003D;
-    font-size: 32px; }
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0; }
     @media screen and (max-width: 576px) {
       .job .title {
         font-size: 30px; } }
@@ -2245,13 +2260,11 @@ a {
     display: flex;
     width: 35%;
     flex-direction: column;
-    border-left: 1px solid #484848; }
+    position: sticky;
+    top: 10px; }
     .job .job__nav .nav__title {
       text-align: center;
       margin-bottom: 40px;
-      border-bottom: 1px solid #484848;
-      padding-bottom: 15px;
-      padding-left: 15px;
       font-size: 30px; }
     .job .job__nav .nav__list {
       display: flex;
