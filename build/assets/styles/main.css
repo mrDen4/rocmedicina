@@ -912,6 +912,8 @@ a {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%; }
+    .footer .footer__row:first-child {
+      margin-bottom: 30px; }
     @media screen and (max-width: 576px) {
       .footer .footer__row {
         flex-direction: column; } }
@@ -2141,12 +2143,12 @@ a {
       .new .title {
         font-size: 30px; } }
   .new p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 0;
     text-align: justify; }
   .new ol, .new ul {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 20px; }
   .new ul {
     list-style: initial; }
