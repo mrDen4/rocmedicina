@@ -36,8 +36,9 @@
         justify-content: space-between;
         height: 415px;
 
-        @include phones() {
+        @include tablets() {
             flex-direction: column;
+            height: initial;
         }
     }
 
@@ -47,8 +48,9 @@
         border-radius: 15px;
         overflow: hidden;
 
-        @include phones() {
+        @include tablets() {
             width: 100%;
+            margin-bottom: 20px;
         }
 
         .img__img {
@@ -70,7 +72,7 @@
             text-align: center;
             border-radius: 0 0 50px 0;
 
-            @include phones() {
+            @include tablets() {
                 width: 150px;
                 padding: 10px;
             }
@@ -92,10 +94,16 @@
         border: 1px solid $border-gray;
         border-radius: 15px;
 
+        @include tablets() {
+            width: 100%;
+            padding: 10px 20px;
+        }
+
         .about__subtitle {
             font-size: 30px;
             font-weight: bold;
             margin-top: 0;
+            text-align: center;
         }
 
         .about__list {
@@ -132,10 +140,18 @@
     .service-about__container {
         flex-direction: row;
         justify-content: space-between;
+
+        @include tablets() {
+            flex-direction: column;
+        }
     }
 
     .service-about__text {
         width: 55%;
+
+        @include tablets() {
+            width: 100%;
+        }
 
         p {
             font-size: 17px;
@@ -149,30 +165,54 @@
         ul {
             font-size: 17px;
         }
+
+        .text__border-red {
+            background: linear-gradient(to right, red, white);
+            padding: 2px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
     
-        .text__text--border-red {
-            display: block;
-            border: 1px solid $red;
-            border-radius: 15px;
+        .border-red__text {
+            background: #fff;
+            margin: 0;
             padding: 20px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 17px;
+
+            @include tablets() {
+                padding: 10px 15px;
+            }
+
         }
     
         .text__text--bg-gray {
             display: block;
             background: #F2F2F2;
-            border-radius: 15px;
+            border-radius: 10px;
             padding: 20px 30px;
+
+            @include tablets() {
+                padding: 10px 15px;
+            }
         }
     
         .text__btns {
             display: flex;
             margin-top: 30px;
+
+            @include tablets() {
+                flex-direction: column;
+            }
     
             .btns__link {
                 margin-right: 75px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-bottom: 20px;
+                width: 100%;
             }
     
             .btns__btn {
@@ -194,6 +234,12 @@
         align-items: center;
         justify-content: center;
 
+        @include tablets() {
+            width: 100%;
+            height: initial;
+            margin-top: 30px;
+        }
+
         .news__subtitle {
             font-size: 30px;
             font-weight: bold;
@@ -207,6 +253,7 @@
             .list__item {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 margin-bottom: 20px;
 
                 &:last-child {
@@ -228,6 +275,10 @@
                     color: $red;
                     font-size: 17px;
                     text-decoration: underline;
+                }
+
+                .content__text {
+                    font-size: 15px;
                 }
             }
         }
