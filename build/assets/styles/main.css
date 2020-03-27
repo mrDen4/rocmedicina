@@ -1408,8 +1408,10 @@ a {
     .service-about .service-about__text h3 {
       font-size: 20px;
       font-weight: bold; }
-    .service-about .service-about__text ul {
-      font-size: 17px; }
+    .service-about .service-about__text ul, .service-about .service-about__text ol {
+      font-size: 17px;
+      padding: 0;
+      padding-left: 15px; }
     .service-about .service-about__text .text__border-red {
       background: linear-gradient(to right, red, white);
       padding: 2px;
@@ -1444,8 +1446,10 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
-        width: 100%; }
+        margin-bottom: 20px; }
+        @media screen and (max-width: 768px) {
+          .service-about .service-about__text .text__btns .btns__link {
+            width: 100%; } }
       .service-about .service-about__text .text__btns .btns__btn {
         background: none;
         border: 1px solid #DCDCDC;

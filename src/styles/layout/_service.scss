@@ -162,8 +162,10 @@
             font-weight: bold;
         }
     
-        ul {
+        ul, ol {
             font-size: 17px;
+            padding: 0;
+            padding-left: 15px;
         }
 
         .text__border-red {
@@ -212,7 +214,10 @@
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 20px;
-                width: 100%;
+
+                @include tablets() {
+                    width: 100%;
+                }
             }
     
             .btns__btn {
