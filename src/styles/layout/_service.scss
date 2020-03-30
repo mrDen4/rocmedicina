@@ -184,9 +184,8 @@
             font-size: 17px;
 
             @include tablets() {
-                padding: 10px 15px;
+                padding: 10px 15px; 
             }
-
         }
     
         .text__text--bg-gray {
