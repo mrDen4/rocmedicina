@@ -2263,8 +2263,7 @@ a {
         .new .new__content .content__callback {
           flex-direction: column; } }
     .new .new__content .content__link {
-      background: none;
-      border: 1px solid #FF003D;
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -2275,9 +2274,13 @@ a {
           width: 100%;
           margin: 0;
           margin-bottom: 20px; } }
-    @media screen and (max-width: 576px) {
-      .new .new__content .content__btn {
-        width: 100%; } }
+    .new .new__content .content__btn {
+      background: none;
+      color: #FF003D;
+      border: 1px solid #FF003D; }
+      @media screen and (max-width: 576px) {
+        .new .new__content .content__btn {
+          width: 100%; } }
   .new .new__nav {
     display: flex;
     width: 40%;
@@ -2322,11 +2325,13 @@ a {
       .new .new__nav .nav__block:last-child {
         margin-bottom: 0; }
     .new .new__nav .nav__title {
-      text-align: center; }
+      text-align: center;
+      font-size: 30px; }
     .new .new__nav .nav__list {
       display: flex;
       flex-direction: column;
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
       .new .new__nav .nav__list .list__item {
         display: flex;
         justify-content: space-between;
@@ -2382,31 +2387,70 @@ a {
     list-style: none;
     padding: 0; }
   .job .job__content {
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 768px) {
+      .job .job__content {
+        width: 100%; } }
     .job .job__content .job__img {
       width: 100%;
       margin: 40px 0; }
+    .job .job__content .content__border-red {
+      background: linear-gradient(to right, red, white);
+      padding: 2px;
+      border-radius: 10px;
+      margin: 20px 0; }
+    .job .job__content .border-red__text {
+      background: #fff;
+      margin: 0;
+      padding: 20px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 17px; }
+      @media screen and (max-width: 768px) {
+        .job .job__content .border-red__text {
+          padding: 10px 15px; } }
   .job .job__nav {
     display: flex;
-    width: 35%;
+    width: 40%;
     flex-direction: column;
+    align-items: center;
     position: sticky;
-    top: 10px; }
+    top: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 15px;
+    padding: 50px 30px; }
+    @media screen and (max-width: 768px) {
+      .job .job__nav {
+        width: 100%;
+        margin-top: 30px; } }
     .job .job__nav .nav__title {
       text-align: center;
       margin-bottom: 40px;
-      font-size: 30px; }
+      margin-top: 0;
+      font-size: 30px;
+      color: #FF003D; }
     .job .job__nav .nav__list {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       width: 100%;
       padding-left: 40px;
-      font-size: 20px; }
+      font-size: 20px;
+      padding: 0;
+      list-style: none; }
+    .job .job__nav .list__item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px; }
+      .job .job__nav .list__item .item__img {
+        margin-right: 30px; }
     .job .job__nav .nav__subtitle {
-      padding-left: 15px;
       font-size: 24px;
       text-align: center; }
     .job .job__nav .nav__btn {
-      margin-left: 15px; }
+      margin-left: 15px;
+      width: 225px; }
