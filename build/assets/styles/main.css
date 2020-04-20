@@ -1317,13 +1317,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 415px; }
+    height: 410px; }
     @media screen and (max-width: 768px) {
       .service .service__content {
         flex-direction: column;
         height: initial; } }
   .service .content__img {
     width: 55%;
+    height: 100%;
     position: relative;
     border-radius: 15px;
     overflow: hidden; }
@@ -1332,7 +1333,7 @@ a {
         width: 100%;
         margin-bottom: 20px; } }
     .service .content__img .img__img {
-      width: 100%; }
+      height: 100%; }
     .service .content__img .img__sale {
       position: absolute;
       top: 0;
