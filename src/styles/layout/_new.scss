@@ -108,8 +108,7 @@
         }
 
         .content__link {
-            background: none;
-            border: 1px solid $red;
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -124,6 +123,10 @@
         }
 
         .content__btn {
+            background: none;
+            color: $red;
+            border: 1px solid $red;
+
             @include phones() {
                 width: 100%;
             }
@@ -199,12 +202,14 @@
 
         .nav__title {
             text-align: center;
+            font-size: 30px;
         }
 
         .nav__list {
             display: flex;
             flex-direction: column;
             width: 100%;
+            padding: 0;
 
             .list__item {
                 display: flex;
