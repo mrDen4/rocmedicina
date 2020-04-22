@@ -1179,6 +1179,20 @@ a {
         .products .products__list .list__item .item__btn:hover {
           background: #FF003D;
           color: #FFFFFF; }
+      .products .products__list .list__item .item__link {
+        background: #FFFFFF;
+        background: none;
+        border: 1px solid #FF003D;
+        color: #FF003D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: initial;
+        height: 35px;
+        width: 60%; }
+        .products .products__list .list__item .item__link:hover {
+          background: #FF003D;
+          color: #FFFFFF; }
       .products .products__list .list__item .item__title {
         font-size: 18px;
         color: #484848;
@@ -1317,7 +1331,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 410px; }
+    height: 470px; }
     @media screen and (max-width: 768px) {
       .service .service__content {
         flex-direction: column;
@@ -2168,6 +2182,16 @@ a {
     background: none;
     border: none;
     cursor: pointer; }
+
+.popup-coockie {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  padding: 0 50px; }
 
 .bg {
   background: #C4C4C4;

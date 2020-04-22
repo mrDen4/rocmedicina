@@ -87,6 +87,24 @@
                 }
             }
 
+            .item__link {
+                background: #FFFFFF;
+                background: none;
+                border: 1px solid $red;
+                color: $red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: initial;
+                height: 35px;
+                width: 60%;
+
+                &:hover {
+                    background: $red;
+                    color: #FFFFFF;
+                }
+            }
+
             .item__title {
                 font-size: 18px;
                 color: #484848;

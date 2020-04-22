@@ -197,6 +197,17 @@
     }
 }
 
+.popup-coockie {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    padding: 0 50px;
+}
+
 .bg {
     background: #C4C4C4;
     opacity: .5;
