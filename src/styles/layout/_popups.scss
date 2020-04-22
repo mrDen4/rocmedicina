@@ -205,7 +205,21 @@
     bottom: 0;
     background: #ffffff;
     width: 100%;
-    padding: 0 50px;
+    padding: 0 100px;
+
+    .popup-coockie__btn {
+        background: none;
+        color: $red;
+        font-size: 20px;
+        border: 1px solid $red;
+        border-radius: 10px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    &--active {
+        display: none;
+    }
 }
 
 .bg {

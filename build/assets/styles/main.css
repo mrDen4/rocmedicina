@@ -557,6 +557,9 @@ a {
           .callback .callback__form .form__item .form__copy {
             color: #D2D2D2;
             text-align: center; } }
+        .callback .callback__form .form__item .form__copy .copy__link {
+          text-decoration: underline;
+          color: #D2D2D2; }
       .callback .callback__form .form__item .form__text {
         text-align: center;
         width: 100%;
@@ -2191,7 +2194,17 @@ a {
   bottom: 0;
   background: #ffffff;
   width: 100%;
-  padding: 0 50px; }
+  padding: 0 100px; }
+  .popup-coockie .popup-coockie__btn {
+    background: none;
+    color: #FF003D;
+    font-size: 20px;
+    border: 1px solid #FF003D;
+    border-radius: 10px;
+    margin: 0;
+    cursor: pointer; }
+  .popup-coockie--active {
+    display: none; }
 
 .bg {
   background: #C4C4C4;
