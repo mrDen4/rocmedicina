@@ -1430,6 +1430,8 @@ a {
       font-size: 17px;
       padding: 0;
       padding-left: 15px; }
+    .service-about .service-about__text li {
+      list-style: square; }
     .service-about .service-about__text .text__border-red {
       background: linear-gradient(to right, red, white);
       padding: 2px;
