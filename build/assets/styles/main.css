@@ -2188,26 +2188,6 @@ a {
     border: none;
     cursor: pointer; }
 
-.popup-coockie {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  background: #ffffff;
-  width: 100%;
-  padding: 0 100px; }
-  .popup-coockie .popup-coockie__btn {
-    background: none;
-    color: #FF003D;
-    font-size: 20px;
-    border: 1px solid #FF003D;
-    border-radius: 10px;
-    margin: 0;
-    cursor: pointer; }
-  .popup-coockie--active {
-    display: none; }
-
 .bg {
   background: #C4C4C4;
   opacity: .5;
