@@ -701,13 +701,14 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: flex-start; }
   .services .services__title {
     width: 48%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-right: 34px; }
     @media screen and (max-width: 576px) {
       .services .services__title {
         width: 100%; } }
@@ -746,7 +747,16 @@ a {
     background: #ffffff;
     margin-bottom: 20px;
     transition: .3s;
-    border: 1px solid #dcdcdc; }
+    border: 1px solid #dcdcdc;
+    margin-right: 28px; }
+    .services .services__item:nth-child(3) {
+      margin-right: 0; }
+    .services .services__item:nth-child(7) {
+      margin-right: 0; }
+    .services .services__item:nth-child(11) {
+      margin-right: 0; }
+    .services .services__item:nth-child(15) {
+      margin-right: 0; }
     @media screen and (max-width: 576px) {
       .services .services__item {
         width: 45%;
@@ -802,6 +812,12 @@ a {
         background: url("../images/services/svg/13.svg") center center no-repeat; }
       .services .services__item .item__img--14 {
         background: url("../images/services/svg/14.svg") center center no-repeat; }
+      .services .services__item .item__img--15 {
+        background: url("../images/services/svg/15.svg") center center no-repeat; }
+      .services .services__item .item__img--16 {
+        background: url("../images/services/svg/16.svg") center center no-repeat; }
+      .services .services__item .item__img--17 {
+        background: url("../images/services/svg/17.svg") center center no-repeat; }
     .services .services__item:hover {
       background: url("../images/services/active.png");
       background-size: cover;
@@ -834,6 +850,12 @@ a {
         background: url("../images/services/svg/active/13.svg") center center no-repeat; }
       .services .services__item:hover .item__img--14 {
         background: url("../images/services/svg/active/14.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--15 {
+        background: url("../images/services/svg/active/15.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--16 {
+        background: url("../images/services/svg/active/16.svg") center center no-repeat; }
+      .services .services__item:hover .item__img--17 {
+        background: url("../images/services/svg/active/17.svg") center center no-repeat; }
 
 .contacts .contacts__container {
   flex-direction: row;
@@ -1289,6 +1311,12 @@ a {
           background: url("../images/services/svg/13.svg") center center no-repeat; }
         .products .products__list .list__item .item__img--14 {
           background: url("../images/services/svg/14.svg") center center no-repeat; }
+        .products .products__list .list__item .item__img--15 {
+          background: url("../images/services/svg/15.svg") center center no-repeat; }
+        .products .products__list .list__item .item__img--16 {
+          background: url("../images/services/svg/16.svg") center center no-repeat; }
+        .products .products__list .list__item .item__img--17 {
+          background: url("../images/services/svg/17.svg") center center no-repeat; }
       .products .products__list .list__item--sales {
         height: inherit; }
         .products .products__list .list__item--sales .item__title {
@@ -1319,11 +1347,18 @@ a {
   .service p {
     font-size: 18px;
     margin-bottom: 0; }
-  .service ol, .service ul {
+  .service ul {
     margin: 0;
     font-size: 18px;
     list-style: initial;
     padding-left: 20px; }
+  .service ol {
+    margin: 0;
+    font-size: 18px;
+    list-style-type: decimal;
+    padding-left: 20px; }
+    .service ol li {
+      list-style-type: decimal; }
   .service a {
     color: #FF003D;
     text-decoration: underline; }
@@ -1430,6 +1465,8 @@ a {
       font-size: 17px;
       padding: 0;
       padding-left: 15px; }
+    .service-about .service-about__text ol li {
+      list-style: decimal; }
     .service-about .service-about__text li {
       list-style: square; }
     .service-about .service-about__text .text__border-red {
