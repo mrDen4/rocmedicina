@@ -7,7 +7,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     
     .services__title {
@@ -16,6 +16,7 @@
         align-items: center;
         justify-content: space-between;
         font-weight: bold;
+        margin-right: 34px;
 
         @include phones() {
             width: 100%;
@@ -66,6 +67,23 @@
         margin-bottom: 20px; 
         transition: .3s;
         border: 1px solid #dcdcdc;
+        margin-right: 28px;
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(7) {
+            margin-right: 0;
+        }
+
+        &:nth-child(11) {
+            margin-right: 0;
+        }
+
+        &:nth-child(15) {
+            margin-right: 0;
+        }
 
         @include phones() {
             width: 45%;
@@ -158,6 +176,18 @@
             &--14 {
                 background: url('../images/services/svg/14.svg') center center no-repeat;
             }
+
+            &--15 {
+                background: url('../images/services/svg/15.svg') center center no-repeat;
+            }
+
+            &--16 {
+                background: url('../images/services/svg/16.svg') center center no-repeat;
+            }
+
+            &--17 {
+                background: url('../images/services/svg/17.svg') center center no-repeat;
+            }
         }
 
         &:hover {
@@ -221,6 +251,18 @@
     
                 &--14 {
                     background: url('../images/services/svg/active/14.svg') center center no-repeat;
+                }
+
+                &--15 {
+                    background: url('../images/services/svg/active/15.svg') center center no-repeat;
+                }
+
+                &--16 {
+                    background: url('../images/services/svg/active/16.svg') center center no-repeat;
+                }
+
+                &--17 {
+                    background: url('../images/services/svg/active/17.svg') center center no-repeat;
                 }
             }
         }

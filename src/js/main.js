@@ -91,4 +91,8 @@ $(document).ready(function () {
         $('.popup-job').removeClass('popup-job--active');
         $('.bg').removeClass('bg--active');
     });
+
+    $('.popup-coockie .popup-coockie__btn').on('click', function () {
+        $('.popup-coockie').addClass('popup-coockie--active');
+    });
 });

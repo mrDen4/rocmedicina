@@ -87,6 +87,24 @@
                 }
             }
 
+            .item__link {
+                background: #FFFFFF;
+                background: none;
+                border: 1px solid $red;
+                color: $red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: initial;
+                height: 35px;
+                width: 60%;
+
+                &:hover {
+                    background: $red;
+                    color: #FFFFFF;
+                }
+            }
+
             .item__title {
                 font-size: 18px;
                 color: #484848;
@@ -235,6 +253,18 @@
 
                 &--14 {
                     background: url('../images/services/svg/14.svg') center center no-repeat;
+                }
+
+                &--15 {
+                    background: url('../images/services/svg/15.svg') center center no-repeat;
+                }
+
+                &--16 {
+                    background: url('../images/services/svg/16.svg') center center no-repeat;
+                }
+
+                &--17 {
+                    background: url('../images/services/svg/17.svg') center center no-repeat;
                 }
             }
 

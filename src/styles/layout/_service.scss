@@ -13,11 +13,22 @@
         margin-bottom: 0;
     }
 
-    ol,ul {
+    ul {
         margin: 0;
         font-size: 18px;
         list-style: initial;
         padding-left: 20px;
+    }
+
+    ol {
+        margin: 0;
+        font-size: 18px;
+        list-style-type: decimal;
+        padding-left: 20px;
+
+        li {
+            list-style-type: decimal;
+        }
     }
 
     a {
@@ -34,7 +45,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 410px;
+        height: 470px;
 
         @include tablets() {
             flex-direction: column;
@@ -167,6 +178,16 @@
             font-size: 17px;
             padding: 0;
             padding-left: 15px;
+        }
+
+        ol {
+            li {
+                list-style: decimal;
+            }
+        }
+        
+        li {
+            list-style: square;
         }
 
         .text__border-red {
