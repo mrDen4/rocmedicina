@@ -1918,66 +1918,112 @@ a {
   .buy .buy__content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 50px; }
     .buy .buy__content .content__img {
-      width: 45%; }
+      width: 55%; }
       @media screen and (max-width: 576px) {
         .buy .buy__content .content__img {
           display: none; } }
       .buy .buy__content .content__img .img__img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 15px; }
     .buy .buy__content .content__form {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 40%;
+      border-radius: 15px;
+      border: 1px solid #EBEBEB;
+      padding: 20px 30px; }
       .buy .buy__content .content__form .row {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        margin: 10px 0; }
       .buy .buy__content .content__form .form__icon {
         margin-right: 20px; }
       .buy .buy__content .content__form .form__text {
         color: #FF003D;
         font-size: 17px;
-        font-weight: bold; }
+        font-weight: bold;
+        margin: 0; }
       .buy .buy__content .content__form .form__inp {
         border: none;
         border-bottom: 1px solid #D2D2D2;
-        padding: 15px;
+        padding: 12px;
         font-size: 17px;
         outline: none; }
       .buy .buy__content .content__form .form__btn {
-        margin-top: 80px;
+        margin-top: 20px;
         background: #FF003D;
         color: #ffffff;
         border: none;
         cursor: pointer;
-        height: 65px;
+        height: 50px;
         border-radius: 10px;
         font-size: 17px;
         font-weight: bold; }
       .buy .buy__content .content__form .form__about {
-        font-size: 15px;
+        font-size: 10px;
         color: #939393;
         text-align: center; }
   .buy .buy__about {
-    width: 80%; }
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
     @media screen and (max-width: 576px) {
       .buy .buy__about {
         width: 100%; } }
-    .buy .buy__about .about__title {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      color: #484848; }
     .buy .buy__about .about__text {
-      font-size: 15px;
-      color: #939393; }
-    .buy .buy__about p {
-      font-size: 15px;
-      color: #939393; }
-    .buy .buy__about ol {
-      font-size: 15px;
-      color: #939393;
-      padding-inline-start: 15px; }
+      width: 55%; }
+      .buy .buy__about .about__text p {
+        font-size: 15px;
+        color: #939393; }
+      .buy .buy__about .about__text ol {
+        font-size: 15px;
+        color: #939393;
+        padding-inline-start: 15px; }
+    .buy .buy__about .about__news {
+      width: 40%;
+      height: 500px;
+      padding: 0 30px;
+      border: 1px solid #EBEBEB;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      @media screen and (max-width: 768px) {
+        .buy .buy__about .about__news {
+          width: 100%;
+          height: initial;
+          margin-top: 30px; } }
+      .buy .buy__about .about__news .news__subtitle {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 0; }
+      .buy .buy__about .about__news .news__list {
+        display: flex;
+        flex-direction: column; }
+        .buy .buy__about .about__news .news__list .list__item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px; }
+          .buy .buy__about .about__news .news__list .list__item:last-child {
+            margin-bottom: 0; }
+          .buy .buy__about .about__news .news__list .list__item .item__img {
+            width: 25%;
+            border-radius: 15px; }
+          .buy .buy__about .about__news .news__list .list__item .item__content {
+            display: flex;
+            flex-direction: column;
+            width: 70%; }
+          .buy .buy__about .about__news .news__list .list__item .item__link {
+            color: #FF003D;
+            font-size: 17px;
+            text-decoration: underline; }
+          .buy .buy__about .about__news .news__list .list__item .content__text {
+            font-size: 15px; }
 
 .docs {
   padding-top: 30px; }

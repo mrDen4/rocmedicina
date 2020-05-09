@@ -13,9 +13,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 50px;
 
         .content__img {
-            width: 45%;
+            width: 55%;
 
             @include phones() {
                 display: none;
@@ -23,16 +24,22 @@
 
             .img__img {
                 width: 100%;
+                border-radius: 15px;
             }
         }
 
         .content__form {
             display: flex;
             flex-direction: column;
+            width: 40%;
+            border-radius: 15px;
+            border: 1px solid $border-gray;
+            padding: 20px 30px;
 
             .row {
                 display: flex;
                 align-items: center;
+                margin: 10px 0;
             }
 
             .form__icon {
@@ -43,30 +50,31 @@
                 color: $red;
                 font-size: 17px;
                 font-weight: bold;
+                margin: 0;
             }
 
             .form__inp {
                 border: none;
                 border-bottom: 1px solid #D2D2D2;
-                padding: 15px;
+                padding: 12px;
                 font-size: 17px;
                 outline: none;
             }
 
             .form__btn {
-                margin-top: 80px;
+                margin-top: 20px;
                 background: $red;
                 color: #ffffff;
                 border: none;
                 cursor: pointer;
-                height: 65px;
+                height: 50px;
                 border-radius: 10px;
                 font-size: 17px;
                 font-weight: bold;
             }
 
             .form__about {
-                font-size: 15px;
+                font-size: 10px;
                 color: #939393;
                 text-align: center;
             }
@@ -74,33 +82,88 @@
     }
 
     .buy__about {
-        width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
 
         @include phones() {
             width: 100%;
         }
 
-        .about__title {
-            text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-            color: #484848;
-        }
-
         .about__text {
-            font-size: 15px;
-            color: #939393;
+            width: 55%;
+
+            p {
+                font-size: 15px;
+                color: #939393;
+            }
+    
+            ol {
+                font-size: 15px;
+                color: #939393;
+                padding-inline-start: 15px;
+            }
         }
 
-        p {
-            font-size: 15px;
-            color: #939393;
-        }
-
-        ol {
-            font-size: 15px;
-            color: #939393;
-            padding-inline-start: 15px;
+        .about__news {
+            width: 40%;
+            height: 500px;
+            padding: 0 30px;
+            border: 1px solid $border-gray;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            @include tablets() {
+                width: 100%;
+                height: initial;
+                margin-top: 30px;
+            }
+    
+            .news__subtitle {
+                font-size: 30px;
+                font-weight: bold;
+                margin-top: 0;
+            }
+    
+            .news__list {
+                display: flex;
+                flex-direction: column;
+    
+                .list__item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    .item__img {
+                        width: 25%;
+                        border-radius: 15px;
+                    }
+    
+                    .item__content {
+                        display: flex;
+                        flex-direction: column;
+                        width: 70%;
+                    }
+    
+                    .item__link {
+                        color: $red;
+                        font-size: 17px;
+                        text-decoration: underline;
+                    }
+    
+                    .content__text {
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
 }
