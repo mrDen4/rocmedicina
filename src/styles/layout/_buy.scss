@@ -105,64 +105,118 @@
             }
         }
 
-        .about__news {
-            width: 40%;
-            height: 500px;
-            padding: 0 30px;
-            border: 1px solid $border-gray;
-            border-radius: 15px;
+        .about__nav {
             display: flex;
+            width: 40%;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            position:sticky; 
+            top:10px;
     
             @include tablets() {
                 width: 100%;
-                height: initial;
-                margin-top: 30px;
             }
     
-            .news__subtitle {
+            .nav__block {
+                border: 1px solid #dcdcdc;
+                border-radius: 15px;
+                margin-bottom: 30px;
+                padding: 0 30px;
+    
+                @include tablets() {
+                    padding: 20px;
+                }
+
+                a {
+                    color: $red;
+                    font-size: 17px;
+                    text-decoration: underline;
+                }
+    
+                &--img {
+    
+                    .nav__list {
+                        .list__item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 20px;
+            
+                            .item__img {
+                                width: 25%;
+                                border-radius: 15px;
+                                
+                                @include phones() {
+                                    display: none;
+                                }
+                            }
+            
+                            .item__content {
+                                display: flex;
+                                flex-direction: column;
+                                width: 70%;
+    
+                                @include phones() {
+                                    width: 100%;
+                                }
+                            }
+            
+                            .item__link {
+                                color: $red;
+                                font-size: 17px;
+                                text-decoration: underline;
+                            }
+            
+                            .content__text {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+    
+            .nav__title {
+                text-align: center;
                 font-size: 30px;
-                font-weight: bold;
-                margin-top: 0;
             }
     
-            .news__list {
+            .nav__list {
                 display: flex;
                 flex-direction: column;
+                width: 100%;
+                padding: 0;
     
                 .list__item {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 20px;
-    
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-    
-                    .item__img {
-                        width: 25%;
-                        border-radius: 15px;
-                    }
-    
-                    .item__content {
-                        display: flex;
-                        flex-direction: column;
-                        width: 70%;
-                    }
-    
-                    .item__link {
-                        color: $red;
-                        font-size: 17px;
-                        text-decoration: underline;
-                    }
-    
-                    .content__text {
-                        font-size: 15px;
-                    }
+                    margin-bottom: 30px;
                 }
+    
+                .item__img {
+                    width: 40%;
+                }
+            }
+    
+            .nav__img {
+                width: 100%;
+            }
+    
+            .nav__link {
+                margin-top: 30px;
+                background: none;
+                border: 1px solid $red;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .nav__btn {
+                margin-top: 30px;
             }
         }
     }

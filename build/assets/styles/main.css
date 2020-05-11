@@ -857,6 +857,14 @@ a {
       .services .services__item:hover .item__img--17 {
         background: url("../images/services/svg/active/17.svg") center center no-repeat; }
 
+.contacts--page {
+  padding: 30px 0; }
+  .contacts--page .contacts__title {
+    width: 100%;
+    text-align: center; }
+  .contacts--page .contacts__container {
+    flex-wrap: wrap; }
+
 .contacts .contacts__container {
   flex-direction: row;
   justify-content: space-between;
@@ -2038,48 +2046,80 @@ a {
         font-size: 15px;
         color: #939393;
         padding-inline-start: 15px; }
-    .buy .buy__about .about__news {
-      width: 40%;
-      height: 500px;
-      padding: 0 30px;
-      border: 1px solid #EBEBEB;
-      border-radius: 15px;
+    .buy .buy__about .about__nav {
       display: flex;
+      width: 40%;
       flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+      position: sticky;
+      top: 10px; }
       @media screen and (max-width: 768px) {
-        .buy .buy__about .about__news {
-          width: 100%;
-          height: initial;
-          margin-top: 30px; } }
-      .buy .buy__about .about__news .news__subtitle {
-        font-size: 30px;
-        font-weight: bold;
-        margin-top: 0; }
-      .buy .buy__about .about__news .news__list {
-        display: flex;
-        flex-direction: column; }
-        .buy .buy__about .about__news .news__list .list__item {
+        .buy .buy__about .about__nav {
+          width: 100%; } }
+      .buy .buy__about .about__nav .nav__block {
+        border: 1px solid #dcdcdc;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        padding: 0 30px; }
+        @media screen and (max-width: 768px) {
+          .buy .buy__about .about__nav .nav__block {
+            padding: 20px; } }
+        .buy .buy__about .about__nav .nav__block a {
+          color: #FF003D;
+          font-size: 17px;
+          text-decoration: underline; }
+        .buy .buy__about .about__nav .nav__block--img .nav__list .list__item {
           display: flex;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 20px; }
-          .buy .buy__about .about__news .news__list .list__item:last-child {
-            margin-bottom: 0; }
-          .buy .buy__about .about__news .news__list .list__item .item__img {
+          .buy .buy__about .about__nav .nav__block--img .nav__list .list__item .item__img {
             width: 25%;
             border-radius: 15px; }
-          .buy .buy__about .about__news .news__list .list__item .item__content {
+            @media screen and (max-width: 576px) {
+              .buy .buy__about .about__nav .nav__block--img .nav__list .list__item .item__img {
+                display: none; } }
+          .buy .buy__about .about__nav .nav__block--img .nav__list .list__item .item__content {
             display: flex;
             flex-direction: column;
             width: 70%; }
-          .buy .buy__about .about__news .news__list .list__item .item__link {
+            @media screen and (max-width: 576px) {
+              .buy .buy__about .about__nav .nav__block--img .nav__list .list__item .item__content {
+                width: 100%; } }
+          .buy .buy__about .about__nav .nav__block--img .nav__list .list__item .item__link {
             color: #FF003D;
             font-size: 17px;
             text-decoration: underline; }
-          .buy .buy__about .about__news .news__list .list__item .content__text {
+          .buy .buy__about .about__nav .nav__block--img .nav__list .list__item .content__text {
             font-size: 15px; }
+        .buy .buy__about .about__nav .nav__block:last-child {
+          margin-bottom: 0; }
+      .buy .buy__about .about__nav .nav__title {
+        text-align: center;
+        font-size: 30px; }
+      .buy .buy__about .about__nav .nav__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0; }
+        .buy .buy__about .about__nav .nav__list .list__item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px; }
+        .buy .buy__about .about__nav .nav__list .item__img {
+          width: 40%; }
+      .buy .buy__about .about__nav .nav__img {
+        width: 100%; }
+      .buy .buy__about .about__nav .nav__link {
+        margin-top: 30px;
+        background: none;
+        border: 1px solid #FF003D;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .buy .buy__about .about__nav .nav__btn {
+        margin-top: 30px; }
 
 .docs {
   padding-top: 30px; }
