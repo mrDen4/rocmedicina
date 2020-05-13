@@ -84,20 +84,64 @@ a {
     color: #FF003D; }
 
 .header {
-  padding: 30px 0;
+  padding: 20px 0;
   z-index: 100;
   position: relative;
   background: #fff;
   border-bottom: 1px solid #f3f3f3; }
   .header .header__container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
     z-index: 100; }
     @media screen and (max-width: 576px) {
       .header .header__container {
         flex-wrap: wrap; } }
+  .header .header__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .header .left__imgs {
+    display: flex; }
+    .header .left__imgs .imgs__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+      cursor: pointer;
+      position: relative;
+      height: 30px;
+      width: 30px;
+      transition: .3s; }
+      .header .left__imgs .imgs__item:hover {
+        transition: .3s; }
+        .header .left__imgs .imgs__item:hover .item__text {
+          height: 40px;
+          width: 120px;
+          transition: .2s; }
+      .header .left__imgs .imgs__item .hero__img {
+        height: 30px;
+        width: 30px;
+        transition: .3s; }
+        @media screen and (max-width: 576px) {
+          .header .left__imgs .imgs__item .hero__img {
+            height: 30px;
+            width: 30px; } }
+      .header .left__imgs .imgs__item .item__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 0;
+        overflow: hidden;
+        height: 0;
+        transition: .3s;
+        margin-bottom: 20px;
+        bottom: -55px;
+        position: absolute;
+        color: #d0801f; }
   .header .header__logo {
     z-index: 100; }
     @media screen and (max-width: 768px) {
@@ -382,7 +426,7 @@ a {
       opacity: 1; }
 
 .plus {
-  padding-bottom: 30px; }
+  padding-bottom: 10px; }
   .plus .plus__title {
     display: flex;
     flex-direction: row;
@@ -695,7 +739,7 @@ a {
 
 .services {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background: rgba(184, 139, 124, 0.03); }
   .services .services__container {
     flex-direction: row;
@@ -1144,6 +1188,9 @@ a {
         margin-top: 20px; } }
     .footer .row__text:hover {
       color: #FF003D; }
+  .footer .row__tex {
+    color: #949494;
+    margin-top: 30px; }
 
 .products {
   padding: 30px 0;
@@ -1155,7 +1202,7 @@ a {
     font-weight: bold;
     color: #FF003D;
     margin: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 15px; }
   .products .products__text {
     text-align: center;
     font-size: 15px;
@@ -1510,8 +1557,7 @@ a {
         margin-right: 75px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 20px; }
+        justify-content: center; }
         @media screen and (max-width: 768px) {
           .service-about .service-about__text .text__btns .btns__link {
             width: 100%; } }
@@ -1983,7 +2029,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .buy .buy__content .content__img {
       width: 55%; }
       @media screen and (max-width: 576px) {
@@ -2138,7 +2184,7 @@ a {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 40px; }
+      margin-bottom: 30px; }
       @media screen and (max-width: 576px) {
         .docs .docs__list .list__item {
           width: 100%;
@@ -2341,7 +2387,7 @@ a {
     font-size: 32px;
     width: 100%;
     text-align: center;
-    margin: 30px 0; }
+    margin: 0 0 30px 0; }
     @media screen and (max-width: 576px) {
       .new .title {
         font-size: 30px; } }
@@ -2509,7 +2555,7 @@ a {
     font-size: 32px;
     width: 100%;
     text-align: center;
-    margin: 30px 0; }
+    margin: 0 0 30px 0; }
     @media screen and (max-width: 576px) {
       .job .title {
         font-size: 30px; } }
