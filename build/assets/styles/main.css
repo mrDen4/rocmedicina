@@ -1890,98 +1890,43 @@ a {
 
 .reviews {
   padding: 30px 0; }
+  .reviews .reviews__title {
+    margin-bottom: 30px; }
+  .reviews .reviews__slider-wrap {
+    position: relative; }
   .reviews .reviews__slider {
     width: 100%;
     margin-bottom: 30px; }
     .reviews .reviews__slider .slider__slide {
       display: flex;
-      width: 100%;
-      justify-content: space-around; }
-      @media screen and (max-width: 576px) {
-        .reviews .reviews__slider .slider__slide {
-          flex-direction: column;
-          align-items: center; } }
-      .reviews .reviews__slider .slider__slide .slide__ava {
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .reviews .reviews__slider .slider__slide .slide__ava .ava__img {
-          height: 100%; }
-      .reviews .reviews__slider .slider__slide .slide__content {
-        display: flex;
-        flex-direction: column;
-        width: 50%; }
-        @media screen and (max-width: 576px) {
-          .reviews .reviews__slider .slider__slide .slide__content {
-            width: 100%; } }
-        .reviews .reviews__slider .slider__slide .slide__content .content__date {
-          color: #939393;
-          font-size: 15px; }
-        .reviews .reviews__slider .slider__slide .slide__content .content__name {
-          color: #484848;
-          font-size: 30px;
-          margin: 0; }
-        .reviews .reviews__slider .slider__slide .slide__content .content__text {
-          font-size: 20px;
-          color: #646464; }
-    .reviews .reviews__slider .slick-dots {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-  .reviews .slider__dots {
+      width: 24%;
+      overflow: hidden; }
+      .reviews .reviews__slider .slider__slide .slide__img {
+        width: 100%; }
+  .reviews .arrows__left {
+    border: none;
+    background: none;
     position: absolute;
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center; }
-  .reviews .slider__dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer; }
-  .reviews .slider__dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
+    left: -20px;
+    top: 42%;
+    z-index: 50;
     outline: none;
-    background: transparent; }
-  .reviews .slider__dots li button:hover,
-  .reviews .slider__dots li button:focus {
-    outline: none; }
-  .reviews .slider__dots li button:hover:before,
-  .reviews .slider__dots li button:focus:before {
-    opacity: 1; }
-  .reviews .slider__dots li button:before {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
+    cursor: pointer;
+    opacity: .5; }
+    .reviews .arrows__left:hover {
+      opacity: 1; }
+  .reviews .arrows__right {
+    border: none;
+    background: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: url("https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg");
-    text-align: center;
-    opacity: .25;
-    color: #FF003D;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-  .reviews .slider__dots li.slick-active button:before {
-    opacity: .75;
-    color: #FF003D; }
+    right: -20px;
+    top: 42%;
+    z-index: 50;
+    outline: none;
+    cursor: pointer;
+    opacity: .5; }
+    .reviews .arrows__right:hover {
+      opacity: 1; }
   .reviews .content__menu {
     display: flex;
     align-items: center;

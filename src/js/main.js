@@ -58,9 +58,11 @@ $(document).ready(function () {
 
     // Cлайдер для отзывов
     $('.reviews .reviews__slider').slick({
-        dots: true,
-        dotsClass: 'slider__dots',
-        arrows: false
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $('.reviews .arrows__left'),
+        nextArrow: $('.reviews .arrows__right')
     });
 
     //Popup "Как добраться"
