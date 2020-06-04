@@ -1,5 +1,5 @@
 .header {
-    padding: 30px 0;
+    padding: 20px 0;
     z-index: 100;
     position: relative;
     background: #fff;
@@ -7,13 +7,72 @@
 
     .header__container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: row;
         justify-content: space-between;
         z-index: 100;
 
         @include phones() {
             flex-wrap: wrap;
+        }
+    }
+
+    .header__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left__imgs {
+        display: flex;
+
+        .imgs__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            cursor: pointer;
+            position: relative;
+            height: 30px;
+            width: 30px;
+            transition: .3s;
+
+            &:hover {
+                transition: .3s;
+
+                .item__text {
+                    height: 40px;
+                    width: 120px;
+                    transition: .2s;
+                }
+            }
+            
+            .hero__img {
+                height: 30px;
+                width: 30px;
+                transition: .3s;
+        
+                @include phones() {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+
+            .item__text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 0;
+                overflow: hidden;
+                height: 0;
+                transition: .3s;
+                margin-bottom: 20px;
+                bottom: -55px;
+                position: absolute;
+                color: #d0801f;
+            }
         }
     }
 

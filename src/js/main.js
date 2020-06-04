@@ -26,16 +26,9 @@ $(document).ready(function () {
         $('.bg').toggleClass('bg--active-popup');
     });
 
-    // Вывод услуг в виде popup окна
-    $('.products .products__list .list__item .item__btn').on('click', function () {
-        $(this).closest('.list__item--tab').addClass('list__item--active');
-        $('.bg').toggleClass('bg--active-popup');
-    });
-
-    $('.products .products__list .list__item .item__exit').on('click', function () {
-        $(this).closest('.list__item--tab').removeClass('list__item--active');
-        $('.bg').toggleClass('bg--active-popup');
-    });
+    $('.popup-buy .popup__btn').on('click', function() {
+        $('.popup-buy').toggleClass('popup-buy--active');
+    })
 
     $('.result .license__slider').slick({
         infinite: true,
@@ -65,9 +58,11 @@ $(document).ready(function () {
 
     // Cлайдер для отзывов
     $('.reviews .reviews__slider').slick({
-        dots: true,
-        dotsClass: 'slider__dots',
-        arrows: false
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $('.reviews .arrows__left'),
+        nextArrow: $('.reviews .arrows__right')
     });
 
     //Popup "Как добраться"
@@ -90,9 +85,5 @@ $(document).ready(function () {
     $('.popup-job .job__exit').on('click', function () {
         $('.popup-job').removeClass('popup-job--active');
         $('.bg').removeClass('bg--active');
-    });
-
-    $('.popup-coockie .popup-coockie__btn').on('click', function () {
-        $('.popup-coockie').addClass('popup-coockie--active');
     });
 });

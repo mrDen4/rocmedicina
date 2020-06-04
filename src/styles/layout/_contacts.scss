@@ -1,5 +1,17 @@
 .contacts {
 
+    &--page {
+        padding: 30px 0;
+        .contacts__title {
+            width: 100%;
+            text-align: center;
+        }
+
+        .contacts__container {
+            flex-wrap: wrap;
+        }
+    }
+
     .contacts__container {
         flex-direction: row;
         justify-content: space-between;
