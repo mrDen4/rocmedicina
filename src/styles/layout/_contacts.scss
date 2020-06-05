@@ -47,6 +47,10 @@
         font-size: 42px;
         color: $red;
         margin: 0;
+
+        @include phones() {
+            margin-bottom: 20px;
+        }
     }
 
     .contacts__text {
@@ -76,6 +80,10 @@
         .text__about {
             margin: 0;
             font-size: 17px;
+
+            @include phones() {
+                font-size: 16px;
+            }
         }
     }
 

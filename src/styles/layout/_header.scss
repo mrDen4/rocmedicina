@@ -21,6 +21,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        @include phones() {
+            align-items: center;
+        }
     }
 
     .left__imgs {
@@ -141,9 +145,9 @@
         }
 
         @include phones() {
-            width: 45%;
+            width: 55%;
             order: 3;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .socials__icon {
@@ -181,7 +185,7 @@
 
         @include phones() {
             order: 4;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         &:hover {
@@ -197,6 +201,7 @@
         transition: .3s;
         z-index: 100;
         padding: 0;
+        position: absolute;
 
         @include phones() {
             height: 25px;

@@ -92,6 +92,24 @@
             padding: 10px;
             align-items: center;
             text-align: center;
+            margin-right: 25px;
+
+    
+            &:nth-child(5) {
+                margin-right: 0;
+            }
+    
+            &:nth-child(9) {
+                margin-right: 0;
+            }
+    
+            &:nth-child(13) {
+                margin-right: 0;
+            }
+
+            &:nth-child(17) {
+                margin-right: 0;
+            }
         }
 
         .item__title {

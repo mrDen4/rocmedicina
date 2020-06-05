@@ -28,6 +28,7 @@ $(document).ready(function () {
 
     $('.popup-buy .popup__btn').on('click', function() {
         $('.popup-buy').toggleClass('popup-buy--active');
+        $('.bg').toggleClass('bg--active-popup');
     })
 
     $('.result .license__slider').slick({

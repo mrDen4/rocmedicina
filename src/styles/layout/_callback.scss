@@ -105,7 +105,7 @@
                 padding-bottom: 0;
 
                 @include phones() {
-                    width: 60%;
+                    width: 100%;
                     padding: 0;
                 }
             }

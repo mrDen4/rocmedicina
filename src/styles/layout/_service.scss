@@ -67,6 +67,11 @@
 
         .img__img {
             height: 100%;
+
+            @include phones() {
+                height: initial;
+                width: 100%;
+            }
         }
 
         .img__sale {
@@ -238,20 +243,29 @@
                 @include tablets() {
                     width: 100%;
                 }
+
+                @include phones() {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
             }
     
             .btns__btn {
                 background: none;
                 border: 1px solid #DCDCDC;
                 color: $red;
+
+                @include phones() {
+                    height: 60px;
+                }
             }
         }
     }
 
     .service-about__news {
         width: 40%;
-        height: 500px;
-        padding: 0 30px;
+        height: 375px;
+        padding: 30px;
         border: 1px solid $border-gray;
         border-radius: 15px;
         display: flex;
@@ -269,6 +283,10 @@
             font-size: 30px;
             font-weight: bold;
             margin-top: 0;
+
+            @include phones() {
+                font-size: 24px;
+            }
         }
 
         .news__list {
@@ -281,6 +299,10 @@
                 align-items: center;
                 margin-bottom: 20px;
 
+                @include phones() {
+                    flex-direction: column;
+                }
+
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -288,12 +310,20 @@
                 .item__img {
                     width: 25%;
                     border-radius: 15px;
+
+                    @include phones() {
+                        width: 85%;
+                    }
                 }
 
                 .item__content {
                     display: flex;
                     flex-direction: column;
                     width: 70%;
+
+                    @include phones() {
+                        width: 85%;
+                    }
                 }
 
                 .item__link {
