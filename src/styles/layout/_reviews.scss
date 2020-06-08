@@ -12,6 +12,11 @@
         width: 100%;
         margin-bottom: 30px;
 
+        @include phones() {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+
         .years__item {
             border: 1px solid $gray;
             display: flex;
@@ -22,8 +27,16 @@
             padding: 10px;
             margin-right: 20px;
 
+            @include phones() {
+                margin-bottom: 20px;
+            }
+
             &:last-child {
                 margin-right: 0;
+
+                @include phones() {
+                    margin-right: 20px;
+                }
             }
 
             &:hover {
@@ -53,6 +66,10 @@
             display: flex;
             width: 24%;
             overflow: hidden;
+
+            @include phones() {
+                width: 100%;
+            }
 
             .slide__img {
                 width: 100%;

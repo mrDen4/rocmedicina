@@ -63,7 +63,16 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         prevArrow: $('.reviews .arrows__left'),
-        nextArrow: $('.reviews .arrows__right')
+        nextArrow: $('.reviews .arrows__right'),
+        responsive: [
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1
+              }
+            }
+          ]
     });
 
     //Popup "Как добраться"

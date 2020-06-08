@@ -201,9 +201,9 @@
         transition: .3s;
         z-index: 100;
         padding: 0;
-        position: absolute;
 
         @include phones() {
+            position: absolute;
             height: 25px;
         }
 
