@@ -36,6 +36,10 @@
             border: 1px solid $border-gray;
             padding: 20px 30px;
 
+            @include phones() {
+                width: 100%;
+            }
+
             .row {
                 display: flex;
                 align-items: center;
@@ -88,10 +92,15 @@
 
         @include phones() {
             width: 100%;
+            flex-wrap: wrap;
         }
 
         .about__text {
             width: 55%;
+
+            @include phones() {
+                width: 100%;
+            }
 
             p {
                 font-size: 15px;

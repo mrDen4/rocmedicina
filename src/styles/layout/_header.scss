@@ -23,21 +23,25 @@
         align-items: flex-start;
 
         @include phones() {
-            align-items: center;
+            align-items: flex-start;
+            width: 100%;
         }
     }
 
     .left__imgs {
         display: flex;
+        position: relative;
+        width: 150px;
+        height: 30px;
 
         .imgs__item {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            position: static;
             transition: .3s;
             cursor: pointer;
-            position: relative;
             height: 30px;
             width: 30px;
             transition: .3s;
@@ -46,9 +50,9 @@
                 transition: .3s;
 
                 .item__text {
-                    height: 40px;
-                    width: 120px;
-                    transition: .2s;
+                    opacity: 1;
+                    transition: .3s;
+                    text-align: center;
                 }
             }
             
@@ -68,14 +72,18 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                width: 0;
+                width: 150px;
+                height: 40;
+                left: 0;
+                right: 0;
+                bottom: -20px;
+                margin-right: auto;
+                margin-left: auto;
                 overflow: hidden;
-                height: 0;
                 transition: .3s;
-                margin-bottom: 20px;
-                bottom: -55px;
                 position: absolute;
                 color: #d0801f;
+                opacity: 0;
             }
         }
     }
@@ -205,6 +213,7 @@
         @include phones() {
             position: absolute;
             height: 25px;
+            right: 25px;
         }
 
         &:active {

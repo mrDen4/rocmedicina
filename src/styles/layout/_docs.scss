@@ -22,6 +22,7 @@
             @include phones() {
                 width: 100%;
                 margin-bottom: 20px;
+                padding: 10px;
             }
 
             .item__link {
@@ -31,6 +32,10 @@
                 font-size: 17px;
                 font-weight: bold;
                 color: $black;
+
+                @include phones() {
+                    font-size: 15px;
+                }
 
                 .link__img {
                     margin-right: 30px;

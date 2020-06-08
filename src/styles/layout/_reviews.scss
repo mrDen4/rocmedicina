@@ -26,6 +26,7 @@
             transition: .3s;
             padding: 10px;
             margin-right: 20px;
+            border-radius: 10px;
 
             @include phones() {
                 margin-bottom: 20px;
@@ -50,6 +51,7 @@
             .item__link {
                 text-decoration: none;
                 color: $gray;
+                font-weight: bold;
             }
         }
     }
