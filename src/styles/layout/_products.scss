@@ -56,7 +56,7 @@
             }
 
             @include phones() {
-                width: 48%;
+                width: 100%;
                 padding: 10px;
                 margin: 0 0 15px 0;
                 height: 225px;
@@ -82,7 +82,7 @@
                 height: 35px;
 
                 @include phones() {
-                    width: 100%;
+                    width: 70%;
                 }
 
                 &:hover {
@@ -110,7 +110,8 @@
             }
 
             .item__title {
-                font-size: 18px;
+                font-size: 17px;
+                font-weight: bold;
                 color: #484848;
                 margin: 10px 0;
                 text-align: center;
@@ -131,7 +132,6 @@
                     font-size: 12px;
                     margin: 0;
                     text-align: justify;
-                    display: none;
                 }
             }
 
