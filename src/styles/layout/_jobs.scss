@@ -27,9 +27,9 @@
 
             .item__title {
                 text-align: center;
-                font-size: 22px;
-                color: #484848;
+                font-size: 16px;
                 font-weight: bold;
+                color: #484848;
                 margin: 0;
 
                 @include phones() {

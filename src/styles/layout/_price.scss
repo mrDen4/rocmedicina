@@ -41,13 +41,13 @@
             box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.05);
             border-radius: 15px;
             color: #484848;
-            font-size: 20px;
+            font-size: 16px;
             padding: 10px 35px;
             cursor: pointer;
             transition: .3s;
 
             @include phones() {
-                font-size: 20px;
+                font-size: 16px;
                 padding: 10px 15px;
             }
 
@@ -95,7 +95,7 @@
 
             .price__name {
                 color: #939393;
-                font-size:18px;
+                font-size:16px;
                 width: 70%;
                 font-weight: normal;
 
@@ -117,7 +117,7 @@
 
             .num__old-price {
                 text-decoration: line-through;
-                font-size: 18px;
+                font-size: 16px;
                 color: #484848;
                 text-align: right;
                 margin: 5px 0;
@@ -129,7 +129,7 @@
 
             .num__new-price {
                 color: $red;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: right;
                 margin: 5px 0;
 
@@ -140,7 +140,7 @@
 
             .num__usual-price {
                 color: #484848;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: right;
 
                 @include phones() {
@@ -150,7 +150,7 @@
 
             .num__sale {
                 color: #D2D2D2;
-                font-size: 15px;
+                font-size: 16px;
                 text-align: right;
                 margin: 5px 0;
 
