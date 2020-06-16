@@ -18,6 +18,10 @@
         font-weight: bold;
         margin-right: 34px;
 
+        @include tablets() {
+            margin-right: 10px;
+        }
+
         @include phones() {
             width: 100%;
         }
@@ -30,6 +34,7 @@
 
             @include tablets() {
                 font-size: 150px;
+                margin-right: 20px;
             }
 
             @include phones() {
@@ -45,7 +50,7 @@
             margin: 0;
 
             @include tablets() {
-                font-size: 33px;
+                font-size: 25px;
             }
 
             @include phones() {
@@ -83,6 +88,11 @@
 
         &:nth-child(15) {
             margin-right: 0;
+        }
+
+        @include tablets() {
+            height: 266px;
+            margin-right: 10px;
         }
 
         @include phones() {

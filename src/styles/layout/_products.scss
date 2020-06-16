@@ -55,6 +55,11 @@
                 cursor: pointer;
             }
 
+            @include tablets() {
+                margin: 10px;
+                width: 45%;
+            }
+
             @include phones() {
                 width: 100%;
                 padding: 10px;
@@ -110,14 +115,18 @@
             }
 
             .item__title {
-                font-size: 17px;
+                font-size: 18px;
                 font-weight: bold;
                 color: #484848;
                 margin: 10px 0;
                 text-align: center;
 
+                @include tablets() {
+                    margin: 10px 0;
+                }
+
                 @include phones() {
-                    font-size: 11px;
+                    font-size: 15px;
                     margin: 10px 0;
                 }
             }
@@ -125,11 +134,15 @@
             .item__text {
                 color: #616161;
                 margin-bottom: 20px;
-                font-size: 17px;
+                font-size: 18px;
                 text-align: center;
 
+                @include tablets() {
+                    margin: 10px 0;
+                }
+
                 @include phones() {
-                    font-size: 12px;
+                    font-size: 15px;
                     margin: 0;
                     text-align: justify;
                 }

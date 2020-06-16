@@ -6,7 +6,7 @@
         background-size: 100%;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 50vh;
+        height: 55vh;
     }
 
     .hero__container {
@@ -23,6 +23,10 @@
     
     .container__left {
         width: 50%;
+
+        @include tablets() {
+            width: 85%;
+        }
 
         @include phones() {
             width: 75%;

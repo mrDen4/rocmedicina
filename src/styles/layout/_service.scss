@@ -68,7 +68,7 @@
         .img__img {
             height: 100%;
 
-            @include phones() {
+            @include tablets() {
                 height: initial;
                 width: 100%;
             }
@@ -229,8 +229,12 @@
         .text__btns {
             display: flex;
             margin-top: 30px;
-
+            
             @include tablets() {
+                justify-content: space-between;
+            }
+
+            @include phones() {
                 flex-direction: column;
             }
     
@@ -241,11 +245,11 @@
                 justify-content: center;
 
                 @include tablets() {
-                    width: 100%;
+                    margin-right: 0;
                 }
 
                 @include phones() {
-                    margin-right: 0;
+                    width: 100%;
                     margin-bottom: 20px;
                 }
             }

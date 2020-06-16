@@ -15,8 +15,13 @@
             margin-bottom: 30px;
         }
 
-        @include phones() {
+        @include tablets() {
             flex-direction: column;
+            align-items: center;
+
+            &:first-child {
+                margin-bottom: 0px;
+            }
         }
     }
 
@@ -33,7 +38,7 @@
         margin-bottom: 45px;
         font-size: 17px;
         
-        @include phones() {
+        @include tablets() {
             width: 100%;
             text-align: center;
         }
@@ -44,7 +49,7 @@
         flex-direction: column;
         width: 30%;
 
-        @include phones() {
+        @include tablets() {
             width: 100%;
             align-items: center;
         }
@@ -54,9 +59,13 @@
             align-items: center;
             margin-bottom: 25px;
 
+            @include tablets() {
+                width: 50%;
+                justify-content: space-between;
+            }
+
             @include phones() {
                 width: 100%;
-                justify-content: space-between;
             }
 
             .iso__img {
@@ -68,7 +77,7 @@
                 transition: .3s;
                 margin-right: 20px;
 
-                @include phones() {
+                @include tablets() {
                     margin-right: 0;
                 }
 
@@ -131,7 +140,7 @@
                 font-size: 15px;
             }
 
-            @include phones() {
+            @include tablets() {
                 display: none;
             }
 
@@ -153,7 +162,7 @@
         padding-top: 25px;
 
         @include tablets() {
-            width: 40%;
+            width: 60%;
         }
 
         @include phones() {
@@ -174,7 +183,7 @@
                 font-size: 15px;
             }
 
-            @include phones() {
+            @include tablets() {
                 width: 45%;
                 margin-bottom: 20px;
                 margin-top: 0;
@@ -196,7 +205,7 @@
             width: 25%;
         }
 
-        @include phones() {
+        @include tablets() {
             width: 100%;
         }
 
@@ -206,8 +215,12 @@
             padding: 0;
 
             @include tablets() {
-                width: 80%;
+                width: 60%;
                 margin-top: 10px;
+            }
+
+            @include phones() {
+                width: 80%;
             }
         }
 
@@ -226,7 +239,7 @@
                 font-size: 15px;
             }
 
-            @include phones() {
+            @include tablets() {
                 display: flex;
             }
 
@@ -316,10 +329,14 @@
         margin: 0;
         transition: .3s;
 
-        @include phones() {
+        @include tablets() {
             width: 100%;
             text-align: center;
             margin-top: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
         }
 
         &:hover {

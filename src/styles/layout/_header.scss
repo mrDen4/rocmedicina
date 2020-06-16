@@ -22,6 +22,10 @@
         flex-direction: column;
         align-items: flex-start;
 
+        @include tablets() {
+            width: 40%;
+        }
+
         @include phones() {
             align-items: flex-start;
             width: 100%;
@@ -92,7 +96,7 @@
         z-index: 100;
 
         @include tablets() {
-            width: 30%;
+            width: 100%;
         }
 
         @include phones() {
@@ -117,6 +121,7 @@
 
         @include tablets() {
             font-size: 15px;
+            width: 35%;
         }
 
         @include phones() {
@@ -149,7 +154,8 @@
         z-index: 100;
 
         @include tablets() {
-            width: 15%;
+            width: 25%;
+            margin-right: 10px;
         }
 
         @include phones() {
@@ -189,6 +195,8 @@
             padding: 5px;
             text-align: center;
             font-size: 12px;
+            width: 25%;
+            margin-right: 10px;
         }
 
         @include phones() {

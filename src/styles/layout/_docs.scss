@@ -33,7 +33,7 @@
                 font-weight: bold;
                 color: $black;
 
-                @include phones() {
+                @include tablets() {
                     font-size: 15px;
                 }
 

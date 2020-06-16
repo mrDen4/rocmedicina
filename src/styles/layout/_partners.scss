@@ -24,6 +24,10 @@
         opacity: .5;
         transition: .3s;
 
+        @include tablets() {
+            width: 15%;
+        }
+
         @include phones() {
             width: 45%;
             height: inherit;

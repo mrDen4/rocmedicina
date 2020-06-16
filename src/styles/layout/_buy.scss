@@ -121,7 +121,7 @@
             position:sticky; 
             top:10px;
     
-            @include tablets() {
+            @include phones() {
                 width: 100%;
             }
     
