@@ -118,8 +118,7 @@
 
         .license__btn {
             position: absolute;
-            border-radius: 30%;
-            background: #e8e8e8;
+            background: none;
             border: none;
             display: flex;
             align-items: center;
@@ -128,6 +127,7 @@
             height: 30px;
             z-index: 100;
             padding: 0;
+            cursor: pointer;
 
             &:focus {
                 outline: none;
@@ -142,7 +142,7 @@
             }
 
             .btn__img {
-                height: 70%;
+                height: 100%;
             }
         }
 
