@@ -1857,6 +1857,31 @@ a {
             @media screen and (max-width: 576px) {
               .news .news__list .list__item .item__link .link__content .content__title {
                 font-size: 15px; } }
+          .news .news__list .list__item .item__link .link__content .content__old-price {
+            text-align-last: right;
+            font-size: 16px;
+            color: #949494;
+            margin: 0;
+            text-decoration: line-through; }
+          .news .news__list .list__item .item__link .link__content .content__new-price {
+            text-align-last: right;
+            color: #FF003D;
+            font-size: 20px;
+            margin: 0; }
+
+.sales .list__item--hidden {
+  display: none; }
+
+.sales .news__list .list__item .item__link {
+  height: 225px; }
+
+.sales .news__list .list__item .item__link .link__img {
+  overflow: hidden;
+  height: 100%; }
+
+.sales .news__list .list__item .item__link .link__img .img__img {
+  height: 100%;
+  width: initial; }
 
 .jobs {
   padding: 30px 0; }
