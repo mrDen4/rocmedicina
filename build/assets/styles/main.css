@@ -1973,6 +1973,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center; }
+  .price .price__text {
+    width: 100%; }
   .price .price__list {
     display: flex;
     flex-direction: column;
