@@ -96,4 +96,10 @@ $(document).ready(function () {
         $('.popup-job').removeClass('popup-job--active');
         $('.bg').removeClass('bg--active');
     });
+
+    //Показать еще эл-ты в акциях
+    $('.news .news__btn').on('click', function () {
+        $('.list__item').removeClass('list__item--hidden');
+        $('.news .news__btn').hide();
+    });
 });
