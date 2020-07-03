@@ -1870,6 +1870,13 @@ a {
             font-size: 18px;
             margin: 0;
             width: 49%; }
+          .news .news__list .list__item .item__link .link__content .content__sale {
+            font-size: 18px;
+            background: #FF003D;
+            color: #ffffff;
+            padding: 5px;
+            margin: 0;
+            margin-top: 10px; }
 
 .sales .list__item--hidden {
   display: none; }
