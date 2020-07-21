@@ -347,7 +347,8 @@ a {
     margin-bottom: 50px;
     text-align: left; }
     .hero .hero__title .title__color {
-      color: #FF003D; }
+      color: #FF003D;
+      text-transform: initial; }
     @media screen and (max-width: 576px) {
       .hero .hero__title {
         font-size: 20px; } }
@@ -1286,7 +1287,7 @@ a {
   padding: 30px 0;
   background: #f7f7f7; }
   .products .products__title {
-    font-size: 42px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
