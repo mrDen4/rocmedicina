@@ -2155,6 +2155,10 @@ a {
         text-decoration: none;
         color: #939393;
         font-weight: bold; }
+      .reviews .review__years .years__item--active {
+        background: #FF003D; }
+        .reviews .review__years .years__item--active .item__link {
+          color: #fff; }
   .reviews .reviews__slider-wrap {
     position: relative; }
   .reviews .reviews__slider {
