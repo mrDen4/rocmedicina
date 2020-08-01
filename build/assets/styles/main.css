@@ -546,7 +546,7 @@ a {
   color: #ffffff;
   padding: 30px 0; }
   .callback .callback__title {
-    font-size: 42px;
+    font-size: 36px;
     text-align: center;
     margin: 0;
     margin-bottom: 20px;
@@ -1500,7 +1500,7 @@ a {
   padding-top: 30px; }
   .service .title {
     color: #FF003D;
-    font-size: 32px;
+    font-size: 20px;
     margin-bottom: 30px; }
   .service p {
     font-size: 18px;
@@ -1583,7 +1583,7 @@ a {
         width: 100%;
         padding: 10px 20px; } }
     .service .content__about .about__subtitle {
-      font-size: 30px;
+      font-size: 20px;
       font-weight: bold;
       margin-top: 0;
       text-align: center; }
@@ -1974,7 +1974,8 @@ a {
     align-items: center;
     justify-content: center; }
   .price .price__text {
-    width: 100%; }
+    width: 100%;
+    padding-left: 35px; }
   .price .price__list {
     display: flex;
     flex-direction: column;
@@ -2505,6 +2506,10 @@ a {
     background: none;
     border: none;
     cursor: pointer; }
+  .popup-delivery .delivery__title {
+    font-size: 20px; }
+  .popup-delivery .delivery__text {
+    font-size: 14px; }
 
 .popup-job {
   display: none; }
