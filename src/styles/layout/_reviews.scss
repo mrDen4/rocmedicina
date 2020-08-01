@@ -53,6 +53,14 @@
                 color: $gray;
                 font-weight: bold;
             }
+
+            &--active {
+                background: $red;
+
+                .item__link {
+                    color: #fff;
+                }
+            }
         }
     }
 

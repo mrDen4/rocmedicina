@@ -44,6 +44,7 @@
 
         .title__color {
             color: $red;
+            text-transform: initial;
         }
 
         @include phones() {
