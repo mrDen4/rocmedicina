@@ -52,7 +52,7 @@ ul {
     opacity: .8; }
 
 .title {
-  font-size: 36px;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #FF003D;
@@ -662,7 +662,7 @@ a {
       .result .result__left {
         width: 100%; } }
     .result .result__left .left__title {
-      font-size: 30px;
+      font-size: 36px;
       color: #FF003D;
       font-weight: bold;
       margin: 65px 0; }
@@ -712,7 +712,7 @@ a {
           width: 100%;
           margin-bottom: 15px; } }
       .result .result__center .center__item .item__num {
-        font-size: 60px;
+        font-size: 36px;
         font-weight: bold;
         margin: 0; }
         @media screen and (max-width: 768px) {
@@ -993,7 +993,7 @@ a {
 
 .contacts .contacts__title {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 20px;
   color: #FF003D;
   margin: 0; }
   @media screen and (max-width: 576px) {
@@ -1620,14 +1620,17 @@ a {
       .service-about .service-about__text {
         width: 100%; } }
     .service-about .service-about__text p {
-      font-size: 17px; }
+      font-size: 20px; }
+    .service-about .service-about__text h2 {
+      margin: 0; }
     .service-about .service-about__text h3 {
       font-size: 20px;
       font-weight: bold; }
     .service-about .service-about__text ul, .service-about .service-about__text ol {
-      font-size: 17px;
+      font-size: 20px;
       padding: 0;
-      padding-left: 15px; }
+      padding-left: 25px;
+      margin-top: 0; }
     .service-about .service-about__text ol li {
       list-style: decimal; }
     .service-about .service-about__text li {
@@ -1836,20 +1839,21 @@ a {
           width: 48%;
           display: flex;
           flex-direction: column;
-          padding: 25px 10px; }
+          padding: 10px; }
           @media screen and (max-width: 576px) {
             .news .news__list .list__item .item__link .link__content {
               width: 100%; } }
           .news .news__list .list__item .item__link .link__content .content__date {
             display: flex;
             align-items: center;
-            margin: 0; }
+            margin: 0;
+            font-size: 14px; }
             .news .news__list .list__item .item__link .link__content .content__date .date__icon {
               margin-right: 15px; }
           .news .news__list .list__item .item__link .link__content .content__title {
             font-size: 18px;
             color: #484848;
-            font-weight: bold;
+            font-weight: normal;
             margin: 10px 0 0 0; }
             @media screen and (max-width: 768px) {
               .news .news__list .list__item .item__link .link__content .content__title {
@@ -1877,7 +1881,16 @@ a {
             color: #ffffff;
             padding: 5px;
             margin: 0;
-            margin-top: 10px; }
+            margin-top: 10px;
+            margin-right: 20px; }
+          .news .news__list .list__item .item__link .link__content .content__arrow {
+            font-size: 16px;
+            color: #484848;
+            margin: 0;
+            margin-top: 10px;
+            text-align: right; }
+            .news .news__list .list__item .item__link .link__content .content__arrow:hover {
+              color: #FF003D; }
 
 .sales .list__item--hidden {
   display: none; }
@@ -2292,7 +2305,7 @@ a {
         font-size: 17px;
         font-weight: bold; }
       .buy .buy__content .content__form .form__about {
-        font-size: 10px;
+        font-size: 12px;
         color: #939393;
         text-align: center; }
   .buy .buy__about {
@@ -2469,7 +2482,7 @@ a {
   .popup-buy .form__inp {
     border: none;
     border-bottom: 1px solid #E5E5E5;
-    font-size: 17px;
+    font-size: 16px;
     color: #484848;
     padding: 20px;
     outline: none; }
@@ -2486,7 +2499,7 @@ a {
     cursor: pointer;
     margin-top: 50px; }
   .popup-buy .form__text {
-    font-size: 11px;
+    font-size: 12px;
     color: #939393;
     text-align: center; }
 
@@ -2624,7 +2637,7 @@ a {
     align-items: flex-start; }
   .new .title {
     color: #FF003D;
-    font-size: 32px;
+    font-size: 20px;
     width: 100%;
     text-align: center;
     margin: 0 0 30px 0; }

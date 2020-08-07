@@ -126,7 +126,7 @@
                     width: 48%;
                     display: flex;
                     flex-direction: column;
-                    padding: 25px 10px;
+                    padding: 10px;
 
                     @include phones() {
                         width: 100%;
@@ -136,6 +136,7 @@
                         display: flex;
                         align-items: center;
                         margin: 0;
+                        font-size: 14px;
 
                         .date__icon {
                             margin-right: 15px;
@@ -145,7 +146,7 @@
                     .content__title {
                         font-size: 18px;
                         color: #484848;
-                        font-weight: bold;
+                        font-weight: normal;
                         margin: 10px 0 0 0;
 
                         @include tablets() {
@@ -182,6 +183,19 @@
                         padding: 5px;
                         margin: 0;
                         margin-top: 10px;
+                        margin-right: 20px;
+                    }
+
+                    .content__arrow {
+                        font-size: 16px;
+                        color: $black;
+                        margin: 0;
+                        margin-top: 10px;
+                        text-align: right;
+
+                        &:hover {
+                            color: $red;
+                        }
                     }
                 }
             }
