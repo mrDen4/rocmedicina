@@ -123,10 +123,10 @@
                 }
 
                 .link__content {
-                    width: 48%;
+                    width: 50%;
                     display: flex;
                     flex-direction: column;
-                    padding: 10px;
+                    padding: 5px;
 
                     @include phones() {
                         width: 100%;
@@ -184,6 +184,7 @@
                         margin: 0;
                         margin-top: 10px;
                         margin-right: 20px;
+                        border-radius: 10px;
                     }
 
                     .content__arrow {
@@ -192,6 +193,8 @@
                         margin: 0;
                         margin-top: 10px;
                         text-align: right;
+                        display: flex;
+                        align-items: center;
 
                         &:hover {
                             color: $red;
@@ -209,12 +212,27 @@
         display: none;
     }
 
-    .news__list .list__item {
-        width: 48%;
+    .news__list {
+        .list__item {
+            width: 48%;
+
+            @include phones() {
+                width: 100%;
+                height: 400px;
+            }
+        }
     }
 
-    .news__list .list__item .item__link {
-        height: 185px;
+    .news__list {
+        .list__item {
+            .item__link {
+                height: 185px;
+        
+            @include phones() {
+                height: 400px;
+            }
+            }
+        } 
     }
 
     .news__list .list__item .item__link .link__img {
