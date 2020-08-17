@@ -160,7 +160,7 @@
                     }
 
                     .content__old-price {
-                        text-align-last: right;
+                        text-align: right;
                         font-size: 16px;
                         color: #949494;
                         margin: 0;
@@ -169,7 +169,7 @@
                     }
 
                     .content__new-price {
-                        text-align-last: right;
+                        text-align: right;
                         color: $red;
                         font-size: 18px;
                         margin: 0;
@@ -243,10 +243,34 @@
     .news__list .list__item .item__link .link__img .img__img {
         height: initial;
         width: 100%;
+
+        @include phones() {
+            height: 100%;
+            width: initial;
+        }
     }
 
     .news__list .list__item .item__link .link__content {
         flex-direction: row;
         flex-wrap: wrap;
+
+        @include phones() {
+            justify-content: space-around;
+        }
+    }
+
+    .news__list .list__item .item__link .link__content .content__title {
+        @include phones() {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .news__list .list__item .item__link .link__content .content__old-price {
+        text-align: center;
+    }
+
+    .news__list .list__item .item__link .link__content .content__new-price {
+        text-align: center;
     }
 }

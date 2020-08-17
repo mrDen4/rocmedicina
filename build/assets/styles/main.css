@@ -1863,14 +1863,14 @@ a {
               .news .news__list .list__item .item__link .link__content .content__title {
                 font-size: 15px; } }
           .news .news__list .list__item .item__link .link__content .content__old-price {
-            text-align-last: right;
+            text-align: right;
             font-size: 16px;
             color: #949494;
             margin: 0;
             text-decoration: line-through;
             width: 49%; }
           .news .news__list .list__item .item__link .link__content .content__new-price {
-            text-align-last: right;
+            text-align: right;
             color: #FF003D;
             font-size: 18px;
             margin: 0;
@@ -1918,10 +1918,28 @@ a {
 .sales .news__list .list__item .item__link .link__img .img__img {
   height: initial;
   width: 100%; }
+  @media screen and (max-width: 576px) {
+    .sales .news__list .list__item .item__link .link__img .img__img {
+      height: 100%;
+      width: initial; } }
 
 .sales .news__list .list__item .item__link .link__content {
   flex-direction: row;
   flex-wrap: wrap; }
+  @media screen and (max-width: 576px) {
+    .sales .news__list .list__item .item__link .link__content {
+      justify-content: space-around; } }
+
+@media screen and (max-width: 576px) {
+  .sales .news__list .list__item .item__link .link__content .content__title {
+    width: 100%;
+    text-align: center; } }
+
+.sales .news__list .list__item .item__link .link__content .content__old-price {
+  text-align: center; }
+
+.sales .news__list .list__item .item__link .link__content .content__new-price {
+  text-align: center; }
 
 .jobs {
   padding: 30px 0; }
