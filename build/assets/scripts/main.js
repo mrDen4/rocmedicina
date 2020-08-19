@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     // Появление popup окна по клику на кнопку
-    $('.hero .btn, .service .callback__btn-buy, .footer .footer__right .right__btn').on('click', function () {
+    $('.hero .btn, .service .callback__btn-buy, .footer .footer__right .right__btn, .new .new__content .content__btn').on('click', function () {
         $('.popup-buy').toggleClass('popup-buy--active');
         $('.bg').toggleClass('bg--active-popup');
     });

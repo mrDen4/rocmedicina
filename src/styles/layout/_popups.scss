@@ -69,6 +69,11 @@
         font-weight: bold;
         cursor: pointer;
         margin-top: 50px;
+
+        @include phones() {
+            height: 50px;
+            margin-top: 25px;
+        }
     }
 
     .form__text {

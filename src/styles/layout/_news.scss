@@ -260,6 +260,7 @@
     }
 
     .news__list .list__item .item__link .link__content .content__title {
+        width: 100%;
         @include phones() {
             width: 100%;
             text-align: center;

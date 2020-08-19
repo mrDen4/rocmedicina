@@ -955,6 +955,10 @@ a {
       .services .services__item:hover .item__img--17 {
         background: url("../images/services/svg/active/17.svg") center center no-repeat; }
 
+@media screen and (max-width: 576px) {
+  .contacts {
+    padding-top: 30px; } }
+
 .contacts--page {
   padding: 30px 0; }
   .contacts--page .contacts__title {
@@ -1323,7 +1327,7 @@ a {
       padding: 30px;
       align-items: center;
       justify-content: space-between;
-      height: 310px;
+      height: 325px;
       transition: .3s; }
       .products .products__list .list__item:hover {
         cursor: pointer; }
@@ -1930,10 +1934,12 @@ a {
     .sales .news__list .list__item .item__link .link__content {
       justify-content: space-around; } }
 
-@media screen and (max-width: 576px) {
-  .sales .news__list .list__item .item__link .link__content .content__title {
-    width: 100%;
-    text-align: center; } }
+.sales .news__list .list__item .item__link .link__content .content__title {
+  width: 100%; }
+  @media screen and (max-width: 576px) {
+    .sales .news__list .list__item .item__link .link__content .content__title {
+      width: 100%;
+      text-align: center; } }
 
 .sales .news__list .list__item .item__link .link__content .content__old-price {
   text-align: center; }
@@ -2529,6 +2535,10 @@ a {
     font-weight: bold;
     cursor: pointer;
     margin-top: 50px; }
+    @media screen and (max-width: 576px) {
+      .popup-buy .form__btn {
+        height: 50px;
+        margin-top: 25px; } }
   .popup-buy .form__text {
     font-size: 12px;
     color: #939393;
