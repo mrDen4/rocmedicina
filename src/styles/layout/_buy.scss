@@ -14,6 +14,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 30px;
+        width: 100%;
 
         .content__img {
             width: 55%;
@@ -48,13 +49,7 @@
 
             .form__icon {
                 margin-right: 20px;
-            }
-
-            .form__text {
-                color: $red;
-                font-size: 17px;
-                font-weight: bold;
-                margin: 0;
+                width: 20px;
             }
 
             .form__inp {
@@ -63,6 +58,7 @@
                 padding: 12px;
                 font-size: 17px;
                 outline: none;
+                width: 95%;
             }
 
             .form__btn {

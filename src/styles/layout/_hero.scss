@@ -1,31 +1,36 @@
 .hero {
-    height: 65vh;
+    min-height: 65vh;
+    padding-top: 30px;
 
     @include phones() {
-        background: url('../images/hero-bg-1.png') no-repeat;
-        background-size: 100%;
+        // background: url('../images/hero-bg-1.jpg') no-repeat;
+        // background-size: 100%;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 48vh;
-        background-position-y: 77%;
+        min-height: 48vh;
+        padding-top: 0;
+        // background-position-y: 87%;
     }
 
     .hero__container {
-        background: url('../images/hero-bg-1.png') 90% center no-repeat;
-        background-size: 50%;
+        // background: url('../images/hero-bg-1.jpg') 90% center no-repeat;
+        // background-size: 50%;
         height: 95%;
         display: flex;
         justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
 
         @include phones() {
             background: none;
             justify-content: flex-start;
             padding-top: 15px;
+            flex-direction: column;
         }
     }
     
     .container__left {
-        width: 50%;
+        width: 45%;
 
         @include tablets() {
             width: 85%;
@@ -36,6 +41,18 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+        }
+    }
+
+    .container__image {
+        width: 55%;
+
+        @include phones() {
+            display: none;
+        }
+
+        .image__img {
+            height: 375px;
         }
     }
 
@@ -61,9 +78,18 @@
                 text-align: left;
                 display: initial;
                 font-size: 20px;
-                margin-bottom: 215px;
+                margin-bottom: 10px;
                 color: $gray;
             }
+        }
+    }
+
+    .hero__img-mobile {
+        display: none;
+
+        @include phones() {
+            width: 100%;
+            display: initial;
         }
     }
 
@@ -143,7 +169,7 @@
 
         @include phones() {
             height: 30px;
-            padding: 5px 40px;
+            padding: 5px 10px;
             margin-bottom: 15px;
         }
     }

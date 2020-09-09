@@ -128,10 +128,15 @@
 
     .delivery__title {
         font-size: 20px;
+        color: #ffffff;
+        background: $gray;
+        padding: 0 10px;
+        border-radius: 10px;
     }
 
     .delivery__text {
-        font-size: 14px;
+        font-size: 16px;
+        text-align: justify;
     }
 }
 

@@ -18,7 +18,7 @@
         margin: 0 0 30px 0;
 
         @include phones() {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 
@@ -40,7 +40,8 @@
 
     a {
         color: $red;
-        text-decoration: underline;
+        text-decoration: none;
+        font-weight: bold;
     }
 
     .job__breadcrumbs {
