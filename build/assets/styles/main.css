@@ -1040,6 +1040,11 @@ a {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 25px; }
+  .contacts .contacts__item a {
+    color: #484848;
+    transition: .3s; }
+    .contacts .contacts__item a:hover {
+      color: #FF003D; }
   .contacts .contacts__item .item__img {
     margin-right: 20px; }
   .contacts .contacts__item .text__name {
