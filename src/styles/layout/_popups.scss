@@ -5,7 +5,7 @@
     position: fixed;
     width: 350px;
     height: 450px;
-    padding: 20px 100px;
+    padding: 20px 50px;
     top: -50%;
     left: 50%;
     margin-top: -225px;
@@ -33,6 +33,12 @@
         color: #FF0000;
         background: none;
         border: none;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            opacity: .5;
+        }
     }
 
     .form__title {
@@ -40,12 +46,18 @@
         font-weight: bold;
         color: $red;
         text-align: center;
+        margin: 10px 0 20px;
     }
 
     .form__row {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .row__img {
+        width: 20px;
+        height: 25px;
     }
 
     .form__inp {
@@ -68,11 +80,16 @@
         font-size: 17px;
         font-weight: bold;
         cursor: pointer;
-        margin-top: 50px;
+        margin-top: 20px;
+        transition: .3s;
 
         @include phones() {
             height: 50px;
             margin-top: 25px;
+        }
+
+        &:hover {
+            opacity: .5;
         }
     }
 
