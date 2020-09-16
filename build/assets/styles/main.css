@@ -1931,11 +1931,13 @@ a {
             font-size: 18px;
             background: #FF003D;
             color: #ffffff;
-            padding: 5px;
+            padding: 0 5px;
             margin: 0;
-            margin-top: 10px;
             margin-right: 20px;
-            border-radius: 10px; }
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
           .news .news__list .list__item .item__link .link__content .content__arrow {
             font-size: 30px;
             color: #484848;
@@ -1984,13 +1986,15 @@ a {
 .sales .news__list .list__item .item__link .link__content {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 15px; }
   @media screen and (max-width: 576px) {
     .sales .news__list .list__item .item__link .link__content {
       justify-content: space-around; } }
 
 .sales .news__list .list__item .item__link .link__content .content__title {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
   @media screen and (max-width: 576px) {
     .sales .news__list .list__item .item__link .link__content .content__title {
       width: 100%;

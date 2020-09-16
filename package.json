@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/mrDen4/rp-land/issues"
   },
-  "homepage": "https://github.com/mrDen4/rp-land#readme"
+  "homepage": "https://github.com/mrDen4/rp-land#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

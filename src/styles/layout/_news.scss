@@ -185,11 +185,13 @@
                         font-size: 18px;
                         background: $red;
                         color: #ffffff;
-                        padding: 5px;
+                        padding: 0 5px;
                         margin: 0;
-                        margin-top: 10px;
                         margin-right: 20px;
                         border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
 
                     .content__arrow {
@@ -267,6 +269,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 15px;
 
         @include phones() {
             justify-content: space-around;
@@ -275,6 +278,7 @@
 
     .news__list .list__item .item__link .link__content .content__title {
         width: 100%;
+        margin: 0;
         @include phones() {
             width: 100%;
             text-align: center;
