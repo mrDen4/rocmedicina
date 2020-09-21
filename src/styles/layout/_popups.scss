@@ -165,15 +165,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 450px;
-        height: 500px;
+        width: 350px;
+        height: 450px;
         background: #ffffff;
         color: $red;
         position: fixed;
         top: 50%;
         left: 50%;
-        margin-top: -250px;
-        margin-left: -225px;
+        margin-top: -225px;
+        margin-left: -175px;
         z-index: 50;
         padding: 20px;
         border-radius: 10px;
@@ -190,24 +190,30 @@
 
     .job__title {
         font-size: 36px;
+        margin: 20px 0;
     }
 
     .job__form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        width: 100%;
+
+        .form__row {
+            display: flex;
+            align-items: center;
+            width: 80%;
+        }
 
         .form__inp {
             width: 100%;
             border: none;
             background: none;
-            border-bottom: 1px solid $gray;
-            padding: 10px;
-            font-size: 17px;
+            border-bottom: 1px solid #E5E5E5;
+            padding: 20px;
+            font-size: 16px;
             color: #484848;
             outline: none;
-            margin-bottom: 35px;
 
             &::-webkit-input-placeholder {
                 color: #484848;
@@ -218,13 +224,42 @@
             }
         }
 
+        .form__wrap-file {
+            position: relative;
+
+            .form__inp {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+
+            .form__label {
+                width: 100%;
+            }
+
+            .label__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                width: 100%;
+                color: $red;
+                background: #fff;
+                border: 1px solid $red;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 20px 0;
+            }
+        }
+
         .form__btn {
-            width: 60%;
+            width: 80%;
+            height: 65px;
         }
     }
 
     .job__text {
-        font-size: 15px;
+        font-size: 12px;
         color: $gray;
         text-align: center;
         opacity: .6;

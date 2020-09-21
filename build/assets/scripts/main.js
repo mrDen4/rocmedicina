@@ -26,7 +26,7 @@ $(document).ready(function () {
         $('.bg').toggleClass('bg--active-popup');
     });
 
-    $('.popup-buy .popup__btn').on('click', function() {
+    $('.popup-buy .popup__btn, .popup-buy .form__btn').on('click', function() {
         $('.popup-buy').toggleClass('popup-buy--active');
         $('.bg').toggleClass('bg--active-popup');
     })
@@ -92,7 +92,7 @@ $(document).ready(function () {
         $('.bg').addClass('bg--active');
     });
 
-    $('.popup-job .job__exit').on('click', function () {
+    $('.popup-job .job__exit, .popup-job .job__form .form__btn').on('click', function () {
         $('.popup-job').removeClass('popup-job--active');
         $('.bg').removeClass('bg--active');
     });
