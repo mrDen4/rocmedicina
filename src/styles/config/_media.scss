@@ -10,8 +10,8 @@
     }
   }
 
-  @mixin horizon {
-    @media screen and (max-width: $horizon) {
+  @mixin landscape {
+    @media screen and (max-width: $landscape-width) and (max-height: $landscape-height) {
       @content;
     }
   }

@@ -29,6 +29,11 @@
             font-weight: bold;
             margin: 65px 0;
 
+            @include landscape() {
+                margin: 45px 0;
+                font-size: 23px;
+            }
+
             @include tablets() {
                 margin: 45px 0;
                 font-size: 23px;
@@ -44,6 +49,10 @@
                 transform: rotate(-90deg);
                 color: $red;
                 font-size: 140px;
+
+                @include landscape() {
+                    font-size: 110px;
+                }
 
                 @include tablets() {
                     font-size: 110px;

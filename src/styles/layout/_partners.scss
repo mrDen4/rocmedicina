@@ -24,6 +24,10 @@
         opacity: .5;
         transition: .3s;
 
+        @include landscape() {
+            width: 15%;
+        }
+
         @include tablets() {
             width: 15%;
         }

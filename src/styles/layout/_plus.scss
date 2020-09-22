@@ -18,6 +18,10 @@
             font-size: 197px;
             margin: 0;
             margin-right: 40px;
+            
+            @include landscape() {
+                font-size: 145px;
+            }
 
             @include tablets() {
                 font-size: 170px;
@@ -34,6 +38,10 @@
             text-transform: uppercase;
             width: 360px;
             margin: 0;
+
+            @include landscape() {
+                font-size: 30px;
+            }
 
             @include tablets() {
                 font-size: 25px;
@@ -70,6 +78,11 @@
         transition: .3s;
         cursor: pointer;
 
+        @include landscape() {
+            padding: 15px;
+            align-items: center;
+        }
+
         @include tablets() {
             padding: 15px 13px;
         }
@@ -94,6 +107,11 @@
             margin: 10px 0 0 0;
             font-weight: bold;
 
+            @include landscape() {
+                font-size: 14px;
+                text-align: center;
+            }
+
             @include phones() {
                 font-size: 14px;
             }
@@ -103,6 +121,10 @@
             color: $gray;
             font-size: 15px;
             margin: 10px 0 0 0;
+
+            @include landscape() {
+                font-size: 13px;
+            }
 
             @include tablets() {
                 font-size: 13px;

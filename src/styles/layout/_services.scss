@@ -18,6 +18,10 @@
         font-weight: bold;
         margin-right: 34px;
 
+        @include landscape() {
+            margin-right: 10px;
+        }
+
         @include tablets() {
             margin-right: 10px;
         }
@@ -31,6 +35,11 @@
             font-size: 197px;
             margin: 0;
             margin-right: 40px;
+
+            @include landscape() {
+                font-size: 150px;
+                margin-right: 20px;
+            }
 
             @include tablets() {
                 font-size: 150px;
@@ -48,6 +57,10 @@
             font-size: 42px;
             text-transform: uppercase;
             margin: 0;
+
+            @include landscape() {
+                font-size: 25px;
+            }
 
             @include tablets() {
                 font-size: 25px;
@@ -90,6 +103,11 @@
             margin-right: 0;
         }
 
+        @include landscape() {
+            height: 266px;
+            margin-right: 10px;
+        }
+
         @include tablets() {
             height: 266px;
             margin-right: 10px;
@@ -126,6 +144,11 @@
             text-align: center;
             font-size: 17px;
             color: #484848;
+
+            @include landscape() {
+                font-size: 12px;
+                margin: 10px 0;
+            }
             
             @include tablets() {
                 font-size: 12px;
@@ -137,6 +160,11 @@
             text-align: center;
             color: #939393;
             font-size: 15px;
+
+            @include landscape() {
+                font-size: 10px;
+                margin: 5px 0;
+            }
 
             @include tablets() {
                 font-size: 10px;

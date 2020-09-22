@@ -3,34 +3,35 @@
     padding-top: 30px;
 
     @include phones() {
-        // background: url('../images/hero-bg-1.jpg') no-repeat;
-        // background-size: 100%;
         align-items: flex-start;
         justify-content: flex-start;
         min-height: 48vh;
         padding-top: 0;
-        // background-position-y: 87%;
     }
 
     .hero__container {
-        // background: url('../images/hero-bg-1.jpg') 90% center no-repeat;
-        // background-size: 50%;
         height: 95%;
         display: flex;
-        justify-content: center;
         flex-direction: row;
         justify-content: space-between;
 
         @include phones() {
-            background: none;
             justify-content: flex-start;
             padding-top: 15px;
             flex-direction: column;
+        }
+
+        @include landscape() {
+            padding-top: 15px;
         }
     }
     
     .container__left {
         width: 45%;
+
+        @include landscape() {
+            width: 35%;
+        }
 
         @include tablets() {
             width: 85%;
@@ -53,6 +54,10 @@
 
         .image__img {
             height: 375px;
+
+            @include landscape() {
+                height: 250px;
+            }
         }
     }
 
@@ -65,6 +70,10 @@
         .title__color {
             color: $red;
             text-transform: initial;
+        }
+
+        @include landscape() {
+            font-size: 20px;
         }
 
         @include phones() {
@@ -154,6 +163,10 @@
         justify-content: space-between;
         width: 70%;
 
+        @include landscape() {
+            width: 100%;
+        }
+
         @include phones() {
             width: 100%;
             align-items: flex-start;
@@ -166,6 +179,10 @@
         align-items: center;
         justify-content: center;
         width: 160px;
+
+        @include landscape() {
+            width: 125px;
+        }
 
         @include phones() {
             height: 30px;
