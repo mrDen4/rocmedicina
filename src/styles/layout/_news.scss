@@ -233,7 +233,7 @@
 
             @include phones() {
                 width: 100%;
-                height: 400px;
+                height: initial;
             }
         }
     }
@@ -244,7 +244,7 @@
                 height: 185px;
         
             @include phones() {
-                height: 400px;
+                height: initial;
             }
             }
         } 
@@ -260,8 +260,8 @@
         width: 100%;
 
         @include phones() {
-            height: 100%;
-            width: initial;
+            width: 100%;
+            height: initial;
         }
     }
 
@@ -282,11 +282,17 @@
         @include phones() {
             width: 100%;
             text-align: center;
+            margin-bottom: 10px;
+            font-size: 18px;
         }
     }
 
     .news__list .list__item .item__link .link__content .content__old-price {
         text-align: center;
+
+        @include phones() {
+            margin-bottom: 20px;
+        }
     }
 
     .news__list .list__item .item__link .link__content .content__new-price {
@@ -295,5 +301,8 @@
 
     .news__list .list__item .item__link .link__content .content__date {
         color: $black;
+        @include phones() {
+            margin-bottom: 10px;
+        }
     }
 }

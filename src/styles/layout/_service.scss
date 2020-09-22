@@ -115,7 +115,7 @@
 
         @include tablets() {
             width: 100%;
-            padding: 10px 20px;
+            padding: 20px;
         }
 
         .about__subtitle {
@@ -127,6 +127,7 @@
             background: $red;
             border-radius: 10px;
             padding: 0 10px;
+            margin-bottom: 20px;
         }
 
         .about__list {
@@ -336,7 +337,7 @@
                     border-radius: 15px;
 
                     @include phones() {
-                        width: 85%;
+                        width: 100%;
                     }
                 }
 
@@ -346,13 +347,14 @@
                     width: 70%;
 
                     @include phones() {
-                        width: 85%;
+                        width: 100%;
+                        padding: 20px 10px;
                     }
                 }
 
                 .item__link {
-                    color: #000000;
-                    font-size: 16px;
+                    color: #484848;
+                    font-size: 14px;
                     text-decoration: none;
                 }
 

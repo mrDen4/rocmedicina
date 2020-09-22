@@ -102,4 +102,9 @@ $(document).ready(function () {
         $('.list__item').removeClass('list__item--hidden');
         $('.news .news__btn').hide();
     });
+
+    //Маска для телефона
+    $(function() {
+        $('#form-buy-phone, .callback .callback__form .form__item .item__inp').mask('+7(999) 999-99-99');
+    });
 });
