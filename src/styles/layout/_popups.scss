@@ -1,6 +1,7 @@
 .popup-buy {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: fixed;
     width: 350px;
@@ -14,6 +15,7 @@
     border-radius: 10px;
     z-index: 150;
     transition: .3s;
+    overflow: hidden;
 
     @include phones() {
         width: 300px;
@@ -21,8 +23,17 @@
         margin-left: -150px;
     }
 
+    @include landscape() {
+        height: 100%;
+        margin-top: 0;
+    }
+
     &--active {
         top: 50%;
+
+        @include landscape{
+            top: 0;
+        }
     }
 
     .popup__btn {
@@ -41,18 +52,31 @@
         }
     }
 
+    .popup-buy__form {
+        overflow: hidden;
+
+        @include phones() {
+            width: 95%;
+        }
+    }
+
     .form__title {
         font-size: 36px;
         font-weight: bold;
         color: $red;
         text-align: center;
         margin: 10px 0 20px;
+
+        @include phones() {
+            margin: 0 0 20px 0;
+        }
     }
 
     .form__row {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
     .row__img {
@@ -67,6 +91,10 @@
         color: #484848;
         padding: 20px;
         outline: none;
+
+        @include phones() {
+            width: 85%;
+        }
     }
 
     .form__btn {
@@ -86,6 +114,7 @@
         @include phones() {
             height: 50px;
             margin-top: 25px;
+            width: 100%;
         }
 
         &:hover {
@@ -144,11 +173,12 @@
     }
 
     .delivery__title {
-        font-size: 20px;
+        font-size: 16px;
         color: #ffffff;
         background: $gray;
-        padding: 0 10px;
+        padding: 5px 10px;
         border-radius: 10px;
+        text-transform: uppercase;
     }
 
     .delivery__text {

@@ -76,6 +76,52 @@
                 height: 300px;
             }
 
+            .content__title {
+                font-size: 18px;
+                color: #484848;
+                font-weight: normal;
+                margin: 10px 0 0 0;
+                transition: .3s;
+
+                @include tablets() {
+                    font-size: 15px;
+                    word-wrap: break-word;
+                }
+
+                @include phones() {
+                    font-size: 15px;
+                }
+            }
+
+            .content__arrow {
+                font-size: 30px;
+                color: $black;
+                margin: 0;
+                text-align: right;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 0 25px;
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                transition: .3s;
+
+                @include phones() {
+                    font-size: 40px;
+                    position: initial;
+                    right: initial;
+                    bottom: initial;
+                    padding-right: 0;
+                }
+            }
+
+            &:hover {
+                .content__title, .content__arrow {
+                    color: $red;
+                }
+            }
+
             .item__link {
                 width: 100%;
                 display: flex;
@@ -109,6 +155,7 @@
                         width: 100%;
                         overflow: hidden;
                         height: 100%;
+                        align-items: flex-start;
                     }
 
                     .img__img {
@@ -132,9 +179,28 @@
                     flex-direction: column;
                     padding: 5px;
                     position: relative;
+                    transition: .3s;
 
                     @include phones() {
                         width: 100%;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 25px;
+                    }
+
+                    .content__btn {
+                        width: 150px;
+                        padding: 0;
+                        height: 30px;
+                        position: absolute;
+                        bottom: 10px;
+
+                        @include phones() {
+                            position: initial;
+                            bottom: initial;
+                        }
                     }
 
                     .content__date {
@@ -142,25 +208,14 @@
                         align-items: center;
                         margin: 0;
                         font-size: 14px;
+                        font-weight: bold;
 
                         .date__icon {
                             margin-right: 15px;
                         }
-                    }
 
-                    .content__title {
-                        font-size: 18px;
-                        color: #484848;
-                        font-weight: normal;
-                        margin: 10px 0 0 0;
-
-                        @include tablets() {
-                            font-size: 15px;
-                            word-wrap: break-word;
-                        }
-
-                        @include phones() {
-                            font-size: 15px;
+                        .date__text {
+                            margin: 0;
                         }
                     }
 
@@ -185,35 +240,18 @@
                         font-size: 18px;
                         background: $red;
                         color: #ffffff;
-                        padding: 0 5px;
+                        padding: 5px 10px;
                         margin: 0;
                         margin-right: 20px;
                         border-radius: 10px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                    }
 
-                    .content__arrow {
-                        font-size: 30px;
-                        color: $black;
-                        margin: 0;
-                        text-align: right;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                        padding: 0 25px;
-                        position: absolute;
-                        right: 10px;
-                        bottom: 10px;
-
-                        &:hover {
-                            color: $red;
+                        @include phones() {
+                            padding: 5px 10px;
+                            margin-top: 10px;
                         }
-                    }
-
-                    .arrow__img {
-                        width: 35px;
                     }
                 }
             }
@@ -222,11 +260,6 @@
 }
 
 .sales {
-
-    .list__item--hidden {
-        display: none;
-    }
-
     .news__list {
         .list__item {
             width: 48%;
@@ -235,74 +268,75 @@
                 width: 100%;
                 height: initial;
             }
-        }
-    }
 
-    .news__list {
-        .list__item {
+            &--hidden {
+                display: none;
+            }
+
             .item__link {
                 height: 185px;
         
-            @include phones() {
-                height: initial;
-            }
+                @include phones() {
+                    height: initial;
+                }
+
+                .link__img {
+                    overflow: hidden;
+                    height: 100%;
+
+                    .img__img {
+                        height: initial;
+                        width: 100%;
+                
+                        @include phones() {
+                            width: 100%;
+                            height: initial;
+                        }
+                    }
+                }
+
+                .link__content {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 15px;
+            
+                    @include phones() {
+                        justify-content: space-around;
+                    }
+
+                    .content__title {
+                        width: 100%;
+                        margin: 0;
+                        @include phones() {
+                            width: 100%;
+                            text-align: center;
+                            margin-bottom: 10px;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .content__old-price {
+                        text-align: center;
+                    }
+                    
+                    .content__new-price {
+                        text-align: center;
+                        font-weight: bold;
+
+                        @include phones() {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .content__date {
+                        color: $black;
+                        @include phones() {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
             }
         } 
-    }
-
-    .news__list .list__item .item__link .link__img {
-        overflow: hidden;
-        height: 100%;
-    }
-
-    .news__list .list__item .item__link .link__img .img__img {
-        height: initial;
-        width: 100%;
-
-        @include phones() {
-            width: 100%;
-            height: initial;
-        }
-    }
-
-    .news__list .list__item .item__link .link__content {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 15px;
-
-        @include phones() {
-            justify-content: space-around;
-        }
-    }
-
-    .news__list .list__item .item__link .link__content .content__title {
-        width: 100%;
-        margin: 0;
-        @include phones() {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-    }
-
-    .news__list .list__item .item__link .link__content .content__old-price {
-        text-align: center;
-
-        @include phones() {
-            margin-bottom: 20px;
-        }
-    }
-
-    .news__list .list__item .item__link .link__content .content__new-price {
-        text-align: center;
-    }
-
-    .news__list .list__item .item__link .link__content .content__date {
-        color: $black;
-        @include phones() {
-            margin-bottom: 10px;
-        }
     }
 }

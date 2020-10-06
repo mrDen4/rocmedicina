@@ -49,6 +49,7 @@
             padding: 10px 35px;
             cursor: pointer;
             transition: .3s;
+            text-align: left;
 
             @include phones() {
                 font-size: 16px;
@@ -98,6 +99,11 @@
                 border-bottom: 1px solid rgba(184, 139, 124, 0.2);
                 background: #fff;
                 width: 100%;
+                transition: .3s;
+
+                &:hover {
+                    border-color: $red;
+                }
 
                 @include phones() {
                     flex-direction: column;

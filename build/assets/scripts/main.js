@@ -26,21 +26,10 @@ $(document).ready(function () {
         $('.bg').toggleClass('bg--active-popup');
     });
 
-    $('.popup-buy .popup__btn, .popup-buy .form__btn').on('click', function() {
+    $('.popup-buy .popup__btn').on('click', function() {
         $('.popup-buy').toggleClass('popup-buy--active');
         $('.bg').toggleClass('bg--active-popup');
     })
-
-    $('.result .license__slider').slick({
-        infinite: true,
-        arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: $('.result .result__license .license__btn--left'),
-        nextArrow: $('.result .result__license .license__btn--right')
-    });
 
     // Раскрывание эл-ов в прайс-листе
     $('.price .price__list .item__btn').on('click', function () {
@@ -55,24 +44,6 @@ $(document).ready(function () {
         } else {
             $(this).next('.item__block').toggleClass('item__block--active');
         }
-    });
-
-    // Cлайдер для отзывов
-    $('.reviews .reviews__slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: $('.reviews .arrows__left'),
-        nextArrow: $('.reviews .arrows__right'),
-        responsive: [
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToScroll: 1,
-                slidesToShow: 1
-              }
-            }
-          ]
     });
 
     //Popup "Как добраться"
@@ -103,8 +74,38 @@ $(document).ready(function () {
         $('.news .news__btn').hide();
     });
 
-    //Маска для телефона
+    //Маска для телефона в формах
     $(function() {
         $('#form-buy-phone, .callback .callback__form .form__item .item__inp').mask('+7(999) 999-99-99');
+    });
+
+    // Cлайдер для отзывов
+    $('.reviews .reviews__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $('.reviews .arrows__left'),
+        nextArrow: $('.reviews .arrows__right'),
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1
+                }
+            }
+            ]
+    });
+
+    //Слайдер для лицензий
+    $('.result .license__slider').slick({
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.result .result__license .license__btn--left'),
+        nextArrow: $('.result .result__license .license__btn--right')
     });
 });

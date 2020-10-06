@@ -22,10 +22,6 @@
         flex-direction: column;
         align-items: flex-start;
 
-        @include landscape() {
-            width: 30%;
-        }
-
         @include tablets() {
             width: 40%;
         }
@@ -33,6 +29,10 @@
         @include phones() {
             align-items: flex-start;
             width: 100%;
+        }
+
+        @include landscape() {
+            width: 35%;
         }
     }
 
@@ -132,6 +132,10 @@
             display: none;
         }
 
+        @include landscape() {
+            width: initial;
+        }
+
         &:hover {
             color: $red;
         }
@@ -146,6 +150,23 @@
 
         @include phones() {
             display: flex;
+            margin-right: 10px;
+        }
+    }
+
+    .header__wrap-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include phones() {
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        @include landscape() {
+            flex-direction: column;
         }
     }
 
@@ -154,8 +175,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 14%;
         z-index: 100;
+        margin-right: 25px;
 
         @include tablets() {
             width: 25%;
@@ -166,11 +187,22 @@
             width: 55%;
             order: 3;
             margin-top: 30px;
+            margin-right: 0;
+        }
+
+        @include landscape() {
+            width: 100%;
+            margin-bottom: 5px;
         }
 
         .socials__icon {
             transition: .3s;
             width: 25px;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             .icon__img {
                 width: 100%;
@@ -195,12 +227,6 @@
         z-index: 100;
         font-size: 14px;
 
-        @include landscape() {
-            padding: 4px 10px;
-            text-align: center;
-            width: 135px;
-        }
-
         @include tablets() {
             padding: 5px;
             text-align: center;
@@ -212,6 +238,13 @@
         @include phones() {
             order: 4;
             margin-top: 0;
+            margin-right: 0;
+        }
+
+        @include landscape() {
+            padding: 4px 10px;
+            text-align: center;
+            width: 100%;
         }
 
         &:hover {
@@ -297,6 +330,11 @@
         margin-top: 48px;
         padding-top: 60px;
         height: inherit;
+
+        @include landscape() {
+            margin-top: 20px;
+            padding-top: 20px;
+        }
     }
 
     .menu-list__link {

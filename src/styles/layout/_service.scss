@@ -119,15 +119,15 @@
         }
 
         .about__subtitle {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bold;
-            margin-top: 0;
             text-align: center;
             color: #fff;
             background: $red;
             border-radius: 10px;
-            padding: 0 10px;
-            margin-bottom: 20px;
+            padding: 5px 10px;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
         }
 
         .about__list {
@@ -164,6 +164,7 @@
     .service-about__container {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
 
         @include tablets() {
             flex-direction: column;
@@ -286,6 +287,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: sticky;
+        top: 10px;
 
         @include tablets() {
             width: 100%;
@@ -294,13 +297,15 @@
         }
 
         .news__subtitle {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: bold;
             margin-top: 0;
             background: $red;
             color: #fff;
-            padding: 0 10px;
+            padding: 5px 10px;
             border-radius: 10px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
 
             @include phones() {
                 font-size: 24px;
@@ -348,7 +353,7 @@
 
                     @include phones() {
                         width: 100%;
-                        padding: 20px 10px;
+                        padding: 20px 15px;
                     }
                 }
 

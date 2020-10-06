@@ -127,7 +127,7 @@
 
                 @include phones() {
                     font-size: 15px;
-                    margin: 0 0 15px 0;
+                    margin: 0 0 20px 0;
                 }
             }
 
@@ -143,7 +143,7 @@
 
                 @include phones() {
                     font-size: 15px;
-                    margin: 0 0 15px 0;
+                    margin: 0 0 20px 0;
                     text-align: justify;
                 }
             }
@@ -215,6 +215,10 @@
                 width: 75px;
                 height: 60px;
                 background-size: contain;
+
+                @include phones() {
+                    margin-bottom: 20px;
+                }
 
                 &--1 {
                     background: url('../images/services/svg/1.svg') center center no-repeat;
