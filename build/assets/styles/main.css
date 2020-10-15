@@ -2844,11 +2844,11 @@ a {
   flex-direction: column;
   position: fixed;
   width: 350px;
-  height: 450px;
+  height: 484px;
   padding: 20px 50px;
   top: -150%;
   left: 50%;
-  margin-top: -225px;
+  margin-top: -242px;
   margin-left: -175px;
   background: #ffffff;
   border-radius: 10px;
@@ -2900,6 +2900,9 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%; }
+    .popup-buy .form__row--recaptcha {
+      width: 100%;
+      margin-top: 20px; }
   .popup-buy .row__img {
     width: 20px;
     height: 25px; }
@@ -2909,7 +2912,8 @@ a {
     font-size: 16px;
     color: #484848;
     padding: 20px;
-    outline: none; }
+    outline: none;
+    width: 95%; }
     @media screen and (max-width: 576px) {
       .popup-buy .form__inp {
         width: 85%; } }
