@@ -5,11 +5,11 @@
     flex-direction: column;
     position: fixed;
     width: 350px;
-    height: 484px;
+    height: 540px;
     padding: 20px 50px;
     top: -150%;
     left: 50%;
-    margin-top: -242px;
+    margin-top: -270px;
     margin-left: -175px;
     background: #ffffff;
     border-radius: 10px;
@@ -18,9 +18,10 @@
     overflow: hidden;
 
     @include phones() {
-        width: 300px;
+        width: 100vw;
         padding: 20px;
-        margin-left: -150px;
+        margin-left: 0;
+        left: 0;
     }
 
     @include landscape() {
@@ -77,10 +78,12 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        border-bottom: 1px solid #E5E5E5;
 
         &--recaptcha {
             width: 100%;
             margin-top: 20px;
+            border: none;
         }
     }
 
@@ -91,7 +94,6 @@
 
     .form__inp {
         border: none;
-        border-bottom: 1px solid #E5E5E5;
         font-size: 16px;
         color: #484848;
         padding: 20px;

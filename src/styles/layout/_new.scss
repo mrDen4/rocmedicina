@@ -145,13 +145,14 @@
         }
 
         .nav__block {
-            border: 1px solid #dcdcdc;
+            border: 1px solid $border-gray;
             border-radius: 15px;
             margin-bottom: 30px;
-            padding: 20px 30px;
+            padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
 
             @include tablets() {
                 padding: 20px;
@@ -160,48 +161,179 @@
             &--img {
 
                 .nav__list {
+                    display: flex;
+                    flex-direction: column;
+        
                     .list__item {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        width: 100%;
                         margin-bottom: 20px;
-                        border: 1px solid #e4e4e4;
-                        border-radius: 17px;
-                        transition: .3s;
-
-                        &:hover {
-                            border-color: $red;
-                        }
+                        overflow: hidden;
         
-                        .item__img {
-                            width: 25%;
-                            border-radius: 15px;
-                            
-                            @include phones() {
-                                display: none;
-                            }
+                        &:last-child{
+                            margin-bottom: 0;
                         }
-        
-                        .item__content {
-                            display: flex;
-                            flex-direction: column;
-                            width: 70%;
-
-                            @include phones() {
-                                width: 100%;
-                                padding: 5px;
-                            }
+            
+                        @include tablets() {
+                            height: 170px;
                         }
-        
-                        .item__link {
-                            color: $black;
+            
+                        @include phones() {
+                            width: 100%;
+                            height: 345px;
+                        }
+            
+                        .content__title {
                             font-size: 16px;
-                            text-decoration: none;
-                            font-weight: initial;
+                            color: #484848;
+                            font-weight: normal;
+                            margin: 10px 0 0 0;
+                            transition: .3s;
+            
+                            @include tablets() {
+                                font-size: 15px;
+                                word-wrap: break-word;
+                            }
+            
+                            @include phones() {
+                                font-size: 15px;
+                            }
                         }
-        
-                        .content__text {
-                            font-size: 15px;
+            
+                        .content__arrow {
+                            font-size: 30px;
+                            color: $black;
+                            margin: 0;
+                            text-align: right;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            padding: 0 25px;
+                            position: absolute;
+                            right: 10px;
+                            bottom: 10px;
+                            transition: .3s;
+                            padding-right: 0;
+                            display: none;
+            
+                            @include phones() {
+                                font-size: 40px;
+                                position: initial;
+                                right: initial;
+                                bottom: initial;
+                                padding-right: 0;
+                                display: flex;
+                            }
+                        }
+            
+                        .content__date {
+                            display: flex;
+                            align-items: center;
+                            margin: 0;
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: $black;
+                            transition: .3s;
+            
+                            .date__icon {
+                                margin-right: 15px;
+                            }
+            
+                            .date__text {
+                                margin: 0;
+                            }
+                        }
+            
+                        &:hover {
+                            .content__title, .content__arrow, .content__date {
+                                color: $red;
+                            }
+                        }
+            
+                        .item__link {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            border: 1px solid #c5c5c5;
+                            border-radius: 10px;
+                            padding: 0;
+                            overflow: hidden;
+            
+                            @include tablets() {
+                                height: 100%;
+                            }
+            
+                            @include phones() {
+                                flex-direction: column;
+                                justify-content: flex-start;
+                            }
+            
+                            .link__img {
+                                width: 45%;
+                                background-size: contain;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+            
+                                @include tablets() {
+                                    height: 100%;
+                                    overflow: hidden;
+                                }
+                                
+                                @include phones() {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    height: 175px;
+                                    align-items: flex-start;
+                                }
+            
+                                .img__img {
+                                    width: 100%;
+            
+                                    @include tablets() {
+                                        width: initial;
+                                        height: 100%;
+                                    }
+            
+                                    @include phones() {
+                                        height: initial;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+            
+                            .link__content {
+                                width: 54%;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 5px;
+                                position: relative;
+                                transition: .3s;
+            
+                                @include phones() {
+                                    width: 100%;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 10px 25px;
+                                }
+            
+                                .content__btn {
+                                    width: 150px;
+                                    padding: 0;
+                                    height: 30px;
+                                    position: absolute;
+                                    bottom: 10px;
+                                    display: none;
+            
+                                    @include phones() {
+                                        position: initial;
+                                        bottom: initial;
+                                        display: initial;
+                                        width: 135px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

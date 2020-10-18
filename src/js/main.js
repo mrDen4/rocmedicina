@@ -76,7 +76,7 @@ $(document).ready(function () {
 
     //Маска для телефона в формах
     $(function() {
-        $('#form-buy-phone, .callback .callback__form .form__item .item__inp').mask('+7(999) 999-99-99');
+        $('#form-buy-phone, .callback .callback__form .form__item .item__inp--phone').mask('+7(999) 999-99-99');
     });
 
     // Cлайдер для отзывов

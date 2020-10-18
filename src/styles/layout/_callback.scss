@@ -45,6 +45,11 @@
                 flex-direction: column;
                 margin-bottom: 0;
             }
+
+            &--recaptcha {
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         .form__item {
