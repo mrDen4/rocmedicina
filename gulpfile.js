@@ -32,6 +32,10 @@ const paths = {
     font: {
         src: 'src/font/**/*.*',
         dest: 'build/assets/font'
+    },    
+    docs: {
+        src: 'src/docs/**/*.*',
+        dest: 'build/assets/docs/'
     }
 }
 
@@ -74,6 +78,7 @@ function watch() {
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.template.src, template);
     gulp.watch(paths.images.src, images);
+    gulp.watch(paths.docs.src, docs);
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.php.src, php);
     gulp.watch(paths.font.src, font);
@@ -93,15 +98,22 @@ function images() {
         .pipe(gulp.dest(paths.images.dest));
 }
 
+// переносим документы
+function docs() {
+    return gulp.src(paths.docs.src)
+        .pipe(gulp.dest(paths.docs.dest));
+}
+
 exports.template = template;
 exports.styles = styles;
 exports.clean = clean;
 exports.images = images;
 exports.font = font;
 exports.php = php;
+exports.docs = docs;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, template, images, scripts, font, php),
+    gulp.parallel(styles, template, images, scripts, font, php, docs),
     gulp.parallel(watch, server)
 ));
