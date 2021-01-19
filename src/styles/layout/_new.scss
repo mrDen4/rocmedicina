@@ -1,6 +1,10 @@
 .new {
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 145px;
+
+    @include phones() {
+        padding-top: 30px;
+    }
 
     .container {
         align-items: center;

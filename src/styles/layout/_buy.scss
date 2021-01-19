@@ -1,5 +1,9 @@
 .buy {
-    padding: 30px 0;
+    padding: 110px 0 30px 0;
+
+    @include phones() {
+        padding: 30px 0;
+    }
 
     .buy__container {
         align-items: center;
@@ -93,136 +97,297 @@
 
         .about__text {
             width: 55%;
+            font-size: 16px;
 
             @include phones() {
                 width: 100%;
             }
 
             p {
-                font-size: 15px;
-                color: #939393;
+                margin: 0 0 15px 0;
+                text-align: justify;
+            }
+    
+            h2,h3 {
+                margin: 0;
+                font-size: 16px;
+            }
+        
+            ul, ol {
+                padding: 0;
+                padding-left: 25px;
+                margin: 0 0 15px 0;
+                text-align: justify;
             }
     
             ol {
-                font-size: 15px;
-                color: #939393;
-                padding-inline-start: 15px;
+                li {
+                    list-style: decimal;
+                }
+            }
+            
+            li {
+                list-style: square;
             }
         }
 
         .about__nav {
-            display: flex;
             width: 40%;
+            height: 525px;
+            padding: 30px;
+            border: 1px solid $border-gray;
+            border-radius: 15px;
+            display: flex;
             flex-direction: column;
-            position:sticky; 
-            top:10px;
-    
-            @include phones() {
-                width: 100%;
-            }
-    
-            .nav__block {
-                border: 1px solid #dcdcdc;
-                border-radius: 15px;
-                margin-bottom: 30px;
-                padding: 0 30px;
-    
-                @include tablets() {
-                    padding: 20px;
-                }
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 10px;
 
-                a {
-                    color: $red;
-                    font-size: 17px;
-                    text-decoration: underline;
+            @include tablets() {
+                width: 100%;
+                height: initial;
+                margin-top: 30px;
+            }
+
+            .news__subtitle {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 0;
+                background: $red;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+    
+                @include phones() {
+                    font-size: 16px;
                 }
-    
-                &--img {
-    
-                    .nav__list {
-                        .list__item {
+            }
+
+            .news__list {
+                display: flex;
+                flex-direction: column;
+
+                .list__item {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    @include tablets() {
+                        height: 170px;
+                    }
+
+                    @include phones() {
+                        width: 100%;
+                        height: 345px;
+                    }
+
+                    .content__title {
+                        font-size: 16px;
+                        color: #484848;
+                        font-weight: normal;
+                        margin: 10px 0 0 0;
+                        transition: .3s;
+
+                        @include tablets() {
+                            font-size: 15px;
+                            word-wrap: break-word;
+                        }
+
+                        @include phones() {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .content__arrow {
+                        font-size: 30px;
+                        color: $black;
+                        margin: 0;
+                        text-align: right;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding: 0 25px;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 10px;
+                        transition: .3s;
+                        padding-right: 0;
+                        display: none;
+
+                        @include phones() {
+                            font-size: 40px;
+                            position: initial;
+                            right: initial;
+                            bottom: initial;
+                            padding-right: 0;
                             display: flex;
-                            justify-content: space-between;
+                        }
+                    }
+
+                    .content__date {
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $black;
+                        transition: .3s;
+
+                        .date__icon {
+                            margin-right: 15px;
+                        }
+
+                        .date__text {
+                            margin: 0;
+                        }
+                    }
+
+                    &:hover {
+
+                        .content__title,
+                        .content__arrow,
+                        .content__date {
+                            color: $red;
+                        }
+                    }
+
+                    .item__link {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid #c5c5c5;
+                        border-radius: 10px;
+                        padding: 0;
+                        overflow: hidden;
+
+                        @include tablets() {
+                            height: 100%;
+                        }
+
+                        @include phones() {
+                            flex-direction: column;
+                            justify-content: flex-start;
+                        }
+
+                        .link__img {
+                            width: 45%;
+                            background-size: contain;
+                            display: flex;
                             align-items: center;
-                            margin-bottom: 20px;
-            
-                            .item__img {
-                                width: 25%;
-                                border-radius: 15px;
-                                
-                                @include phones() {
-                                    display: none;
-                                }
+                            justify-content: center;
+
+                            @include tablets() {
+                                height: 100%;
+                                overflow: hidden;
                             }
-            
-                            .item__content {
-                                display: flex;
-                                flex-direction: column;
-                                width: 70%;
-    
+
+                            @include phones() {
+                                width: 100%;
+                                overflow: hidden;
+                                height: 175px;
+                                align-items: flex-start;
+                            }
+
+                            .img__img {
+                                width: 100%;
+
+                                @include tablets() {
+                                    width: initial;
+                                    height: 100%;
+                                }
+
                                 @include phones() {
+                                    height: initial;
                                     width: 100%;
                                 }
                             }
-            
-                            .item__link {
-                                color: $red;
-                                font-size: 17px;
-                                text-decoration: underline;
+                        }
+
+                        .link__content {
+                            width: 54%;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 5px;
+                            position: relative;
+                            transition: .3s;
+
+                            @include phones() {
+                                width: 100%;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 10px 25px;
                             }
-            
-                            .content__text {
-                                font-size: 15px;
+
+                            .content__btn {
+                                width: 150px;
+                                padding: 0;
+                                height: 30px;
+                                position: absolute;
+                                bottom: 10px;
+                                display: none;
+
+                                @include phones() {
+                                    position: initial;
+                                    bottom: initial;
+                                    display: initial;
+                                    width: 135px;
+                                }
                             }
                         }
                     }
                 }
-    
-                &:last-child {
-                    margin-bottom: 0;
-                }
             }
-    
-            .nav__title {
-                text-align: center;
-                font-size: 30px;
-            }
-    
-            .nav__list {
+        }
+
+        .nav__title {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+
+            .list__item {
                 display: flex;
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-    
-                .list__item {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-bottom: 30px;
-                }
-    
-                .item__img {
-                    width: 40%;
-                }
-            }
-    
-            .nav__img {
-                width: 100%;
-            }
-    
-            .nav__link {
-                margin-top: 30px;
-                background: none;
-                border: 1px solid $red;
-                text-decoration: none;
-                display: flex;
+                justify-content: space-between;
                 align-items: center;
-                justify-content: center;
+                margin-bottom: 30px;
             }
-    
-            .nav__btn {
-                margin-top: 30px;
+
+            .item__img {
+                width: 40%;
             }
+        }
+
+        .nav__img {
+            width: 100%;
+        }
+
+        .nav__link {
+            margin-top: 30px;
+            background: none;
+            border: 1px solid $red;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav__btn {
+            margin-top: 30px;
         }
     }
 }

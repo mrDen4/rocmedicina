@@ -5,7 +5,7 @@
     flex-direction: column;
     position: fixed;
     width: 350px;
-    height: 540px;
+    height: 565px;
     padding: 20px 50px;
     top: -150%;
     left: 50%;
@@ -55,6 +55,9 @@
 
     .popup-buy__form {
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
         @include phones() {
             width: 95%;
@@ -62,7 +65,7 @@
     }
 
     .form__title {
-        font-size: 36px;
+        font-size: 22px;
         font-weight: bold;
         color: $red;
         text-align: center;
@@ -85,6 +88,10 @@
             margin-top: 20px;
             border: none;
         }
+
+        @include phones() {
+            width: 304px;
+        }
     }
 
     .row__img {
@@ -101,17 +108,17 @@
         width: 95%;
 
         @include phones() {
-            width: 85%;
+            width: 80%;
         }
     }
 
     .form__btn {
-        height: 65px;
+        height: 50px;
         border: none;
         background: linear-gradient(90deg, #FF003D 0%, #FF0000 61.33%, #FF3D00 100%);
         box-shadow: 0px 10px 30px rgba(255, 0, 61, 0.1);
         border-radius: 10px;
-        width: 100%;
+        width: 70%;
         color: #ffffff;
         font-size: 17px;
         font-weight: bold;
@@ -333,5 +340,35 @@
     &--active-popup {
         height: 100%;
         z-index: 100;
+    }
+}
+
+.phone-abs {
+    display: none;  
+
+    @include phones() {
+        position: fixed;
+        bottom: 0;
+        background: none;
+        background: #f3f3f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .phone-abs__link {
+        display: none;
+
+        @include phones() {
+            display: flex;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .phone-ads__img {
+        margin-right: 20px;
     }
 }

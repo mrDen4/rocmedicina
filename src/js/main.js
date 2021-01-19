@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     // Появление popup окна по клику на кнопку
-    $('.hero .btn, .service .callback__btn-buy, .footer .footer__right .right__btn, .new .new__content .content__btn, .service-about .service-about__text .text__btns .btns__btn').on('click', function () {
+    $('.hero .callback__btn--order, .service .callback__btn-buy, .footer .footer__right .right__btn, .new .new__content .content__btn, .service-about .service-about__text .text__btns .btns__btn, .callback .form__item .form__btn').on('click', function () {
         $('.popup-buy').toggleClass('popup-buy--active');
         $('.bg').toggleClass('bg--active-popup');
     });
@@ -47,7 +47,7 @@ $(document).ready(function () {
     });
 
     //Popup "Как добраться"
-    $('.contacts .contacts__btn').on('click', function () {
+    $('.contacts .contacts__btn--map').on('click', function () {
         $('.popup-delivery').addClass('popup-delivery--active');
         $('.bg').addClass('bg--active');
     });

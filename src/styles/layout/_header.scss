@@ -1,9 +1,15 @@
 .header {
     padding: 20px 0;
     z-index: 100;
-    position: relative;
+    position: fixed;
+    top: 0;
     background: #fff;
     border-bottom: 1px solid #f3f3f3;
+    width: 100%;
+
+    @include phones() {
+        position: relative;
+    }
 
     .header__container {
         display: flex;
@@ -92,6 +98,12 @@
                 position: absolute;
                 color: #d0801f;
                 opacity: 0;
+
+                @include phones() {
+                    left: initial;
+                    right: -145px;
+                    bottom: 5px;
+                }
             }
         }
     }
@@ -176,7 +188,7 @@
         align-items: center;
         justify-content: space-between;
         z-index: 100;
-        margin-right: 25px;
+        margin-right: 40px;
 
         @include tablets() {
             width: 25%;

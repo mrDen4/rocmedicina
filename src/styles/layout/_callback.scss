@@ -5,10 +5,10 @@
     padding: 30px 0;
 
     .callback__title {
-        font-size: 36px;
+        font-size: 22px;
         text-align: center;
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         font-family: 'Lato', sans-serif;
 
         @include phones() {
@@ -16,131 +16,137 @@
         }
     }
 
-    .callback__form {
+
+
+    .form__row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
 
-        .form__row {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            width: 100%;
-            margin-bottom: 30px;
-
-            &:first-child {
-
-                @include phones() {
-                    margin-bottom: 10px;
-                }
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
+        &:first-child {
 
             @include phones() {
-                flex-direction: column;
-                margin-bottom: 0;
-            }
-
-            &--recaptcha {
-                align-items: center;
-                justify-content: center;
+                margin-bottom: 10px;
             }
         }
 
-        .form__item {
-            display: flex;
-            width: 30%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include phones() {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &--recaptcha {
+            align-items: center;
             justify-content: center;
+        }
+    }
+
+    .form__item {
+        display: flex;
+        width: 30%;
+        justify-content: center;
+
+        @include phones() {
+            width: 80%;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+
+        &--copy {
+            @include phones() {
+                order: 10;
+            }
+        }
+
+        &--btn {
+            @include phones() {
+                order: -1;
+            }
+        }
+
+        .item__link {
+            color: #D2D2D2;
+            text-decoration: underline;
+        }
+
+        .item__label {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #FF8D8D;
+
+            .label__img {
+                margin-right: 10px;
+            }
+        }
+
+        .item__inp {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #FF8D8D;
+            color: #ffffff;
+            height: 50px;
+            outline: none;
+            width: 100%;
+            font-size: 18px;
 
             @include phones() {
-                width: 80%;
-                margin-bottom: 10px;
-                justify-content: center;
+                width: 100%;
             }
 
-            &--copy {
-                @include phones() {
-                    order: 10;
-                }
-            }
-
-            .item__label {
-                display: flex;
-                align-items: center;
-                border-bottom: 1px solid #FF8D8D;
-
-                .label__img {
-                    margin-right: 10px;
-                }
-            }
-
-            .item__inp {
-                background: none;
-                border: none;
-                border-bottom: 1px solid #FF8D8D;
+            &::-webkit-input-placeholder {
                 color: #ffffff;
-                height: 50px;
-                outline: none;
-                width: 100%;  
-                font-size: 18px;  
-
-                @include phones() {
-                    width: 100%;
-                }
-
-                &::-webkit-input-placeholder {
-                    color: #ffffff;
-                    opacity: .6;
-                }
+                opacity: .6;
             }
+        }
 
-            .form__btn {
-                background: #ffffff;
-                color: $red;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding-top: 0;
-                padding-bottom: 0;
+        .form__btn {
+            background: #ffffff;
+            color: $red;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0;
+            padding-bottom: 0;
 
-                @include phones() {
-                    width: 100%;
-                    padding: 0;
-                }
+            @include phones() {
+                width: 100%;
+                padding: 0;
             }
+        }
 
-            .form__copy {
-                text-align: center;
+        .form__copy {
+            text-align: center;
+            color: #D2D2D2;
+
+            @include phones() {
                 color: #D2D2D2;
+                text-align: center;
+            }
 
+            .copy__link {
+                text-decoration: underline;
+                color: #D2D2D2;
+            }
+        }
+
+        .form__text {
+            text-align: center;
+            width: 100%;
+            color: #D2D2D2;
+
+            &--callback {
                 @include phones() {
+                    font-weight: bold;
                     color: #D2D2D2;
                     text-align: center;
-                }
-
-                .copy__link {
-                    text-decoration: underline;
-                    color: #D2D2D2;
-                }
-            }
-
-            .form__text {
-                text-align: center;
-                width: 100%;
-                color: #D2D2D2;
-                
-                &--callback {
-                    @include phones() {
-                        font-weight: bold;
-                        color: #D2D2D2;
-                        text-align: center;
-                    }
                 }
             }
         }

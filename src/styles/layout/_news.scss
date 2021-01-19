@@ -1,5 +1,9 @@
 .news {
-   padding: 30px 0;
+    padding: 145px 0 30px 0;
+    
+   @include phones() {
+    padding: 30px 0;
+   }
 
     .news__container {
         align-items: center;
@@ -307,9 +311,15 @@
                         justify-content: space-around;
                     }
 
+                    .content__sale {
+                        padding: 0 10px;
+                    }
+
                     .content__title {
                         width: 100%;
                         margin: 0;
+                        font-size: 17px;
+
                         @include phones() {
                             width: 100%;
                             text-align: center;
@@ -325,6 +335,7 @@
                     .content__new-price {
                         text-align: center;
                         font-weight: bold;
+                        font-size: 17px;
 
                         @include phones() {
                             font-size: 20px;

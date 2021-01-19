@@ -1,6 +1,6 @@
 .hero {
     min-height: 65vh;
-    padding-top: 30px;
+    padding-top: 145px;
 
     @include phones() {
         align-items: flex-start;
@@ -179,6 +179,7 @@
         align-items: center;
         justify-content: center;
         width: 160px;
+        outline: none;
 
         @include landscape() {
             width: 125px;
@@ -195,6 +196,7 @@
         background: #ffffff;
         color: $red;
         transition: .3s;
+        outline: none;
 
         &:hover {
             background: $red;
