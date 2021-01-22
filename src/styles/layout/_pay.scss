@@ -1,0 +1,24 @@
+.succes-pay, .unsucces-pay {
+    height: 50vh;
+    padding-top: 145px;
+}
+
+.succes-pay {
+
+    .succes-pay__title {
+        color: green;
+        font-size: 42px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.unsucces-pay {
+
+    .unsucces-pay__title {
+        color: $red;
+        font-size: 42px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
