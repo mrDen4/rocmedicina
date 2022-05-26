@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -16,7 +16,7 @@ const paths = {
     styles: {
         src: 'src/styles/**/*.*',
         dest: 'build/assets/styles/'
-    },    
+    },
     images: {
         src: 'src/img/**/*.*',
         dest: 'build/assets/images/'
@@ -32,7 +32,7 @@ const paths = {
     font: {
         src: 'src/font/**/*.*',
         dest: 'build/assets/font'
-    },    
+    },
     docs: {
         src: 'src/docs/**/*.*',
         dest: 'build/assets/docs/'

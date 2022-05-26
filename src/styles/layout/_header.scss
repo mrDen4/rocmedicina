@@ -135,6 +135,10 @@
         font-weight: bold;
         color: #FF003D;
 
+        &:first-child {
+            margin-bottom: 10px;
+        }
+
         @include tablets() {
             font-size: 15px;
             width: 35%;
@@ -154,6 +158,7 @@
 
         .phone__icon {
             margin-right: 13px;
+            width: 40px;
         }
     }
 
@@ -189,6 +194,7 @@
         justify-content: space-between;
         z-index: 100;
         margin-right: 40px;
+        position: relative;
 
         @include tablets() {
             width: 25%;
@@ -220,8 +226,46 @@
                 width: 100%;
             }
 
+            .icon__text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 150px;
+                height: 40px;
+                top: 30px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin-right: auto;
+                margin-left: auto;
+                overflow: hidden;
+                transition: .3s;
+                position: absolute;
+                color: $red;
+                opacity: 0;
+
+                @include phones() {
+                    left: initial;
+                    right: -145px;
+                    bottom: 5px;
+                }
+            }
+
             &:hover {
                 opacity: .5;
+
+                .icon__text {
+                    opacity: 1;
+                    transition: .3s;
+                    text-align: center;
+                }
+
+                @include phones() {
+                    .icon__text {
+                        opacity: 0;
+                    }
+                }
             }
         }
     }

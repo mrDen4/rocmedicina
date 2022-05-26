@@ -1,5 +1,5 @@
 .buy {
-    padding: 110px 0 30px 0;
+    padding: 145px 0 30px 0;
 
     @include phones() {
         padding: 30px 0;
@@ -78,9 +78,18 @@
             }
 
             .form__about {
-                font-size: 12px;
+                font-size: 10px;
                 color: #939393;
                 text-align: center;
+                margin-bottom: 0;
+            }
+
+            select {
+                border: 1px solid #D2D2D2;
+                color: $gray;
+                font-size: 17px;
+                padding: 12px;
+                width: 100%;
             }
         }
     }
@@ -142,7 +151,7 @@
             align-items: center;
             justify-content: center;
             position: sticky;
-            top: 10px;
+            top: 125px;
 
             @include tablets() {
                 width: 100%;

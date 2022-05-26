@@ -36,6 +36,11 @@
         margin: 0;
         font-size: 16px;
         padding-left: 20px;
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 16px;
     }
 
     ul {
@@ -141,7 +146,7 @@
         display: flex;
         width: 40%;
         flex-direction: column;
-        position:sticky; 
+        position:sticky;
         top:10px;
 
         @include tablets() {
@@ -167,42 +172,43 @@
                 .nav__list {
                     display: flex;
                     flex-direction: column;
-        
+
                     .list__item {
                         width: 100%;
                         margin-bottom: 20px;
                         overflow: hidden;
-        
+
                         &:last-child{
                             margin-bottom: 0;
                         }
-            
+
                         @include tablets() {
                             height: 170px;
                         }
-            
+
                         @include phones() {
                             width: 100%;
                             height: 345px;
                         }
-            
+
                         .content__title {
                             font-size: 16px;
                             color: #484848;
                             font-weight: normal;
                             margin: 10px 0 0 0;
                             transition: .3s;
-            
+                            text-align: left;
+
                             @include tablets() {
                                 font-size: 15px;
                                 word-wrap: break-word;
                             }
-            
+
                             @include phones() {
                                 font-size: 15px;
                             }
                         }
-            
+
                         .content__arrow {
                             font-size: 30px;
                             color: $black;
@@ -218,7 +224,7 @@
                             transition: .3s;
                             padding-right: 0;
                             display: none;
-            
+
                             @include phones() {
                                 font-size: 40px;
                                 position: initial;
@@ -228,7 +234,7 @@
                                 display: flex;
                             }
                         }
-            
+
                         .content__date {
                             display: flex;
                             align-items: center;
@@ -237,22 +243,22 @@
                             font-weight: bold;
                             color: $black;
                             transition: .3s;
-            
+
                             .date__icon {
                                 margin-right: 15px;
                             }
-            
+
                             .date__text {
                                 margin: 0;
                             }
                         }
-            
+
                         &:hover {
                             .content__title, .content__arrow, .content__date {
                                 color: $red;
                             }
                         }
-            
+
                         .item__link {
                             width: 100%;
                             display: flex;
@@ -261,50 +267,50 @@
                             border-radius: 10px;
                             padding: 0;
                             overflow: hidden;
-            
+
                             @include tablets() {
                                 height: 100%;
                             }
-            
+
                             @include phones() {
                                 flex-direction: column;
                                 justify-content: flex-start;
                             }
-            
+
                             .link__img {
                                 width: 45%;
                                 background-size: contain;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-            
+
                                 @include tablets() {
                                     height: 100%;
                                     overflow: hidden;
                                 }
-                                
+
                                 @include phones() {
                                     width: 100%;
                                     overflow: hidden;
                                     height: 175px;
                                     align-items: flex-start;
                                 }
-            
+
                                 .img__img {
                                     width: 100%;
-            
+
                                     @include tablets() {
                                         width: initial;
                                         height: 100%;
                                     }
-            
+
                                     @include phones() {
                                         height: initial;
                                         width: 100%;
                                     }
                                 }
                             }
-            
+
                             .link__content {
                                 width: 54%;
                                 display: flex;
@@ -312,7 +318,7 @@
                                 padding: 5px;
                                 position: relative;
                                 transition: .3s;
-            
+
                                 @include phones() {
                                     width: 100%;
                                     flex-direction: row;
@@ -321,7 +327,7 @@
                                     align-items: center;
                                     padding: 10px 25px;
                                 }
-            
+
                                 .content__btn {
                                     width: 150px;
                                     padding: 0;
@@ -329,7 +335,7 @@
                                     position: absolute;
                                     bottom: 10px;
                                     display: none;
-            
+
                                     @include phones() {
                                         position: initial;
                                         bottom: initial;

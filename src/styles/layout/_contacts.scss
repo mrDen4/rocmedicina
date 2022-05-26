@@ -37,6 +37,37 @@
         }
     }
 
+    .contacts__cities {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .cities__btn {
+            &:first-child {
+                margin-right: 20px;
+            }
+
+            &--active {
+                background: $red;
+                color: #fff;
+            }
+
+            color: $red;
+            background: none;
+            border: 1px solid $red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background: $red;
+                color: #fff;
+            }
+        }
+    }
+
     .contacts__map {
         width: 45%;
         height: 350px;
@@ -120,13 +151,17 @@
             font-weight: bold;
             display: flex;
             height: 50px;
-            width: 225px;
+            width: 175px;
             align-items: center;
             justify-content: center;
             transition: .3s;
             border: 1px solid #FF003D;
             cursor: pointer;
             margin-right: 20px;
+
+            &:first-child {
+                margin-right: 75px;
+            }
     
             &--link {
                 caret-color: $red;
@@ -135,6 +170,10 @@
                 justify-content: center;
                 text-align: center;
                 margin: 0;
+
+                &:first-child {
+                    margin-right: 75px;
+                }
             }
     
             &:hover {

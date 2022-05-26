@@ -16,6 +16,7 @@ $(document).ready(function () {
         $('.popup-delivery').removeClass('popup-delivery--active');
         $('.popup-job').removeClass('popup-job--active');
         $('.popup-buy').removeClass('popup-buy--active');
+        $('.popup-buy-org').removeClass('popup-buy--active');
         $('.bg').removeClass('bg--active');
         $('.bg').removeClass('bg--active-popup');
     });
@@ -26,13 +27,27 @@ $(document).ready(function () {
         $('.bg').toggleClass('bg--active-popup');
     });
 
-    $('.popup-buy .popup__btn').on('click', function() {
-        $('.popup-buy').toggleClass('popup-buy--active');
+    $('.popup-buy .popup__btn, .popup-buy .form__btn').on('click', function() {
+        $('.popup-buy').removeClass('popup-buy--active');
+        $('.bg').removeClass('bg--active-popup');
+    })
+
+    // Появление popup окна по клику на кнопку для юр лиц
+    $('.hero .callback__btn--white').on('click', function () {
+        $('.popup-buy-org').addClass('popup-buy--active');
         $('.bg').toggleClass('bg--active-popup');
+    });
+
+    $('.popup-buy-org .popup__btn, .popup-buy-org .form__btn').on('click', function() {
+        $('.popup-buy-org').removeClass('popup-buy--active');
+        $('.bg').removeClass('bg--active-popup');
     })
 
     // Раскрывание эл-ов в прайс-листе
     $('.price .price__list .item__btn').on('click', function () {
+        let href = $(this).attr('href');
+        console.log(href);
+
         if ($(this).next('.item__block').hasClass('item__block--active')) {
             $(this).next('.item__block').toggleClass('item__block--active');
             return;
@@ -44,6 +59,10 @@ $(document).ready(function () {
         } else {
             $(this).next('.item__block').toggleClass('item__block--active');
         }
+
+        $('html, body').animate({
+            scrollTop: $(href).target.offset().top
+         }, 1000);
     });
 
     //Popup "Как добраться"
@@ -108,4 +127,6 @@ $(document).ready(function () {
         prevArrow: $('.result .result__license .license__btn--left'),
         nextArrow: $('.result .result__license .license__btn--right')
     });
+
+    //Переключение городов в контактах
 });

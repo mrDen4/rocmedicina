@@ -55,6 +55,10 @@
             height: 325px;
             transition: .3s;
 
+            &--price {
+                height: 360px;
+            }
+
             &:hover {
                 cursor: pointer;
             }
